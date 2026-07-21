@@ -88,6 +88,93 @@ ruby{ruby-position:over}.storyPage ruby rt,.storyTeaser ruby rt,.bookCard ruby r
 .v12DayDone{display:flex;gap:10px;align-items:center;border-radius:19px;padding:12px 13px;margin:12px 0;background:linear-gradient(135deg,#fff6cf,#f5efff);border:1px solid rgba(255,192,64,.27)}.v12DayDone.limit{background:linear-gradient(135deg,#edf4ff,#f7efff);border-color:rgba(105,113,190,.22)}.v12DayDoneIcon{font-size:30px}.v12TrialCard{background:linear-gradient(135deg,#eef9ff,#fff6fd);border-color:rgba(77,154,217,.22)}
 @media(max-width:380px){.v12AudioRow{grid-template-columns:1fr}.choiceLine{grid-template-columns:minmax(0,1fr) 50px}.v12ConfirmButtons{grid-template-columns:1fr}.v12ConfirmButtons .wide{grid-column:auto}}
 
+
+/* ================= Ver.1.4 long-term adventure ================= */
+.ltGoalCard{border-radius:23px;padding:13px;background:linear-gradient(135deg,#fff8df,#f4efff 55%,#eefaff);border:1px solid rgba(139,92,246,.18);box-shadow:var(--shadow)}
+.ltGoalHead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}.ltGoalHead b{font-size:14px}.ltGoalHead span{font-size:10px;color:var(--muted)}
+.ltGoalGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ltGoalBtn{min-height:82px;border-radius:18px;padding:11px;text-align:left;background:rgba(255,255,255,.9);border:1px solid var(--line)}.ltGoalBtn strong{display:block;font-size:13px}.ltGoalBtn small{display:block;font-size:10px;line-height:1.5;color:var(--muted);margin-top:4px}.ltGoalIcon{font-size:27px;margin-bottom:3px}
+.ltMapHero{border-radius:27px;padding:17px;background:linear-gradient(145deg,#fff7dc,#f2edff,#edfaff);border:1px solid rgba(139,92,246,.18);box-shadow:var(--shadow)}.ltMapHero h2{font-size:21px}.ltMapHero p{font-size:12px;line-height:1.65;color:var(--muted);margin-top:5px}
+.ltMapGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.ltMapCell{aspect-ratio:1;border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line);font-weight:1000;position:relative}.ltMapCell.done{background:linear-gradient(145deg,#fff5c8,#eafff5);border-color:rgba(81,201,167,.33)}.ltMapCell.current{background:linear-gradient(145deg,#ffe9f4,#eee8ff);border:2px solid var(--purple);box-shadow:0 0 0 4px rgba(139,92,246,.10)}.ltMapCell.future{opacity:.58}.ltMapDay{font-size:9px;color:var(--muted)}.ltMapMark{font-size:20px;line-height:1.1;margin-top:1px}.ltMapCheck{position:absolute;right:3px;top:2px;font-size:9px;color:#26886e}
+.ltNextEvent{border-radius:18px;padding:11px 12px;margin-top:11px;background:#fff;border:1px solid var(--line);font-size:12px;line-height:1.65}.ltNextEvent b{display:block;font-size:13px}
+.ltMissionGroup{margin-top:12px}.ltMissionGroupTitle{display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:1000;margin:0 3px 8px}.ltMissionRow{border-radius:19px;padding:12px;background:#fff;border:1px solid var(--line);margin-top:8px}.ltMissionTop{display:flex;gap:9px;align-items:center}.ltMissionIcon{font-size:27px;width:34px;text-align:center}.ltMissionMain{flex:1;min-width:0}.ltMissionName{font-size:13px;font-weight:1000}.ltMissionMeta{font-size:10px;color:var(--muted);margin-top:3px}.ltMissionBar{height:7px;background:#eee9f3;border-radius:999px;overflow:hidden;margin-top:7px}.ltMissionBar>div{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--pink),var(--mint))}.ltClaim{min-width:72px;min-height:42px;border-radius:14px;padding:7px 9px;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-size:11px;font-weight:1000}.ltClaim.claimed{background:#edf8f4;color:#277b67;border:1px solid rgba(81,201,167,.28)}.ltClaim:disabled{opacity:.65}
+.ltCelebrate{text-align:center;border-radius:24px;padding:16px;background:radial-gradient(circle at 50% 0%,rgba(255,213,106,.48),rgba(255,255,255,.96) 48%,rgba(238,232,255,.95));border:2px solid rgba(255,194,70,.32);box-shadow:var(--shadow)}.ltCelebrateIcon{font-size:55px}.ltCelebrate h3{font-size:18px;margin-top:4px}.ltCelebrate p{font-size:12px;line-height:1.65;color:var(--muted);margin-top:5px}
+@media(max-width:380px){.ltGoalGrid{grid-template-columns:1fr}.ltMapGrid{gap:5px}.ltMapCell{border-radius:12px}.ltMapMark{font-size:18px}}
+
+
+/* ================= Ver.1.4.0 candidate R2: boss challenge ================= */
+.ltBossHomeCard{border-radius:23px;padding:14px;background:linear-gradient(135deg,#fff4fa,#f1ecff 58%,#eef8ff);border:1px solid rgba(139,92,246,.22);box-shadow:var(--shadow)}
+.ltBossHomeHead{display:flex;align-items:center;gap:10px}.ltBossHomeIcon{font-size:38px}.ltBossHomeMain{flex:1}.ltBossHomeMain b{display:block;font-size:15px}.ltBossHomeMain span{display:block;font-size:11px;line-height:1.55;color:var(--muted);margin-top:3px}
+.ltBossChallengeHero{border-radius:27px;padding:17px;background:radial-gradient(circle at 80% 10%,rgba(255,213,106,.35),transparent 32%),linear-gradient(145deg,#fff6fb,#eee9ff);border:1px solid rgba(139,92,246,.22);box-shadow:var(--shadow)}.ltBossChallengeHero h2{font-size:21px}.ltBossChallengeHero p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:6px}
+.ltSealSummary{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;padding:9px 11px;border-radius:16px;background:rgba(255,255,255,.78);border:1px solid var(--line);font-size:12px;font-weight:1000}.ltSealSummary b{font-size:18px;color:#7650ba}
+.ltBossChallengeCard{border-radius:22px;padding:13px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 22px rgba(91,60,145,.08);margin-top:10px}.ltBossChallengeCard.locked{opacity:.56;filter:grayscale(.6)}
+.ltBossChallengeTop{display:flex;align-items:center;gap:10px}.ltBossChallengeIcon{font-size:42px;width:50px;text-align:center}.ltBossChallengeMain{flex:1}.ltBossChallengeName{font-size:15px;font-weight:1000}.ltBossChallengeMeta{font-size:10px;color:var(--muted);line-height:1.5;margin-top:3px}
+.ltDifficultyGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.ltDifficultyBtn{min-height:77px;border-radius:16px;padding:8px 5px;background:linear-gradient(145deg,#fff,#f7f3ff);border:1.5px solid var(--line);text-align:center}.ltDifficultyBtn.done{background:linear-gradient(145deg,#fff9dd,#fff,#f1edff);border-color:rgba(255,190,70,.48)}.ltDifficultyBtn:disabled{opacity:.47}.ltDifficultyIcon{font-size:23px}.ltDifficultyName{font-size:11px;font-weight:1000;margin-top:2px}.ltDifficultyMeta{font-size:9px;color:var(--muted);margin-top:3px;line-height:1.35}
+.ltBossDailyNote{border-radius:17px;padding:10px 12px;margin-top:10px;background:#fff9e8;border:1px solid rgba(255,190,70,.30);font-size:11px;line-height:1.65}.ltBossDailyNote.done{background:#effcf8;border-color:rgba(81,201,167,.32)}
+.ltBossQuizBanner{border-radius:17px;padding:10px 12px;margin-top:10px;background:linear-gradient(135deg,#fff5dc,#f3edff);border:1px solid rgba(139,92,246,.19);font-size:11px;font-weight:900;line-height:1.55;text-align:center}
+.ltBossOutcome{text-align:center;border-radius:23px;padding:15px;background:linear-gradient(145deg,#fff9e1,#fff,#f0ebff);border:1px solid rgba(255,190,70,.32);box-shadow:var(--shadow)}.ltBossOutcomeIcon{font-size:54px}.ltBossOutcome h3{font-size:17px;margin-top:4px}.ltBossOutcome p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}
+@media(max-width:390px){.ltDifficultyGrid{grid-template-columns:1fr}.ltDifficultyBtn{min-height:58px;display:grid;grid-template-columns:38px 1fr;grid-template-rows:auto auto;text-align:left;align-items:center}.ltDifficultyIcon{grid-row:1/3;text-align:center}.ltDifficultyName,.ltDifficultyMeta{margin:0}}
+
+
+
+/* ================= Ver.1.4.0 candidate R3: town level 10 ================= */
+.ltTownSummary{border-radius:22px;padding:13px 14px;background:linear-gradient(135deg,rgba(255,213,106,.22),rgba(196,181,253,.18),rgba(98,217,189,.16));border:1px solid rgba(139,92,246,.18);margin-top:12px}.ltTownSummaryHead{display:flex;align-items:center;gap:10px}.ltTownSummaryIcon{font-size:34px}.ltTownSummaryMain{flex:1}.ltTownSummaryMain b{display:block;font-size:14px}.ltTownSummaryMain span{display:block;font-size:10px;color:var(--muted);margin-top:3px;line-height:1.5}.ltTownStars{font-size:13px;font-weight:1000;color:#7650ba;white-space:nowrap}.ltTownCard{overflow:hidden}.ltTownCardTop{display:grid;grid-template-columns:70px minmax(0,1fr) auto;gap:11px;align-items:center}.ltTownCardMain{min-width:0}.ltTownCardName{font-size:15px;font-weight:1000;line-height:1.35}.ltTownCardLevel{font-size:10px;color:var(--muted);margin-top:3px}.ltTownCardText{font-size:11px;line-height:1.65;color:var(--muted);margin-top:6px}.ltTownNext{border-radius:14px;padding:8px 10px;margin-top:10px;background:#f8f5fd;border:1px solid var(--line);font-size:10px;font-weight:900;line-height:1.55}.ltTownNext.max{background:#fff8df;border-color:rgba(255,190,70,.30);color:#8a6518}.ltTownProgress{height:8px;border-radius:999px;background:rgba(91,60,145,.10);overflow:hidden;margin-top:9px}.ltTownProgress>div{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--mint),var(--yellow),var(--pink),var(--purple))}.ltTownMemoryBtn{width:100%;min-height:42px;border-radius:14px;margin-top:9px;background:linear-gradient(135deg,#fff9e7,#f5efff);border:1px solid rgba(139,92,246,.18);font-size:11px;font-weight:1000}.ltTownMemoryBtn.new{animation:audioGlow 1.3s ease-in-out infinite}.ltTownVisual{width:64px;height:64px;border-radius:19px;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(145deg,#fff,#f3effa);border:2px solid rgba(255,255,255,.9);box-shadow:0 8px 18px rgba(91,60,145,.12);overflow:hidden}.ltTownVisual.small{width:100%;height:45px;border-radius:14px;background:rgba(255,255,255,.38);box-shadow:none;border:0}.ltTownVisualMain{font-size:37px;line-height:1;filter:drop-shadow(0 4px 4px rgba(43,62,72,.18));position:relative;z-index:2}.ltTownVisual.small .ltTownVisualMain{font-size:29px}.ltTownVisualDeco{position:absolute;right:2px;top:1px;font-size:17px;z-index:3}.ltTownVisual.small .ltTownVisualDeco{font-size:13px}.ltTownVisualGround{position:absolute;left:8px;right:8px;bottom:5px;height:7px;border-radius:999px;background:rgba(98,217,189,.35)}.ltTownTier0{filter:grayscale(.65);opacity:.64}.ltTownTier3{background:linear-gradient(145deg,#fff,#fff7d8)}.ltTownTier5{background:linear-gradient(145deg,#fff9e5,#f0f9ff);box-shadow:0 8px 20px rgba(255,190,70,.18)}.ltTownTier7{background:linear-gradient(145deg,#f2fbff,#f4eeff);box-shadow:0 8px 22px rgba(99,179,255,.20)}.ltTownTier10{background:linear-gradient(145deg,#fff4fb,#f1edff,#edfff9);border-color:rgba(255,213,106,.70);box-shadow:0 0 0 3px rgba(255,213,106,.16),0 10px 24px rgba(139,92,246,.20)}.ltTownTier10:before{content:"✦";position:absolute;left:4px;top:1px;color:#ffc94f;font-size:16px;animation:twinkle 1.8s ease-in-out infinite}.ltTownEventHero{text-align:center;border-radius:23px;padding:15px;background:linear-gradient(145deg,#fff9e7,#fff,#f2edff);border:1px solid rgba(255,190,70,.28)}.ltTownEventHero .ltTownVisual{margin:auto;width:88px;height:88px;border-radius:26px}.ltTownEventHero .ltTownVisualMain{font-size:53px}.ltTownEventKicker{font-size:10px;font-weight:1000;color:#a06a14;letter-spacing:.12em;margin-top:10px}.ltTownEventTitle{font-size:19px;font-weight:1000;margin-top:5px}.ltTownEventText{font-size:13px;line-height:1.85;margin-top:10px;text-align:left}.ltTownCompanionLine{display:flex;gap:9px;align-items:center;border-radius:17px;padding:10px 11px;margin-top:11px;background:#fff;border:1px solid var(--line);text-align:left}.ltTownCompanionIcon{font-size:30px}.ltTownCompanionText{font-size:11px;line-height:1.65}.ltTownCompanionText b{display:block;font-size:12px;margin-bottom:2px}.ltTownMilestoneBadge{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:4px 8px;background:rgba(255,213,106,.25);font-size:9px;font-weight:1000;margin-top:6px}.townBuildings .building{min-width:0}.townBuildings .buildingIcon{font-size:0}.townBuildings .ltTownVisual{margin:auto}.townBuildings .buildingLv{margin-top:2px}
+@media(max-width:390px){.ltTownCardTop{grid-template-columns:60px minmax(0,1fr)}.ltTownCardTop>.ghost{grid-column:1/-1;width:100%}.ltTownVisual{width:56px;height:56px}.ltTownVisualMain{font-size:33px}}
+
+
+
+/* ================= Ver.1.4.0 candidate R4: companion bonds and collection ================= */
+.ltProfileTitle{display:inline-flex;align-items:center;gap:4px;margin-top:4px;padding:3px 8px;border-radius:999px;background:rgba(255,213,106,.25);border:1px solid rgba(222,163,28,.24);font-size:9px;font-weight:1000;color:#76531c}
+.ltBondHero{border-radius:25px;padding:15px;background:linear-gradient(135deg,#fff5fb,#f1edff,#eefcff);border:1px solid rgba(139,92,246,.18);box-shadow:var(--shadow)}
+.ltBondHeroTop{display:flex;align-items:center;gap:12px}.ltBondHeroIcon{width:66px;height:66px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:40px;background:#fff;border:3px solid rgba(255,255,255,.9);box-shadow:0 8px 20px rgba(91,60,145,.13)}
+.ltBondHeroMain{flex:1}.ltBondHeroMain b{display:block;font-size:17px}.ltBondHeroMain span{display:block;font-size:11px;color:var(--muted);margin-top:3px;line-height:1.5}.ltBondHearts{letter-spacing:.08em;font-size:18px;color:#ff6ea8;margin-top:4px}.ltBondTalk{margin-top:11px;border-radius:16px;padding:10px 12px;background:rgba(255,255,255,.82);border:1px solid var(--line);font-size:12px;line-height:1.7}.ltBondBar{height:8px;background:rgba(91,60,145,.10);border-radius:999px;overflow:hidden;margin-top:9px}.ltBondBar>div{height:100%;background:linear-gradient(90deg,var(--pink),var(--yellow));border-radius:999px}.ltBondActions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.companion.selected{border-color:#ff8dbd;background:linear-gradient(145deg,#fff,#fff1f8);box-shadow:0 0 0 3px rgba(255,126,182,.10)}.ltBondMini{font-size:9px;color:#b13e76;font-weight:1000;margin-top:2px}.ltPartnerBadge{display:inline-block;border-radius:999px;padding:2px 5px;background:#fff0f7;color:#b13e76;font-size:8px;margin-left:2px}
+.ltBondModalHero{text-align:center}.ltBondModalIcon{font-size:68px}.ltBondModalName{font-size:20px;font-weight:1000;margin-top:4px}.ltBondMilestones{display:flex;justify-content:center;gap:6px;margin-top:10px}.ltBondMilestone{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eee9f4;border:1px solid var(--line);font-size:17px}.ltBondMilestone.on{background:#fff1a8;border-color:#ffc94f;box-shadow:0 0 14px rgba(255,201,79,.36)}
+.ltBondCelebrate{border-radius:23px;padding:15px;text-align:center;background:linear-gradient(135deg,#fff2f8,#fff9dd,#eefcff);border:1px solid rgba(255,126,182,.25);box-shadow:var(--shadow)}.ltBondCelebrateIcon{font-size:55px}.ltBondCelebrate h3{font-size:17px;margin-top:4px}.ltBondCelebrate p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}
+.ltCollectionHomeCard{border-radius:22px;padding:13px;background:linear-gradient(135deg,#fff7dd,#fff,#f1edff);border:1px solid rgba(255,196,80,.28);box-shadow:var(--shadow)}.ltCollectionHomeRow{display:flex;align-items:center;gap:10px}.ltCollectionHomeIcon{font-size:35px}.ltCollectionHomeMain{flex:1}.ltCollectionHomeMain b{display:block;font-size:14px}.ltCollectionHomeMain span{display:block;font-size:10px;color:var(--muted);line-height:1.5;margin-top:2px}
+.ltCollectionHero{border-radius:27px;padding:17px;background:linear-gradient(145deg,#fff6df,#f4efff,#edfaff);border:1px solid rgba(139,92,246,.18);box-shadow:var(--shadow)}.ltCollectionHero h2{font-size:21px}.ltCollectionHero p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}.ltSelectedTitle{margin-top:10px;border-radius:16px;padding:10px 12px;background:#fff;border:1px solid var(--line);font-size:12px}.ltSelectedTitle b{display:block;font-size:14px;margin-top:2px;color:#7650ba}
+.ltCollectionGroup{margin-top:14px}.ltCollectionGroupTitle{display:flex;align-items:center;justify-content:space-between;font-weight:1000;font-size:14px;margin:0 3px 8px}.ltStickerGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ltSticker{min-height:132px;border-radius:19px;padding:11px 9px;text-align:center;background:#fff;border:1px solid var(--line);box-shadow:0 7px 18px rgba(91,60,145,.06)}.ltSticker.locked{filter:grayscale(.7);opacity:.56}.ltSticker.selected{border-color:#9871df;background:linear-gradient(145deg,#fff,#f2edff)}.ltSticker.new{box-shadow:0 0 0 3px rgba(255,126,182,.13),0 7px 18px rgba(91,60,145,.06)}.ltStickerIcon{font-size:38px}.ltStickerName{font-size:11px;font-weight:1000;line-height:1.4;margin-top:4px}.ltStickerTitle{font-size:9px;color:#7650ba;font-weight:1000;margin-top:4px}.ltStickerHint{font-size:9px;line-height:1.45;color:var(--muted);margin-top:4px}.ltNewBadge{display:inline-block;border-radius:999px;padding:2px 6px;background:#ffedf6;color:#b13e76;font-size:8px;font-weight:1000;margin-bottom:3px}
+@media(max-width:390px){.ltBondActions{grid-template-columns:1fr}.ltStickerGrid{grid-template-columns:1fr 1fr}.ltSticker{min-height:126px;padding:9px 6px}}
+
+
+/* ================= Ver.1.4.0 candidate R5: crystal fragments ================= */
+.ltCrystalHomeCard{border-radius:23px;padding:13px;background:linear-gradient(135deg,#fff8e6,#f2efff,#eefaff);border:1px solid rgba(139,92,246,.19);box-shadow:var(--shadow)}
+.ltCrystalHomeRow{display:flex;align-items:center;gap:10px}.ltCrystalHomeIcon{width:48px;height:48px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:30px;background:rgba(255,255,255,.82);box-shadow:0 7px 18px rgba(91,60,145,.10)}
+.ltCrystalHomeMain{flex:1;min-width:0}.ltCrystalHomeMain b{display:block;font-size:14px}.ltCrystalHomeMain span{display:block;font-size:10px;line-height:1.55;color:var(--muted);margin-top:3px}
+.ltCrystalHero{border-radius:28px;padding:17px;background:linear-gradient(145deg,#fff9e8,#f4efff,#edfaff);border:1px solid rgba(139,92,246,.19);box-shadow:var(--shadow);text-align:center}.ltCrystalHero h2{font-size:21px}.ltCrystalHero p{font-size:12px;line-height:1.75;color:var(--muted);margin-top:6px}.ltCrystalSummary{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.ltCrystalSummary div{border-radius:15px;padding:9px 5px;background:rgba(255,255,255,.82);border:1px solid var(--line);font-size:10px;color:var(--muted)}.ltCrystalSummary b{display:block;font-size:18px;color:#7650ba;margin-bottom:2px}
+.ltCrystalGroup{margin-top:13px}.ltCrystalGroupTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px;font-weight:1000;margin:0 3px 8px}.ltCrystalGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ltCrystalCard{position:relative;border-radius:20px;padding:11px;background:#fff;border:1px solid var(--line);box-shadow:0 7px 18px rgba(91,60,145,.07);text-align:center;overflow:hidden}.ltCrystalCard.complete{background:linear-gradient(145deg,#fff,#faf5ff)}.ltCrystalCard.current{box-shadow:0 0 0 3px rgba(139,92,246,.10),0 8px 20px rgba(91,60,145,.10)}
+.ltCrystalGem{font-size:43px;line-height:1;filter:drop-shadow(0 5px 6px rgba(80,55,120,.16))}.ltCrystalGem.pink{color:#ff7eb6}.ltCrystalGem.red{color:#ff776c}.ltCrystalGem.yellow{color:#f2ba26}.ltCrystalGem.green{color:#43bf88}.ltCrystalGem.blue{color:#4fa8f7}.ltCrystalGem.indigo{color:#7468db}.ltCrystalGem.purple{color:#a75de2}.ltCrystalGem.locked{color:#d8d2df;filter:none}
+.ltCrystalName{font-size:12px;font-weight:1000;margin-top:5px;line-height:1.4}.ltCrystalRank{font-size:9px;color:var(--muted);margin-top:3px}.ltShardPieces{display:flex;justify-content:center;gap:5px;margin-top:7px}.ltShardPiece{font-size:16px;color:#ded8e8;line-height:1}.ltShardPiece.on.pink{color:#ff7eb6}.ltShardPiece.on.red{color:#ff776c}.ltShardPiece.on.yellow{color:#f2ba26}.ltShardPiece.on.green{color:#43bf88}.ltShardPiece.on.blue{color:#4fa8f7}.ltShardPiece.on.indigo{color:#7468db}.ltShardPiece.on.purple{color:#a75de2}
+.ltSpecialGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ltSpecialCrystal{border-radius:20px;padding:12px 9px;background:#fff;border:1px solid var(--line);text-align:center;min-height:142px;display:flex;flex-direction:column;align-items:center;justify-content:center}.ltSpecialCrystal.locked{filter:grayscale(.7);opacity:.58}.ltSpecialCrystal.current{border-color:rgba(139,92,246,.34);background:linear-gradient(145deg,#fff,#f4efff)}.ltSpecialIcon{font-size:40px}.ltSpecialName{font-size:11px;font-weight:1000;line-height:1.45;margin-top:5px}.ltSpecialCount{font-size:10px;color:var(--muted);margin-top:4px}
+.ltMapCrystal{border-radius:20px;padding:13px;margin-top:12px;background:linear-gradient(135deg,#fff9e5,#f3efff);border:1px solid rgba(139,92,246,.18);display:flex;align-items:center;gap:11px}.ltMapCrystalIcon{font-size:42px}.ltMapCrystalMain{flex:1}.ltMapCrystalMain b{display:block;font-size:13px}.ltMapCrystalMain span{display:block;font-size:10px;line-height:1.55;color:var(--muted);margin-top:3px}
+.ltCrystalCelebrate{border-radius:23px;padding:15px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,230,130,.38),rgba(255,255,255,.95) 48%,rgba(240,235,255,.96));border:1.5px solid rgba(139,92,246,.22);box-shadow:var(--shadow)}.ltCrystalCelebrateIcon{font-size:58px}.ltCrystalCelebrate h3{font-size:17px;margin-top:4px}.ltCrystalCelebrate p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}.ltCrystalCelebrate .ltShardPieces{margin-top:9px}
+@media(max-width:380px){.ltCrystalGrid,.ltSpecialGrid{grid-template-columns:1fr}.ltCrystalSummary{grid-template-columns:1fr 1fr}.ltCrystalSummary div:last-child{grid-column:1/-1}}
+
+
+/* ================= Ver.1.4.0 candidate R6: journey chapters after day 30 ================= */
+.ltJourneyHomeCard{border-radius:23px;padding:13px;background:linear-gradient(135deg,#edfaff,#fff7e7,#f3efff);border:1px solid rgba(99,179,255,.22);box-shadow:var(--shadow)}
+.ltJourneyHomeRow{display:flex;align-items:center;gap:10px}.ltJourneyHomeIcon{width:48px;height:48px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:30px;background:rgba(255,255,255,.84);box-shadow:0 7px 18px rgba(91,60,145,.10)}
+.ltJourneyHomeMain{flex:1;min-width:0}.ltJourneyHomeMain b{display:block;font-size:14px}.ltJourneyHomeMain span{display:block;font-size:10px;line-height:1.55;color:var(--muted);margin-top:3px}
+.ltJourneyPanel{border-radius:22px;padding:14px;margin-top:12px;background:linear-gradient(145deg,#fff,#eef9ff,#fff8e8);border:1px solid rgba(99,179,255,.22);box-shadow:0 8px 22px rgba(91,60,145,.08)}
+.ltJourneyPanelHead{display:flex;align-items:center;gap:10px}.ltJourneyPanelIcon{font-size:38px}.ltJourneyPanelMain{flex:1}.ltJourneyPanelMain b{display:block;font-size:14px}.ltJourneyPanelMain span{display:block;font-size:10px;line-height:1.55;color:var(--muted);margin-top:3px}
+.ltJourneyChapters{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}.ltJourneyChapter{min-height:64px;border-radius:15px;padding:7px 5px;background:#fff;border:1px solid var(--line);text-align:center}.ltJourneyChapter.locked{opacity:.48;filter:grayscale(.6)}.ltJourneyChapter.new{border-color:var(--pink);box-shadow:0 0 0 3px rgba(255,126,182,.10)}.ltJourneyChapterIcon{font-size:21px}.ltJourneyChapterDay{font-size:9px;color:var(--muted);margin-top:2px}.ltJourneyChapterName{font-size:9px;font-weight:1000;line-height:1.35;margin-top:2px}
+.ltJourneyResult{border-radius:23px;padding:15px;text-align:center;background:linear-gradient(145deg,#eefaff,#fff8e8,#f4efff);border:1.5px solid rgba(99,179,255,.24);box-shadow:var(--shadow)}.ltJourneyResultIcon{font-size:54px}.ltJourneyResult h3{font-size:17px;margin-top:4px}.ltJourneyResult p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}
+.ltJourneyShelf{margin-top:18px}.ltJourneyShelfHead{border-radius:20px;padding:13px;background:linear-gradient(135deg,#eef9ff,#fff7e5);border:1px solid rgba(99,179,255,.20)}.ltJourneyShelfHead h3{font-size:16px}.ltJourneyShelfHead p{font-size:11px;line-height:1.6;color:var(--muted);margin-top:4px}.ltJourneyCycleTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px;font-weight:1000;margin:14px 3px 7px}.ltJourneyVisit{font-size:9px;color:var(--muted);font-weight:900}
+@media(max-width:380px){.ltJourneyChapters{grid-template-columns:1fr 1fr}}
+
+/* ================= Ver.1.4.0 candidate R7: integrated home and audit ================= */
+.ltHomeDashboard{margin-top:12px;border-radius:25px;padding:14px;background:linear-gradient(145deg,#fffdf7,#f4efff 52%,#eefaff);border:1px solid rgba(139,92,246,.18);box-shadow:var(--shadow)}
+.ltHomeDashTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px;font-weight:1000}.ltHomeDashTitle span{font-size:10px;color:var(--muted);font-weight:900}
+.ltHomeFocus{width:100%;display:flex;align-items:center;gap:10px;text-align:left;border-radius:18px;padding:11px 12px;margin-top:9px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:0 6px 16px rgba(91,60,145,.06)}
+.ltHomeFocusIcon{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:14px;background:linear-gradient(145deg,#fff3d9,#f1eaff);font-size:25px;flex-shrink:0}.ltHomeFocusMain{flex:1;min-width:0}.ltHomeFocusMain b{display:block;font-size:13px;line-height:1.45}.ltHomeFocusMain span{display:block;font-size:10px;line-height:1.5;color:var(--muted);margin-top:2px}.ltHomeFocusGo{font-size:18px;color:#8052c9;font-weight:1000}
+.ltHomeMiniGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:9px}.ltHomeMini{min-width:0;border-radius:15px;padding:8px 5px;background:rgba(255,255,255,.78);border:1px solid var(--line);text-align:center}.ltHomeMiniIcon{font-size:20px}.ltHomeMini b{display:block;font-size:11px;margin-top:2px;white-space:nowrap}.ltHomeMini span{display:block;font-size:9px;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ltHomeMenu{margin-top:12px}.ltHomeMenuHead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 3px 8px}.ltHomeMenuHead b{font-size:14px}.ltHomeMenuHead span{font-size:10px;color:var(--muted)}.ltHomeMenuGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ltHomeMenuBtn{position:relative;min-height:66px;border-radius:18px;padding:9px 10px;background:rgba(255,255,255,.91);border:1.5px solid var(--line);box-shadow:0 7px 18px rgba(91,60,145,.06);display:grid;grid-template-columns:36px 1fr;grid-template-rows:auto auto;text-align:left;align-items:center}.ltHomeMenuIcon{grid-row:1/3;font-size:27px;text-align:center}.ltHomeMenuLabel{font-size:13px;font-weight:1000;line-height:1.25}.ltHomeMenuMeta{font-size:9px;color:var(--muted);line-height:1.35;margin-top:2px}.ltHomeBadge{position:absolute;right:7px;top:6px;min-width:20px;height:20px;border-radius:999px;padding:2px 6px;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-size:9px;font-weight:1000;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(139,92,246,.22)}
+.ltHomeMenuBtn.locked{opacity:.58;filter:grayscale(.35)}
+@media(max-width:390px){.ltHomeMiniGrid{grid-template-columns:1fr 1fr}.ltHomeMenuBtn{min-height:64px;padding:8px}.ltHomeMenuIcon{font-size:25px}.ltHomeMenuLabel{font-size:12px}}
+
+
+/* ================= Ver.1.4.0 candidate R8: beta tools and release audit ================= */
+.r8ToolGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.r8ToolBtn{min-height:84px;border-radius:18px;padding:10px;background:#fff;border:1px solid var(--line);text-align:center;box-shadow:0 6px 16px rgba(91,60,145,.06)}.r8ToolBtnIcon{font-size:27px}.r8ToolBtn b{display:block;font-size:12px;margin-top:4px}.r8ToolBtn span{display:block;font-size:9px;line-height:1.45;color:var(--muted);margin-top:3px}.r8BetaHero{border-radius:26px;padding:16px;background:linear-gradient(135deg,#fff4d8,#fff,#f0ebff);border:1px solid rgba(255,190,70,.34);box-shadow:var(--shadow)}.r8BetaHero.active{background:linear-gradient(135deg,#fff0ef,#fff8db,#f2ecff);border-color:rgba(255,120,100,.33)}.r8BetaHero h2{font-size:19px}.r8BetaHero p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}.r8BetaStatus{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.r8BetaChip{border-radius:999px;padding:5px 9px;background:rgba(255,255,255,.78);border:1px solid var(--line);font-size:10px;font-weight:1000}.r8BetaRibbon{border-radius:15px;padding:8px 10px;margin-bottom:10px;background:linear-gradient(90deg,#fff0d8,#ffe9f1,#f0eaff);border:1px solid rgba(255,140,100,.30);display:flex;gap:8px;align-items:center;box-shadow:0 7px 17px rgba(91,60,145,.08)}.r8BetaRibbon b{font-size:11px;flex:1}.r8BetaRibbon button{border-radius:999px;background:#fff;padding:6px 9px;border:1px solid var(--line);font-size:10px;font-weight:1000}.r8PresetGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.r8Preset{min-height:54px;border-radius:15px;background:#fff;border:1.5px solid var(--line);padding:7px;font-weight:1000;font-size:11px}.r8Preset.on{background:#f4efff;border-color:#9a75df}.r8BetaCustom{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:9px}.r8BetaCustom .input{min-width:0}.r8ScreenGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.r8ScreenGrid button{min-height:48px;border-radius:14px;background:#fff;border:1px solid var(--line);font-size:11px;font-weight:1000;padding:7px}.r8ReportTable{width:100%;border-collapse:collapse}.r8ReportTable th,.r8ReportTable td{font-size:10px;line-height:1.45;padding:7px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.r8ReportTable th{background:#f3effa;font-weight:1000;position:static}.r8ReportTable td:first-child{width:25%;font-weight:1000}.r8ReportTable td:nth-child(2){width:30%}.r8ReportWrap{overflow:auto;border-radius:16px;border:1px solid var(--line);background:#fff}.r8PreflightSummary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.r8PreflightStat{border-radius:16px;padding:10px;text-align:center;background:#fff;border:1px solid var(--line)}.r8PreflightStat b{display:block;font-size:21px;margin-top:2px}.r8ReleaseNote{border-radius:17px;padding:11px 12px;background:#eef8ff;border:1px solid rgba(70,150,220,.24);font-size:11px;line-height:1.65}.r8NoteRow{border-radius:15px;background:#fff;border:1px solid var(--line);padding:9px;margin-top:7px}.r8NoteRow b{font-size:11px}.r8NoteRow p{font-size:10px;line-height:1.55;color:var(--muted);margin-top:4px;white-space:pre-wrap}.r8NoteMeta{font-size:9px;color:#9489a2;margin-top:4px}.r8Danger{border-color:rgba(255,90,80,.35)!important;color:#9e3b35}.r8Ok{color:#24795f}.r8Warn{color:#94670e}.r8Bad{color:#a13b36}@media(max-width:390px){.r8ToolGrid{grid-template-columns:1fr}.r8ToolBtn{min-height:66px;display:grid;grid-template-columns:38px 1fr;text-align:left;align-items:center}.r8ToolBtnIcon{grid-row:1/3}.r8PresetGrid{grid-template-columns:repeat(2,1fr)}.r8ScreenGrid{grid-template-columns:repeat(2,1fr)}.r8PreflightSummary{grid-template-columns:1fr 1fr}.r8BetaCustom{grid-template-columns:1fr}.r8ReportTable th,.r8ReportTable td{font-size:9px;padding:6px 5px}}
+
 </style>
 </head>
 <body>
@@ -1533,6 +1620,926 @@ v131SetQuestion(50037,{
 
 /* P) Remove a misleading filing-cabinet emoji from the desk question. */
 v131SetQuestion(30108,{visual:null});
+
+
+
+/* ================= Ver.1.4.0 candidate R1: long-term adventure ================= */
+APP.version='1.4.0';
+document.title='はじまりのクリスタル Ver.1.4.0';
+
+const LT_MAP_DAYS=30;
+const LT_MAP_THEMES=['ほしの もり','うみべの まち','つきの たに','くもの おしろ'];
+const LT_WEEKLY_MISSIONS=['weekly:days:3','weekly:questions:20','weekly:subjects:3'];
+
+function ltDateKeyFromTime(ms){const d=new Date(ms);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function ltDateFromKey(key){const m=String(key||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);return m?new Date(Number(m[1]),Number(m[2])-1,Number(m[3])):null}
+function ltWeekStartDate(d=new Date()){const x=new Date(d.getFullYear(),d.getMonth(),d.getDate()),day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);return x}
+function ltWeekKey(){return ltDateKeyFromTime(ltWeekStartDate().getTime())}
+function ltWeekBounds(){const start=ltWeekStartDate().getTime(),end=start+7*DAY;return {start,end}}
+function ltRowsInRange(start,end){return (state.questionHistory||[]).filter(r=>Number(r.at)>=start&&Number(r.at)<end)}
+function ltRowSubject(r){return r.subject||QUESTION_MAP.get(r.id)?.subject||null}
+function ltTodayRows(){const d=ltDateFromKey(today()),start=d?d.getTime():Date.now(),end=start+DAY;return ltRowsInRange(start,end)}
+function ltAvailableMissionSubjects(){const goal=typeof v11TodayGoal==='function'?v11TodayGoal():state.settings.dailyGoal,plan=(state.totalSessions||0)<3?{'こくご':2,'さんすう':2,'えいご':1,'ものしり':0}:effectivePlan(goal),out=Object.entries(plan).filter(([,n])=>n>=2).map(([sub])=>sub);return out.length?out:['こくご','さんすう']}
+function ltGenerateDailyMissionIds(){const seed=Number(today().replace(/-/g,''))||1,subs=ltAvailableMissionSubjects(),sub=subs[seed%subs.length],third=['daily:questions:5','daily:subjects:3','daily:hint:1'][seed%3];return ['daily:complete',`daily:subject:${sub}`,third]}
+function ensureLongTermState(){
+  const completedCycles=Math.floor((state.totalSessions||0)/LT_MAP_DAYS);
+  if(!state.longTerm||typeof state.longTerm!=='object')state.longTerm={};
+  const lt=state.longTerm;lt.version=1;
+  if(!lt.dailyMissions||typeof lt.dailyMissions!=='object'||lt.dailyMissions.date!==today())lt.dailyMissions={date:today(),ids:ltGenerateDailyMissionIds(),claimed:[]};
+  if(!Array.isArray(lt.dailyMissions.ids)||lt.dailyMissions.ids.length!==3)lt.dailyMissions.ids=ltGenerateDailyMissionIds();
+  lt.dailyMissions.claimed=Array.isArray(lt.dailyMissions.claimed)?[...new Set(lt.dailyMissions.claimed)]:[];
+  const wk=ltWeekKey();if(!lt.weeklyMissions||typeof lt.weeklyMissions!=='object'||lt.weeklyMissions.week!==wk)lt.weeklyMissions={week:wk,ids:[...LT_WEEKLY_MISSIONS],claimed:[]};
+  if(!Array.isArray(lt.weeklyMissions.ids))lt.weeklyMissions.ids=[...LT_WEEKLY_MISSIONS];
+  lt.weeklyMissions.claimed=Array.isArray(lt.weeklyMissions.claimed)?[...new Set(lt.weeklyMissions.claimed)]:[];
+  if(!lt.map||typeof lt.map!=='object')lt.map={rewardedCycles:completedCycles,pendingCelebration:null};
+  if(!Number.isFinite(Number(lt.map.rewardedCycles)))lt.map.rewardedCycles=completedCycles;
+  lt.map.rewardedCycles=Math.max(0,Number(lt.map.rewardedCycles)||0);
+  if(!Object.prototype.hasOwnProperty.call(lt.map,'pendingCelebration'))lt.map.pendingCelebration=null;
+  /* Normalize old saves where a boss already has three lights but is missing from bossCleared. */
+  BOSSES.forEach(b=>{if((state.bossProgress?.[b.id]||0)>=3&&!state.bossCleared.includes(b.id))state.bossCleared.push(b.id)});
+  return lt;
+}
+
+/* Keep an unlocked boss available until it is cleared, even after later milestones are reached. */
+currentBoss=function(){
+  ensureLongTermState();
+  return BOSSES.find((boss,index)=>(state.totalSessions||0)>=(index+1)*5&&!state.bossCleared.includes(boss.id))||null;
+};
+bossAvailable=function(){return !!currentBoss()};
+
+function ltMapStatus(){const total=Math.max(0,state.totalSessions||0);if(total===0)return {cycle:1,completed:0,theme:LT_MAP_THEMES[0]};const cycle=Math.ceil(total/LT_MAP_DAYS),completed=total-(cycle-1)*LT_MAP_DAYS;return {cycle,completed,theme:LT_MAP_THEMES[(cycle-1)%LT_MAP_THEMES.length]}}
+function ltMapMark(day,cycle){if(day===LT_MAP_DAYS)return '🌈';if(cycle===1&&day===24)return '💎';if(day%5===0&&day<=20)return cycle===1?(BOSSES[day/5-1]?.icon||'👑'):'⭐';if(day%7===0)return '📖';if(day%3===0)return '🎁';return '•'}
+function ltMapEventLabel(day,cycle){if(day===30)return 'にじの おまつり';if(cycle===1&&day===24)return 'クリスタルが かがやく日';if(day%5===0&&day<=20)return cycle===1?`${BOSSES[day/5-1]?.name||'ボス'}の しるし`:'ひかりの もん';if(day%7===0)return 'とくべつな おはなし';if(day%3===0)return 'たからばこの しるし';return 'つぎの 一歩'}
+function ltNextMapEvent(status=ltMapStatus()){
+  if(status.completed>=LT_MAP_DAYS)return {day:LT_MAP_DAYS,label:'30にち たっせい！ つぎの章は あしたから'};
+  for(let d=status.completed+1;d<=LT_MAP_DAYS;d++){if(d===30||(status.cycle===1&&d===24)||(d%5===0&&d<=20)||d%7===0||d%3===0)return {day:d,label:ltMapEventLabel(d,status.cycle)}}
+  return {day:status.completed+1,label:'つぎの 一歩'};
+}
+
+function ltMissionDefinition(id){
+  if(id==='daily:complete')return {icon:'🪄',name:'きょうの ぼうけんを おえる',target:1,rewardCoins:5,rewardLight:2};
+  if(id.startsWith('daily:subject:')){const sub=id.slice('daily:subject:'.length),cfg=SUBJECTS[sub]||{icon:'📘'};return {icon:cfg.icon,name:`${sub}を 2もん やってみる`,target:2,rewardCoins:5,rewardLight:2}}
+  if(id==='daily:questions:5')return {icon:'🌱',name:'5もんに ちょうせんする',target:5,rewardCoins:5,rewardLight:2};
+  if(id==='daily:subjects:3')return {icon:'🗺️',name:'3つの ばしょで まなぶ',target:3,rewardCoins:5,rewardLight:2};
+  if(id==='daily:hint:1')return {icon:'💡',name:'ヒントを つかって さいごまで かんがえる',target:1,rewardCoins:5,rewardLight:2};
+  if(id==='weekly:days:3')return {icon:'📅',name:'3にち ぼうけんする',target:3,rewardCoins:15,rewardLight:5};
+  if(id==='weekly:questions:20')return {icon:'⭐',name:'こんしゅう 20もんに ちょうせん',target:20,rewardCoins:15,rewardLight:5};
+  if(id==='weekly:subjects:3')return {icon:'🌈',name:'3つの きょうかで まなぶ',target:3,rewardCoins:15,rewardLight:5};
+  return {icon:'✨',name:'ひかりの ミッション',target:1,rewardCoins:5,rewardLight:2};
+}
+function ltMissionProgress(id){
+  if(id==='daily:complete')return state.daily?.completed?1:0;
+  const todayRows=ltTodayRows();
+  if(id.startsWith('daily:subject:')){const sub=id.slice('daily:subject:'.length);return todayRows.filter(r=>ltRowSubject(r)===sub).length}
+  if(id==='daily:questions:5')return todayRows.length;
+  if(id==='daily:subjects:3')return new Set(todayRows.map(ltRowSubject).filter(Boolean)).size;
+  if(id==='daily:hint:1')return todayRows.some(r=>r.hintUsed)?1:0;
+  const {start,end}=ltWeekBounds(),weekRows=ltRowsInRange(start,end);
+  if(id==='weekly:questions:20')return weekRows.length;
+  if(id==='weekly:subjects:3')return new Set(weekRows.map(ltRowSubject).filter(Boolean)).size;
+  if(id==='weekly:days:3'){const dates=new Set((state.dailyHistory||[]).map(x=>x.date).filter(k=>{const d=ltDateFromKey(k);return d&&d.getTime()>=start&&d.getTime()<end}));return dates.size}
+  return 0;
+}
+function ltMissionComplete(id){const d=ltMissionDefinition(id);return ltMissionProgress(id)>=d.target}
+function ltClaimMission(kind,id){
+  const lt=ensureLongTermState(),bucket=kind==='weekly'?lt.weeklyMissions:lt.dailyMissions,def=ltMissionDefinition(id);
+  if(!bucket.ids.includes(id)||bucket.claimed.includes(id))return;
+  if(!ltMissionComplete(id)){showToast('もうすこしで できるよ');return}
+  bucket.claimed.push(id);state.coins+=def.rewardCoins;state.light+=def.rewardLight;save();render();showToast(`🪙${def.rewardCoins}　✨${def.rewardLight}を もらったよ！`);
+}
+function ltMissionCounts(kind){const lt=ensureLongTermState(),bucket=kind==='weekly'?lt.weeklyMissions:lt.dailyMissions;return {done:bucket.ids.filter(ltMissionComplete).length,total:bucket.ids.length,claimed:bucket.claimed.length}}
+
+function ltRenderMissionRow(id,kind){const lt=ensureLongTermState(),bucket=kind==='weekly'?lt.weeklyMissions:lt.dailyMissions,def=ltMissionDefinition(id),progress=ltMissionProgress(id),done=progress>=def.target,claimed=bucket.claimed.includes(id),pct=Math.min(100,progress/def.target*100);return el('div',{className:'ltMissionRow'},[el('div',{className:'ltMissionTop'},[el('div',{className:'ltMissionIcon'},def.icon),el('div',{className:'ltMissionMain'},[el('div',{className:'ltMissionName'},def.name),el('div',{className:'ltMissionMeta'},`${Math.min(progress,def.target)} / ${def.target}　ごほうび 🪙${def.rewardCoins}・✨${def.rewardLight}`),el('div',{className:'ltMissionBar'},el('div',{style:{width:pct+'%'}}))]),el('button',{className:`ltClaim ${claimed?'claimed':''}`,disabled:claimed||!done,onclick:()=>ltClaimMission(kind,id)},claimed?'もらった':done?'もらう':`${Math.min(progress,def.target)}/${def.target}`)])])}
+function renderLongTermMissions(){const lt=ensureLongTermState(),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('きょうと こんしゅう'));wrap.appendChild(el('div',{className:'ltMapHero'},[el('h2',{},'✨ ひかりの ミッション'),el('p',{},'せいかいの数だけではなく、やってみたことや つづけたことが ミッションになるよ。')]));wrap.appendChild(el('div',{className:'ltMissionGroup'},[el('div',{className:'ltMissionGroupTitle'},['きょうの ミッション',el('span',{className:'small'},`${ltMissionCounts('daily').done}/3`)]),...lt.dailyMissions.ids.map(id=>ltRenderMissionRow(id,'daily'))]));wrap.appendChild(el('div',{className:'ltMissionGroup'},[el('div',{className:'ltMissionGroupTitle'},['こんしゅうの ミッション',el('span',{className:'small'},`${ltMissionCounts('weekly').done}/3`)]),...lt.weeklyMissions.ids.map(id=>ltRenderMissionRow(id,'weekly'))]));wrap.appendChild(el('button',{className:'secondary section',onclick:()=>{state.screen='adventureMap';render()}},'🗺️ 30にちマップを みる'));return wrap}
+function renderLongTermMap(){const status=ltMapStatus(),next=ltNextMapEvent(status),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('30にちの ぼうけん'));wrap.appendChild(el('div',{className:'ltMapHero'},[el('h2',{},`🗺️ ${status.cycle}しゅうめ　${status.theme}`),el('p',{},status.completed>=30?'30にちの たびを あるききったよ。あしたから、新しい けしきが はじまるよ。':`きょうまで ${status.completed}にち。つぎは ${status.completed+1}にちめの マスへ すすもう。`),el('div',{className:'bar',style:{marginTop:'10px'}},el('div',{style:{width:Math.min(100,status.completed/30*100)+'%'}}))]));const grid=el('div',{className:'ltMapGrid'});for(let day=1;day<=30;day++){const cls=day<=status.completed?'done':day===status.completed+1?'current':'future';grid.appendChild(el('div',{className:`ltMapCell ${cls}`},[day<=status.completed?el('div',{className:'ltMapCheck'},'✓'):null,el('div',{className:'ltMapDay'},`${day}にち`),el('div',{className:'ltMapMark'},ltMapMark(day,status.cycle))]))}wrap.appendChild(grid);wrap.appendChild(el('div',{className:'ltNextEvent'},[el('b',{},status.completed>=30?'🌈 30にち たっせい！':`つぎの しるし：${next.day}にちめ`),next.label]));wrap.appendChild(el('button',{className:'secondary section',onclick:()=>{state.screen='missions';render()}},'✨ ミッションを みる'));return wrap}
+function ltRenderHomeGoalCard(){const status=ltMapStatus(),daily=ltMissionCounts('daily'),weekly=ltMissionCounts('weekly'),next=ltNextMapEvent(status);return el('div',{className:'section ltGoalCard'},[el('div',{className:'ltGoalHead'},[el('b',{},'🌟 つぎの もくひょう'),el('span',{},'きょう・こんしゅう・30にち')]),el('div',{className:'ltGoalGrid'},[el('button',{className:'ltGoalBtn',onclick:()=>{state.screen='adventureMap';render()}},[el('div',{className:'ltGoalIcon'},'🗺️'),el('strong',{},`${status.cycle}しゅうめ　${status.completed}/30にち`),el('small',{},status.completed>=30?'あしたから つぎの たびへ':`${next.day}にちめ：${next.label}`)]),el('button',{className:'ltGoalBtn',onclick:()=>{state.screen='missions';render()}},[el('div',{className:'ltGoalIcon'},'✨'),el('strong',{},`きょう ${daily.done}/3　こんしゅう ${weekly.done}/3`),el('small',{},daily.claimed<daily.total?'できたミッションの ごほうびを うけとろう':'つぎの ミッションへ すすもう')])])])}
+
+const ltBaseCompleteDailyIfNeeded=completeDailyIfNeeded;
+completeDailyIfNeeded=function(){
+  ensureLongTermState();const completed=ltBaseCompleteDailyIfNeeded();if(!completed)return false;
+  const lt=ensureLongTermState(),cycles=Math.floor((state.totalSessions||0)/LT_MAP_DAYS);
+  if(cycles>lt.map.rewardedCycles){const gained=cycles-lt.map.rewardedCycles;lt.map.rewardedCycles=cycles;state.coins+=50*gained;state.light+=30*gained;state.xp+=30*gained;lt.map.pendingCelebration={cycle:cycles,at:Date.now()};createAutoBackup('30日冒険マップ達成',true)}
+  return true;
+};
+
+const ltBaseSave=save;
+save=function(){ensureLongTermState();return ltBaseSave()};
+const ltBaseRenderHome=renderHome;
+renderHome=function(){ensureLongTermState();const wrap=ltBaseRenderHome(),anchor=[...wrap.children].find(x=>x.classList?.contains('bossCard'))||wrap.querySelector('.mainQuest');const card=ltRenderHomeGoalCard();if(anchor)anchor.insertAdjacentElement('afterend',card);else wrap.appendChild(card);return wrap};
+const ltBaseRenderResult=renderResult;
+renderResult=function(){const wrap=ltBaseRenderResult(),lt=ensureLongTermState(),celebration=lt.map.pendingCelebration;if(celebration&&state.quiz?.newlyCompleted){const card=el('div',{className:'section ltCelebrate'},[el('div',{className:'ltCelebrateIcon'},'🌈'),el('h3',{},`${celebration.cycle}しゅうめの 30にち たっせい！`),el('p',{},'にじの おまつりが はじまったよ。🪙50・✨30・XP30を もらいました。')]);wrap.insertBefore(card,wrap.lastChild);lt.map.pendingCelebration=null;save()}return wrap};
+const ltBaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=ltBaseDiagnostics(),lt=ensureLongTermState(),status=ltMapStatus(),waiting=BOSSES.filter((b,i)=>(state.totalSessions||0)>=(i+1)*5&&!state.bossCleared.includes(b.id)).length;rows.push({name:'30日冒険マップ',ok:true,text:`${status.cycle}周目 ${status.completed}/30日。進行はtotalSessionsから算出し、追加履歴は保存しません。`});rows.push({name:'ミッション保存',ok:true,text:`日次3件・週次3件のIDと受取状態だけを保存しています。`});rows.push({name:'ボス出現キュー',ok:true,text:waiting?`未クリアの出現済みボス ${waiting}体。取り逃しても次の日以降に挑戦できます。`:'出現済みの未クリアボスはありません。'});return rows};
+const ltBaseRender=render;
+render=function(){ensureLongTermState();if(state.screen==='adventureMap'){const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderLongTermMap());return}if(state.screen==='missions'){const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderLongTermMissions());return}return ltBaseRender()};
+
+
+
+/* ================= Ver.1.4.0 candidate R2: boss replay and challenge seals ================= */
+const LT_BOSS_LEVELS=[
+ {id:'light',name:'ひかり',icon:'✨',questions:3,target:3,bonusCoins:12,bonusLight:5},
+ {id:'star',name:'ほし',icon:'⭐',questions:3,target:5,bonusCoins:18,bonusLight:8},
+ {id:'rainbow',name:'にじ',icon:'🌈',questions:3,target:8,bonusCoins:28,bonusLight:12}
+];
+
+const r2BaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){
+  const lt=r2BaseEnsureLongTermState();lt.version=2;
+  if(!lt.bossChallenge||typeof lt.bossChallenge!=='object')lt.bossChallenge={};
+  const bc=lt.bossChallenge;
+  if(!bc.progress||typeof bc.progress!=='object')bc.progress={};
+  if(!Array.isArray(bc.seals))bc.seals=[];bc.seals=[...new Set(bc.seals.filter(x=>typeof x==='string'))];
+  if(typeof bc.lastPlayDate!=='string')bc.lastPlayDate=null;
+  if(!Number.isFinite(Number(bc.totalPlays)))bc.totalPlays=0;bc.totalPlays=Math.max(0,Number(bc.totalPlays)||0);
+  if(!Object.prototype.hasOwnProperty.call(bc,'lastResult'))bc.lastResult=null;
+  BOSSES.forEach(b=>{if(!bc.progress[b.id]||typeof bc.progress[b.id]!=='object')bc.progress[b.id]={};LT_BOSS_LEVELS.forEach(l=>{const n=Number(bc.progress[b.id][l.id]);bc.progress[b.id][l.id]=Math.max(0,Math.min(l.target,Number.isFinite(n)?n:0));if(bc.progress[b.id][l.id]>=l.target&&!bc.seals.includes(`${b.id}:${l.id}`))bc.seals.push(`${b.id}:${l.id}`)})});
+  return lt;
+};
+
+function ltBossLevel(id){return LT_BOSS_LEVELS.find(x=>x.id===id)||null}
+function ltBossSealKey(bossId,levelId){return `${bossId}:${levelId}`}
+function ltBossChallengeState(){return ensureLongTermState().bossChallenge}
+function ltBossChallengePlayedToday(){return ltBossChallengeState().lastPlayDate===today()}
+function ltBossChallengeUnlocked(){return BOSSES.some(b=>state.bossCleared.includes(b.id))}
+function ltBossChallengeProgress(bossId,levelId){const level=ltBossLevel(levelId);return Math.min(level?.target||0,ltBossChallengeState().progress?.[bossId]?.[levelId]||0)}
+function ltBossChallengeHasSeal(bossId,levelId){return ltBossChallengeState().seals.includes(ltBossSealKey(bossId,levelId))}
+function ltBossChallengeRemainingStudy(){return typeof v12RemainingStudy==='function'?v12RemainingStudy():Infinity}
+function ltBossChallengeCanStudy(n){const r=ltBossChallengeRemainingStudy();return !Number.isFinite(r)||r>=n}
+
+function ltBossChallengeQuestions(n){
+  const subjects=Object.keys(SUBJECTS).filter(sub=>sub!=='ものしり'||isLifeUnlocked());
+  const per=Math.ceil(n/subjects.length)+2,buckets={};
+  subjects.forEach(sub=>{let rows=chooseQuestions(sub,per);if(typeof v11IsAudioOnly==='function'&&typeof v11HasEnglishVoice==='function'&&!v11HasEnglishVoice())rows=rows.filter(q=>!v11IsAudioOnly(q));buckets[sub]=rows});
+  const picked=[],used=new Set();let round=0;
+  while(picked.length<n&&round<per+4){for(const sub of subjects){const q=(buckets[sub]||[]).find(x=>!used.has(x.id));if(q){picked.push(q);used.add(q.id)}if(picked.length>=n)break}round++}
+  if(picked.length<n){let pool=QUESTIONS.filter(q=>!used.has(q.id)&&q.difficulty<=currentStageMax());if(typeof v11IsAudioOnly==='function'&&typeof v11HasEnglishVoice==='function'&&!v11HasEnglishVoice())pool=pool.filter(q=>!v11IsAudioOnly(q));shuffle(pool).forEach(q=>{if(picked.length<n&&!used.has(q.id)){picked.push(q);used.add(q.id)}})}
+  return picked.slice(0,n);
+}
+
+function ltStartBossChallenge(bossId,levelId){
+  ensureLongTermState();const boss=BOSSES.find(b=>b.id===bossId),level=ltBossLevel(levelId);
+  if(!boss||!level||!state.bossCleared.includes(bossId)){showToast('まず いつもの ぼうけんで ボスに ひかりを とどけよう');return}
+  if(!state.daily?.completed){showToast('きょうの ぼうけんを おえてから ちょうせんできるよ');return}
+  if(ltBossChallengePlayedToday()){showToast('きょうの ボスチャレンジは できているよ');return}
+  if(!ltBossChallengeCanStudy(level.questions)){if(typeof v12ShowLimitModal==='function')v12ShowLimitModal();else showToast('きょうの おべんきょうは ここまで');return}
+  const questions=ltBossChallengeQuestions(level.questions);if(questions.length<level.questions){showToast('もんだいを じゅんびできませんでした');return}
+  state.quiz={mode:'bossChallenge',subject:null,questions,index:0,answered:false,selected:null,typed:'',orderSelected:[],results:[],rewards:{xp:0,coins:0,light:0},wrongStreak:0,hintUsed:false,boss,challenge:{bossId,levelId},choiceCache:{},audioPlayed:false,audioPlays:0,answeredUnknown:false,miniReview:null,miniReviewAdded:true};
+  state.screen='quiz';save();render();
+}
+
+/* Every daily attempt is a short three-question session. Higher seals need 5 or 8 accumulated lights. */
+const r2BaseFindMiniReview=v12FindMiniReview;
+v12FindMiniReview=function(q,qz){return qz?.mode==='bossChallenge'?null:r2BaseFindMiniReview(q,qz)};
+
+/* Count challenge questions toward the parent's optional daily study limit, including an interrupted attempt. */
+const r2BaseSubmitAnswer=submitAnswer;
+submitAnswer=function(answer){
+  const qz=state.quiz,q=qz?.questions?.[qz.index],countIt=!!(qz?.mode==='bossChallenge'&&!qz.answered&&q&&!q._v12MiniReview);
+  r2BaseSubmitAnswer(answer);
+  if(countIt&&state.quiz?.mode==='bossChallenge'){ensureV12();state.v12.extraAnswered=(state.v12.extraAnswered||0)+1;save()}
+};
+
+const r2BaseStartQuiz=startQuiz;
+startQuiz=function(mode='daily',subject=null){if(mode==='bossChallenge'&&subject&&typeof subject==='object')return ltStartBossChallenge(subject.bossId,subject.levelId);return r2BaseStartQuiz(mode,subject)};
+
+const r2BaseFinishQuiz=finishQuiz;
+finishQuiz=function(){
+  const qz=state.quiz;if(qz?.mode!=='bossChallenge')return r2BaseFinishQuiz();
+  const bc=ltBossChallengeState(),bossId=qz.challenge?.bossId,levelId=qz.challenge?.levelId,level=ltBossLevel(levelId),boss=BOSSES.find(b=>b.id===bossId);
+  if(!level||!boss){state.screen='home';state.quiz=null;save();render();return}
+  const correct=qz.results.filter(r=>r.correct&&!r.mini).length,old=ltBossChallengeProgress(bossId,levelId),now=Math.min(level.target,old+correct),key=ltBossSealKey(bossId,levelId),newSeal=now>=level.target&&!bc.seals.includes(key);
+  bc.progress[bossId][levelId]=now;bc.lastPlayDate=today();bc.totalPlays++;if(newSeal){bc.seals.push(key);state.coins+=level.bonusCoins;state.light+=level.bonusLight}
+  bc.lastResult={bossId,levelId,correct,questions:level.questions,oldProgress:old,newProgress:now,newSeal,at:Date.now()};
+  qz.challengeOutcome=deepClone(bc.lastResult);qz.newlyCompleted=false;state.screen='result';save();render();
+};
+
+function ltRenderBossDifficulty(boss,level){
+  const progress=ltBossChallengeProgress(boss.id,level.id),done=ltBossChallengeHasSeal(boss.id,level.id),played=ltBossChallengePlayedToday(),unlocked=state.bossCleared.includes(boss.id),studyOK=ltBossChallengeCanStudy(level.questions),available=unlocked&&state.daily?.completed&&!played&&studyOK;
+  let meta=done?'シール もっている':`${progress}/${level.target} ひかり`;
+  if(!studyOK&&!done)meta=`あと ${level.questions}もん できる日に`;
+  return el('button',{className:`ltDifficultyBtn ${done?'done':''}`,disabled:!available,onclick:()=>ltStartBossChallenge(boss.id,level.id)},[el('div',{className:'ltDifficultyIcon'},done?'🏅':level.icon),el('div',{className:'ltDifficultyName'},`${level.name}　${level.target}こ`),el('div',{className:'ltDifficultyMeta'},meta)]);
+}
+function renderBossChallenge(){
+  const bc=ltBossChallengeState(),played=ltBossChallengePlayedToday(),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('ボスチャレンジ'));
+  wrap.appendChild(el('div',{className:'ltBossChallengeHero'},[el('h2',{},'👑 もういちど ひかりを とどけよう'),el('p',{},'いちど たすけたボスに、1日1回・3もんだけ ちょうせんできます。まちがえても、せいかいした分のひかりは のこります。'),el('div',{className:'ltSealSummary'},[el('span',{},'あつめた ボスシール'),el('b',{},`${bc.seals.length} / ${BOSSES.length*LT_BOSS_LEVELS.length}`)])]));
+  wrap.appendChild(el('div',{className:`ltBossDailyNote ${played?'done':''}`},played?'✅ きょうの チャレンジは できたよ。また あした！':state.daily?.completed?(ltBossChallengeCanStudy(3)?'🌟 きょうは どれか1つに ちょうせんできるよ。':'🌙 きょうの学習上限になりました。おうちのひと画面で上限を確認できます。'):'🪄 まず「きょうの ぼうけん」を おえると ちょうせんできるよ。'));
+  BOSSES.forEach((boss,index)=>{const unlocked=state.bossCleared.includes(boss.id);wrap.appendChild(el('div',{className:`ltBossChallengeCard ${unlocked?'':'locked'}`},[el('div',{className:'ltBossChallengeTop'},[el('div',{className:'ltBossChallengeIcon'},unlocked?boss.icon:'🔒'),el('div',{className:'ltBossChallengeMain'},[el('div',{className:'ltBossChallengeName'},unlocked?boss.name:`${index+1}ばんめの ボス`),el('div',{className:'ltBossChallengeMeta'},unlocked?'3つの むずかしさで シールを あつめよう。':'いつもの ぼうけんで ひかりを とどけると ひらくよ。')])]),unlocked?el('div',{className:'ltDifficultyGrid'},LT_BOSS_LEVELS.map(level=>ltRenderBossDifficulty(boss,level))):null]))});
+  return wrap;
+}
+function ltRenderBossHomeCard(){const bc=ltBossChallengeState(),played=ltBossChallengePlayedToday();return el('div',{className:'section ltBossHomeCard'},[el('div',{className:'ltBossHomeHead'},[el('div',{className:'ltBossHomeIcon'},'👑'),el('div',{className:'ltBossHomeMain'},[el('b',{},'ボスチャレンジ'),el('span',{},played?`きょうは ちょうせんずみ。シール ${bc.seals.length}/12`:`1日1回、せいかいした分だけ ひかりが たまるよ。シール ${bc.seals.length}/12`)]),el('button',{className:'ghost',onclick:()=>{state.screen='bossChallenge';render()}},played?'みる':'ちょうせん')])])}
+
+const r2BaseRenderQuiz=renderQuiz;
+renderQuiz=function(){const wrap=r2BaseRenderQuiz();if(state.quiz?.mode==='bossChallenge'){const pill=wrap.querySelector('.pill');if(pill)pill.textContent='ボスチャレンジ';const bar=wrap.querySelector('.bar'),level=ltBossLevel(state.quiz.challenge?.levelId),boss=state.quiz.boss;if(bar)bar.insertAdjacentElement('afterend',el('div',{className:'ltBossQuizBanner'},`${boss?.icon||'👑'} ${boss?.name||'ボス'}　${level?.icon||'✨'} ${level?.name||''}チャレンジ　せいかいした分の ひかりは のこるよ`))}return wrap};
+
+const r2BaseRenderResult=renderResult;
+renderResult=function(){
+  const wrap=r2BaseRenderResult(),qz=state.quiz;if(qz?.mode!=='bossChallenge')return wrap;
+  const out=qz.challengeOutcome||ltBossChallengeState().lastResult,level=ltBossLevel(out?.levelId),boss=BOSSES.find(b=>b.id===out?.bossId);if(!out||!level||!boss)return wrap;
+  const remain=Math.max(0,level.target-out.newProgress),card=el('div',{className:'section ltBossOutcome'},[el('div',{className:'ltBossOutcomeIcon'},out.newSeal?'🏅':boss.icon),el('h3',{},out.newSeal?`${level.name}の ボスシールを みつけた！`:`ひかりが ${out.newProgress}/${level.target} たまったよ`),el('p',{},out.newSeal?`はじめてのシールごほうび：🪙${level.bonusCoins}・✨${level.bonusLight}`:remain?`あと ${remain}この ひかり。きょうの分は のこるから、また つづきから できるよ。`:'シールは もう もっているよ。もういちど会いに来てくれて、ボスもうれしそう！')]);
+  const actions=[...wrap.querySelectorAll('.grid2.section,.v12ResultActions')].at(-1);if(actions)wrap.insertBefore(card,actions);else wrap.appendChild(card);
+  if(actions){actions.innerHTML='';actions.className='grid2 section';actions.appendChild(el('button',{className:'secondary',onclick:()=>{state.screen='home';state.quiz=null;save();render()}},'ホームへ'));actions.appendChild(el('button',{className:'primary',onclick:()=>{state.screen='bossChallenge';state.quiz=null;save();render()}},'シールを みる'))}
+  return wrap;
+};
+
+const r2BaseRenderHome=renderHome;
+renderHome=function(){const wrap=r2BaseRenderHome();if(ltBossChallengeUnlocked()){const goal=wrap.querySelector('.ltGoalCard'),card=ltRenderBossHomeCard();if(goal)goal.insertAdjacentElement('afterend',card);else{const hold=wrap.querySelector('.parentHold');wrap.insertBefore(card,hold||null)}}return wrap};
+
+const r2BaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=r2BaseDiagnostics(),bc=ltBossChallengeState();rows.push({name:'ボスチャレンジ',ok:true,text:`通常クリア済みボスに1日1回再挑戦できます。シール ${bc.seals.length}/12、挑戦 ${bc.totalPlays}回。正解分は累積し、既存ボス進行とは分離しています。`});return rows};
+
+const r2BaseRender=render;
+render=function(){ensureLongTermState();if(state.screen==='bossChallenge'){const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderBossChallenge());return}return r2BaseRender()};
+
+
+
+/* ================= Ver.1.4.0 candidate R3: town level 10 ================= */
+const LT_TOWN_MAX_LEVEL=10;
+const LT_TOWN_MILESTONES=[3,5,7,10];
+Object.assign(V11_RUBY,{
+ '何':'なに','明':'あか','絵':'え','国':'くに','目印':'めじるし','変':'か','天井':'てんじょう','休':'やす','元気':'げんき','公園':'こうえん','冬':'ふゆ','動物':'どうぶつ','取':'と','合':'あ','一周':'いっしゅう','呼':'よ','困':'こま','増':'ふ','壁':'かべ','夏':'なつ','夢':'ゆめ','守':'まも','安心':'あんしん','安全':'あんぜん','得意':'とくい','知恵':'ちえ','横断歩道':'おうだんほどう','春':'はる','望遠鏡':'ぼうえんきょう','泉':'いずみ','洗':'あら','生き':'い','町':'まち','発見':'はっけん','真ん中':'まんなか','秋':'あき','笑':'わら','答':'こた','考':'かんが','育':'そだ','舞台':'ぶたい','試':'ため','調':'しら','走':'はし','距離':'きょり','透明':'とうめい','遊':'あそ','重':'かさ','霜':'しも'
+});
+const LT_TOWN_GROWTH={
+ book:{stages:[
+  {level:1,name:'えほんの いえ',icon:'🏡',deco:'📖',text:'ことばと おはなしが あつまる、小さな おうち。'},
+  {level:3,name:'おはなしの おうち',icon:'🏠',deco:'📚',text:'読んだ おはなしが、まどの あかりになって かがやきます。',eventTitle:'まどに ともった ものがたり',event:'夜になると、今日読んだ おはなしが 一つずつ まどの あかりになりました。まちの なかまは、その光を たどって えほんの いえへ 集まってきます。',companion:'lala',comment:'ほんを よむたびに、まちの まどが ひとつ あかるくなるね。'},
+  {level:5,name:'ほしの としょかん',icon:'📚',deco:'⭐',text:'星の しおりが ならぶ、みんなの としょかん。',eventTitle:'ほしの しおりを さがして',event:'本だなの すきまから、金色の しおりが ひらひらと 飛び出しました。しおりを はさんだ 本には、もう一度 よみたい おはなしが ひかっています。',companion:'lala',comment:'まえに よんだ おはなしも、もういちど よむと ちがって みえるよ。'},
+  {level:7,name:'ふしぎな 大としょかん',icon:'🏛️',deco:'📚',text:'ことばの 森の おはなしが 集まる、大きな としょかん。',eventTitle:'白紙の 本が ひらく とき',event:'いちばん上の 棚に、まだ何も 書かれていない 本が ありました。あなたが 今日見つけた ことばを 話すと、白いページに 新しい 一行が あらわれました。',companion:'mint',comment:'まよったことも、あとで だれかを たすける おはなしに なるんだね。'},
+  {level:10,name:'にじの ものがたり城',icon:'🏰',deco:'🌈',text:'王国じゅうの おはなしを 守る、七色の ものがたり城。',eventTitle:'王国で いちばん長い おはなし',event:'城の 大きな 本には、正解した日も、まちがえた日も、休んで また来た日も 書かれていました。どのページも、王国を つくった 大切な おはなしです。',companion:'lumi',comment:'おわりの ページの つぎには、いつも 新しい ページが あるよ。'}
+ ]},
+ tower:{stages:[
+  {level:1,name:'かずの とう',icon:'🏰',deco:'🔢',text:'数を かぞえる 音が きこえる、小さな とう。'},
+  {level:3,name:'かぞえる とけいとう',icon:'🕰️',deco:'🔢',text:'数えるたびに、時計の はりが 元気に 進みます。',eventTitle:'止まっていた はりの 一歩',event:'時計の はりは、むずかしい 問題の 前で 立ち止まっていました。あなたが 一問ずつ 進むと、はりも カチリ、カチリと また歩き始めました。',companion:'colon',comment:'いっぺんに すすまなくても、ひとつずつなら だいじょうぶ！'},
+  {level:5,name:'ほしの さんすうとう',icon:'🗼',deco:'⭐',text:'答えを 見つけると、てっぺんの 星が ひかります。',eventTitle:'てっぺんに とどいた 星',event:'夜空から 小さな 星が 一つ落ち、とうの てっぺんに ぴたりと はまりました。数の なぞが とけるたび、星は 明るく まばたきます。',companion:'colon',comment:'こたえが あうと、どんぐりを みつけたときみたいに うれしいね。'},
+  {level:7,name:'ひらめきの けんきゅうとう',icon:'🔭',deco:'💡',text:'形や 時間の なぞを、なかまと 調べる とう。',eventTitle:'月まで とどく ものさし',event:'長い ものさしで 月までの 距離を はかろうとして、みんなで 笑いました。でも「どうしたら はかれるかな」と 考えたとき、とうの 望遠鏡に 新しい 光が ともりました。',companion:'aqua',comment:'できるか わからないことを かんがえるのも、ぼうけんなんだね。'},
+  {level:10,name:'にじの ちえの とう',icon:'🏯',deco:'🌈',text:'数と ひらめきが 七色に かがやく、王国の ちえの とう。',eventTitle:'一つではない ひらめき',event:'とうの 壁に、同じ 答えへ つづく いくつもの 道が うかびました。ゆっくり 数える道、絵にする道、前の 問題を 思い出す道。自分に 合う道を 選んでよいのです。',companion:'flora',comment:'そだちかたが ちがうように、かんがえかたも ひとつじゃないよ。'}
+ ]},
+ stage:{stages:[
+  {level:1,name:'にじの ステージ',icon:'🎪',deco:'🎵',text:'英語の 音と うたが ひびく、小さな ステージ。'},
+  {level:3,name:'おはようの ステージ',icon:'🎤',deco:'☀️',text:'朝の あいさつが、広場まで とどきます。',eventTitle:'小さな Good morning',event:'ピピの「Good morning!」は、はじめは とても 小さな 声でした。あなたが いっしょに 音を きくと、声は ステージの 外まで 元気に とんでいきました。',companion:'pipi',comment:'ちいさな こえでも、つたわると うれしいね。Good morning!'},
+  {level:5,name:'きらめき げきじょう',icon:'🎭',deco:'✨',text:'ことばと 歌で、いろいろな 国の なかまと つながる げきじょう。',eventTitle:'Helloが かえってきた日',event:'遠くから 来た 鳥に「Hello」と 言うと、すぐに「Hello!」と 返ってきました。二つの 声が 重なったとき、舞台の カーテンが 七色に ひらきました。',companion:'pipi',comment:'しっている ことばが ひとつでも、なかよくなる はじまりに なるよ。'},
+  {level:7,name:'ほしの コンサートホール',icon:'🎼',deco:'⭐',text:'聞いた 音が 星になって 天井を めぐります。',eventTitle:'きこえなかった 音の 星',event:'一度では 聞き取れなかった 音も、もう一度 聞くと 小さな 星になりました。星は 消えずに 天井へ のぼり、次に 聞くときの 目印になりました。',companion:'moko',comment:'わからないって いえると、もういちど きく じゅんびが できるね。'},
+  {level:10,name:'七色の ゆめステージ',icon:'🌈',deco:'🎤',text:'歌と ことばで、王国の 夢を えがく 七色の ステージ。',eventTitle:'王国みんなの うた',event:'ララも コロンも、ことばが ちがう 遠くの なかまも、知っている 音を 一つずつ 歌いました。全部の 音が そろわなくても、うたは とても きれいでした。',companion:'pipi',comment:'じょうずに いうより、いっしょに こえを だすことが たのしいね！'}
+ ]},
+ plaza:{stages:[
+  {level:1,name:'どうぶつ ひろば',icon:'🎠',deco:'🐾',text:'動物や くらしの 発見が 集まる、にぎやかな 広場。'},
+  {level:3,name:'なかよし ひろば',icon:'🐾',deco:'🌷',text:'小さな 生きものも 安心して あつまる 広場。',eventTitle:'雨あがりの 小さな 足あと',event:'雨あがりの 地面に、小さな 足あとが つづいていました。どの 動物の 足あとか みんなで 考えながら、ゆっくり あとを たどりました。',companion:'moko',comment:'あめの あとには、いつもと ちがう はっけんが あるね。'},
+  {level:5,name:'もりの こうえん',icon:'🌳',deco:'🐿️',text:'木や 花、生きものの 季節を 見つけられる 公園。',eventTitle:'五つめの きせつの しるし',event:'春の 花、夏の せみ、秋の どんぐり、冬の 霜。その 真ん中に「今日だけの しるし」を 見つけました。同じ 季節でも、毎日 少しずつ ちがいます。',companion:'flora',comment:'きょう みつけたことは、きょうだけの たからものだよ。'},
+  {level:7,name:'王国ふれあい ひろば',icon:'🎡',deco:'🐾',text:'安全や くらしの 知恵を、みんなで 試せる 大きな 広場。',eventTitle:'みんなで つくった 安全の 道',event:'横断歩道、手を 洗う 場所、困ったときに 呼ぶ ベル。みんなが 一つずつ アイデアを 出して、安心して 遊べる 道を つくりました。',companion:'mint',comment:'しっていることを つかうと、じぶんも だれかも まもれるね。'},
+  {level:10,name:'にじの 大ひろば',icon:'🎠',deco:'🌈',text:'王国の なかまが 集まり、発見を 分けあう 七色の 大広場。',eventTitle:'ちがうことが 集まる おまつり',event:'飛ぶ なかま、走る なかま、花を 育てる なかま。みんなの 得意なことは ちがいます。ちがうからこそ、大広場の おまつりは にぎやかになりました。',companion:'flora',comment:'みんな おなじじゃないから、王国は こんなに きれいなんだね。'}
+ ]},
+ fountain:{stages:[
+  {level:1,name:'にじの ふんすい',icon:'⛲',deco:'💧',text:'集めた ひかりが 水になって きらめく、王国の ふんすい。'},
+  {level:3,name:'ほしの ふんすい',icon:'⛲',deco:'⭐',text:'夜になると、水しぶきが 星のように ひかります。',eventTitle:'水の なかの 一番星',event:'夕方、ふんすいの 水に 一番星が うつりました。水が ゆれるたび、星は たくさんに 増えて、広場を 明るく 照らしました。',companion:'lumi',comment:'ひとつの ひかりも、わけると たくさんに なるんだよ。'},
+  {level:5,name:'クリスタルの いずみ',icon:'💎',deco:'💧',text:'まちがえた 問題も、小さな ひかりに 変える ふしぎな 泉。',eventTitle:'にごった しずくの ひみつ',event:'少し にごった しずくが 一つありました。もう一度 問題に ちょうせんすると、しずくは 透明な 光へ かわりました。にごった時間も、むだでは なかったのです。',companion:'aqua',comment:'うまく いかなかったことも、つぎの つばさに なるんだね。'},
+  {level:7,name:'月ひかりの いずみ',icon:'🌙',deco:'💧',text:'休んだ 日にも、静かに 水を たたえる やさしい 泉。',eventTitle:'冒険しない日の 月',event:'今日は 冒険できない なかまが、泉の そばで 月を 見ていました。泉は 急かさず、静かに 光を うつします。戻ってきたとき、いつでも 続きから 始められます。',companion:'moko',comment:'おやすみの ひも、ひかりは なくならないよ。'},
+  {level:10,name:'七色の 大ふんすい',icon:'⛲',deco:'🌈',text:'王国の すべての ひかりが めぐる、七色の 大ふんすい。',eventTitle:'めぐって もどる 七つの 色',event:'ふんすいから 上がった 七色の 水は、町を 一周して また 泉へ 戻ってきました。学んだことも、忘れて 思い出して、何度でも 自分の 力になります。',companion:'lumi',comment:'おなじ ところに もどっても、まえより すこし つよくなっているよ。'}
+ ]}
+};
+
+const r3BaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){
+ const lt=r3BaseEnsureLongTermState();lt.version=3;
+ if(!lt.townGrowth||typeof lt.townGrowth!=='object')lt.townGrowth={};
+ const tg=lt.townGrowth;
+ if(!Array.isArray(tg.eventsSeen))tg.eventsSeen=[];
+ tg.eventsSeen=[...new Set(tg.eventsSeen.filter(x=>typeof x==='string'))].slice(-30);
+ if(!Number.isFinite(Number(tg.manualUpgrades)))tg.manualUpgrades=0;
+ if(!Object.prototype.hasOwnProperty.call(tg,'lastUpgrade'))tg.lastUpgrade=null;
+ return lt;
+};
+function ltTownState(){return ensureLongTermState().townGrowth}
+function ltTownConfig(id){return LT_TOWN_GROWTH[id]||{stages:[{level:1,name:BUILDINGS[id]?.name||'たてもの',icon:BUILDINGS[id]?.icon||'🏘️',deco:'✨',text:'まちの たてもの。'}]}}
+function ltTownStage(id,lv=state.buildings[id]||0){const cfg=ltTownConfig(id),level=Math.max(0,Number(lv)||0);return [...cfg.stages].reverse().find(s=>level>=s.level)||{level:0,name:'まだ ねむっている',icon:'▫️',deco:'',text:'学習や コインで めざめるのを まっています。'}}
+function ltTownTier(lv){if(lv>=10)return 10;if(lv>=7)return 7;if(lv>=5)return 5;if(lv>=3)return 3;if(lv>=1)return 1;return 0}
+function ltTownMilestone(id,level){return ltTownConfig(id).stages.find(s=>s.level===Number(level)&&LT_TOWN_MILESTONES.includes(Number(level)))||null}
+function ltTownMilestoneKey(id,level){return `${id}:${level}`}
+function ltTownReachedMilestones(id){const lv=state.buildings[id]||0;return LT_TOWN_MILESTONES.map(level=>ltTownMilestone(id,level)).filter(s=>s&&s.level<=lv)}
+function ltTownNextMilestone(id,lv=state.buildings[id]||0){return LT_TOWN_MILESTONES.map(level=>ltTownMilestone(id,level)).find(s=>s&&s.level>lv)||null}
+function ltTownStars(){return Object.keys(BUILDINGS).reduce((sum,id)=>sum+ltTownReachedMilestones(id).length,0)}
+function ltTownTotalLevel(){return Object.keys(BUILDINGS).reduce((sum,id)=>sum+Math.min(LT_TOWN_MAX_LEVEL,state.buildings[id]||0),0)}
+function ltTownEventCandidate(id){const reached=ltTownReachedMilestones(id),seen=ltTownState().eventsSeen;return reached.find(s=>!seen.includes(ltTownMilestoneKey(id,s.level)))||reached.at(-1)||null}
+function ltTownCompanion(id){return COMPANIONS.find(c=>c.id===id)||COMPANIONS[0]}
+function ltTownVisual(id,lv=state.buildings[id]||0,small=false){const stage=ltTownStage(id,lv),tier=ltTownTier(lv);return el('div',{className:`ltTownVisual ltTownTier${tier} ${small?'small':''}`},[el('div',{className:'ltTownVisualGround'}),el('div',{className:'ltTownVisualMain'},stage.icon),stage.deco?el('div',{className:'ltTownVisualDeco'},stage.deco):null])}
+
+/* Keep the original Lv.1-5 prices. Lv.6-10 add a gentle long-term curve. */
+buildingCost=function(id){const lv=Math.max(0,state.buildings[id]||0);return lv<5?22+lv*18:112+(lv-5)*22};
+
+function ltOpenTownEvent(id,level,afterUpgrade=false){
+ const stage=ltTownMilestone(id,level);if(!stage)return;
+ const tg=ltTownState(),key=ltTownMilestoneKey(id,level);if(!tg.eventsSeen.includes(key))tg.eventsSeen.push(key);tg.eventsSeen=tg.eventsSeen.slice(-30);save();
+ const c=ltTownCompanion(stage.companion),modal=el('div',{className:'modal'}),panel=el('div',{className:'modalPanel'});
+ panel.appendChild(el('div',{className:'ltTownEventHero'},[ltTownVisual(id,level),el('div',{className:'ltTownEventKicker'},`TOWN STORY　LV.${level}`),el('div',{className:'ltTownEventTitle'},rubyText(stage.eventTitle)),el('div',{className:'ltTownMilestoneBadge'},`⭐ まちの きらめき ${ltTownStars()} / ${Object.keys(BUILDINGS).length*LT_TOWN_MILESTONES.length}`),el('div',{className:'ltTownEventText'},rubyText(stage.event)),el('div',{className:'ltTownCompanionLine'},[el('div',{className:'ltTownCompanionIcon'},c.icon),el('div',{className:'ltTownCompanionText'},[el('b',{},c.name),rubyText(stage.comment)])]) ]));
+ panel.appendChild(el('button',{className:'secondary',style:{marginTop:'12px'},onclick:()=>speak([stage.eventTitle,stage.event,`${c.name}。${stage.comment}`].join('。'),'ja-JP')},'🔊 よんでもらう'));panel.appendChild(el('button',{className:'primary',style:{marginTop:'8px'},onclick:()=>{modal.remove();if(afterUpgrade){state.screen='town';render()}}},afterUpgrade?'そだった まちを みる':'まちに もどる'));
+ modal.appendChild(panel);document.body.appendChild(modal);
+}
+
+upgradeBuilding=function(id){
+ const before=Math.max(0,state.buildings[id]||0);if(before>=LT_TOWN_MAX_LEVEL){showToast('さいこう レベルだよ');return}
+ const cost=buildingCost(id);if(state.coins<cost){showToast(`コインが あと ${cost-state.coins}こ ひつよう`);return}
+ const after=before+1;state.coins-=cost;state.buildings[id]=after;state.xp+=8;const tg=ltTownState();tg.manualUpgrades++;tg.lastUpgrade={id,before,after,at:Date.now()};save();
+ const milestone=ltTownMilestone(id,after);if(milestone){ltOpenTownEvent(id,after,true);return}
+ const stage=ltTownStage(id,after),next=ltTownNextMilestone(id,after),modal=el('div',{className:'modal'},el('div',{className:'modalPanel exitPanel'},[ltTownVisual(id,after),el('h3',{style:{marginTop:'9px'}},rubyText(`${stage.name}が そだったよ！`)),el('p',{},rubyText(`レベル ${before} から レベル ${after}に なりました。${next?`つぎの へんしんは レベル ${next.level}「${next.name}」だよ。`:'さいこうの すがたに なりました。'}`)),el('button',{className:'primary',onclick:()=>{modal.remove();render()}},'まちを みる')]));document.body.appendChild(modal)
+};
+
+renderTownMini=function(){return el('div',{className:'town'},[el('div',{className:'townBuildings'},Object.keys(BUILDINGS).map(id=>{const lv=state.buildings[id]||0;return el('div',{className:'building'},[el('div',{className:'buildingIcon'},ltTownVisual(id,lv,true)),el('div',{className:'buildingLv'},lv?`Lv.${lv}`:'まだ')])})),el('div',{className:'townGround'})])};
+
+renderTown=function(){
+ ensureLongTermState();const wrap=el('div',{className:'screen'}),stars=ltTownStars(),maxStars=Object.keys(BUILDINGS).length*LT_TOWN_MILESTONES.length,totalLv=ltTownTotalLevel();wrap.appendChild(topBar('ひかりの まち'));
+ wrap.appendChild(el('div',{className:'hero'},[el('div',{className:'title'},'まちを もっと そだてよう'),el('div',{className:'subtitle'},`コイン ${state.coins}こ。レベル3・5・7・10で、たてものの すがたと おはなしが かわるよ。`),renderTownMini(),el('div',{className:'ltTownSummary'},[el('div',{className:'ltTownSummaryHead'},[el('div',{className:'ltTownSummaryIcon'},stars>=maxStars?'🌈':'✨'),el('div',{className:'ltTownSummaryMain'},[el('b',{},stars>=maxStars?'この まちは さいこうに そだったよ！':'まちの きらめきを あつめよう'),el('span',{},stars>=maxStars?'ぼうけんマップの つぎの章でも、なかまたちの 毎日は つづくよ。':`たてものの ごうけいレベル ${totalLv}/${Object.keys(BUILDINGS).length*LT_TOWN_MAX_LEVEL}`)]),el('div',{className:'ltTownStars'},`⭐ ${stars}/${maxStars}`)])]) ]));
+ Object.entries(BUILDINGS).forEach(([id,b])=>{
+  const lv=Math.max(0,state.buildings[id]||0),stage=ltTownStage(id,lv),next=ltTownNextMilestone(id,lv),cost=buildingCost(id),event=ltTownEventCandidate(id),seen=event?ltTownState().eventsSeen.includes(ltTownMilestoneKey(id,event.level)):true;
+  const card=el('div',{className:'card section ltTownCard'});card.appendChild(el('div',{className:'ltTownCardTop'},[ltTownVisual(id,lv),el('div',{className:'ltTownCardMain'},[el('div',{className:'ltTownCardName'},rubyText(stage.name)),el('div',{className:'ltTownCardLevel'},lv?`レベル ${lv}/${LT_TOWN_MAX_LEVEL}　⭐ ${ltTownReachedMilestones(id).length}/${LT_TOWN_MILESTONES.length}`:'まだ ねむっている'),el('div',{className:'ltTownCardText'},rubyText(stage.text))]),el('button',{className:'ghost',disabled:lv>=LT_TOWN_MAX_LEVEL,onclick:()=>upgradeBuilding(id)},lv>=LT_TOWN_MAX_LEVEL?'さいこう':`🪙${cost}`)]));
+  card.appendChild(el('div',{className:'ltTownProgress'},el('div',{style:{width:`${Math.min(100,lv/LT_TOWN_MAX_LEVEL*100)}%`}})));
+  card.appendChild(el('div',{className:`ltTownNext ${lv>=LT_TOWN_MAX_LEVEL?'max':''}`},rubyText(lv>=LT_TOWN_MAX_LEVEL?'🌈 さいこうの すがた。おはなしは いつでも よみかえせるよ。':next?`つぎの へんしん：Lv.${next.level}「${next.name}」`:`あと ${LT_TOWN_MAX_LEVEL-lv}レベルで さいこうの すがた`)));
+  if(event)card.appendChild(el('button',{className:`ltTownMemoryBtn ${seen?'':'new'}`,onclick:()=>ltOpenTownEvent(id,event.level,false)},seen?`📖 Lv.${event.level}の おはなしを よむ`:`NEW ✦ Lv.${event.level}の おはなし`));
+  wrap.appendChild(card);
+ });return wrap
+};
+
+const r3BaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=r3BaseDiagnostics(),tg=ltTownState();rows.push({name:'まちの多段階成長',ok:true,text:`5棟をLv.${LT_TOWN_MAX_LEVEL}まで育成可能。節目イベント ${ltTownStars()}/${Object.keys(BUILDINGS).length*LT_TOWN_MILESTONES.length}、閲覧 ${tg.eventsSeen.length}件、手動強化 ${tg.manualUpgrades}回。Lv.1-5の既存費用とセーブ値は維持しています。`});return rows};
+
+
+
+/* ================= Ver.1.4.0 candidate R4: companion bonds and sticker/title collection ================= */
+APP.version='1.4.0';
+const LT_BOND_LEVELS=[
+ {days:1,name:'はじめの ハート',icon:'♡'},
+ {days:3,name:'なかよし ハート',icon:'♥'},
+ {days:7,name:'ほしの ハート',icon:'⭐'},
+ {days:14,name:'にじの ハート',icon:'🌈'},
+ {days:30,name:'こころの あいぼう',icon:'💎'}
+];
+const LT_BOND_MESSAGES={
+ lumi:['きょうも いっしょに、ひかりを あつめよう。','あなたと あるくと、小さな ひかりも みつけやすいね。','まちがえた ときも、となりに いるから だいじょうぶ。','七つの 星より、つづけた 足あとが きれいだよ。','どんな 日も、あなたの ひかりを ちゃんと しっているよ。','これからの おはなしも、いちばん ちかくで みているね。'],
+ lala:['つぎの おはなしが たのしみだね。','いっしょに よむと、ことばが もっと きらきらするね。','むずかしい ぶんも、一行ずつなら すすめるよ。','あなたの すきな おはなしを、わたしにも おしえてね。','白紙の ページに、ふたりの 足あとが ふえてきたよ。','百さつめの つぎも、ずっと いっしょに よもうね。'],
+ colon:['一もんずつなら、きっと かぞえられるよ。','きょうの ひとつが、あしたの ふたつに つながるね。','まちがえた 数も、かぞえなおせば たからもの！','どんぐりと いっしょに、がんばった 日も ならべているよ。','あなたの ひらめきは、ぼくの じまんだよ。','これからも ふたりで、まだない 答えを さがそう！'],
+ pipi:['Hello! えいごの おとを きいてみよう。','あなたの Hello、ちゃんと とどいたよ！','ききとれない 音も、もういちど いっしょに きこう。','ふたりの うたが、ステージの 外まで ひびいているね。','あなたと なら、しらない ことばも こわくないよ。','Good morningから Good nightまで、ずっと なかまだよ！'],
+ moko:['みじかい ぼうけんでも だいじょうぶ。','ゆっくりの 日も、いっしょに ふわふわ すすもう。','できないって いっても、ひかりは なくならないよ。','雨の 日も、おやすみの 日も、また もどれば だいじょうぶ。','あなたの ペースが、いちばん すてきな ペースだよ。','どんな 空の 日も、となりで やさしい 雲になるね。'],
+ mint:['まよったら、ヒントを つかってね。','いっしょなら、まよいみちも たんけんに なるね。','みぎか ひだりか、ゆっくり たしかめよう。','まよった 足あとが、つぎの 地図に かわってきたよ。','あなたが えらんだ 道を、わたしは しんじているよ。','夜の 森でも、ふたりの 地図が あれば だいじょうぶ。'],
+ aqua:['きのうより すこしだけ すすもう。','あなたと いっしょなら、つばさを ひらけそう。','一もん できたら、一回 はばたいてみるね。','小さな つばさでも、つづければ 空へ ちかづくよ。','あなたが すすむと、ぼくも もっと 高く とべるんだ。','いつか ふたりで、にじの 上まで とんでいこう！'],
+ flora:['あなたの ペースで そだてば いいよ。','きょうの 一もんが、小さな たねに なったよ。','できた 日も できない 日も、ねっこは そだっているよ。','あなたの 季節に、あなたの 花が ひらけば いいんだよ。','いっしょに そだてた 花が、王国じゅうに さいているね。','これからも、まだ見たことのない 花を いっしょに そだてよう。']
+};
+
+const r4BaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){
+ const lt=r4BaseEnsureLongTermState();lt.version=4;
+ if(!lt.companionBond||typeof lt.companionBond!=='object')lt.companionBond={};
+ const cb=lt.companionBond;
+ if(!cb.days||typeof cb.days!=='object')cb.days={};
+ COMPANIONS.forEach(c=>{const n=Number(cb.days[c.id]);cb.days[c.id]=Math.max(0,Math.floor(Number.isFinite(n)?n:0))});
+ if(typeof cb.manualSelection!=='boolean')cb.manualSelection=false;
+ const starter=state.v11?.starterPartner||'lumi';
+ if(!COMPANIONS.some(c=>c.id===cb.selectedId))cb.selectedId=starter;
+ const totalBondDays=Object.values(cb.days).reduce((a,b)=>a+(Number(b)||0),0);
+ if(!cb.manualSelection&&totalBondDays===0&&COMPANIONS.some(c=>c.id===starter))cb.selectedId=starter;
+ if(typeof cb.lastAwardDate!=='string')cb.lastAwardDate=null;
+ if(!Array.isArray(cb.milestones))cb.milestones=[];cb.milestones=[...new Set(cb.milestones.filter(x=>typeof x==='string'))].slice(-80);
+ if(!Object.prototype.hasOwnProperty.call(cb,'pendingCelebration'))cb.pendingCelebration=null;
+ if(!lt.collection||typeof lt.collection!=='object')lt.collection={};
+ const col=lt.collection;
+ if(!Array.isArray(col.unlocked))col.unlocked=[];col.unlocked=[...new Set(col.unlocked.filter(x=>typeof x==='string'))].slice(-100);
+ if(!Array.isArray(col.seen))col.seen=[];col.seen=[...new Set(col.seen.filter(x=>typeof x==='string'))].slice(-100);
+ if(typeof col.selectedTitle!=='string')col.selectedTitle='';
+ return lt;
+};
+function ltBondState(){return ensureLongTermState().companionBond}
+function ltCollectionState(){return ensureLongTermState().collection}
+function ltBondDays(id){return Math.max(0,Number(ltBondState().days[id])||0)}
+function ltBondLevel(id){const days=ltBondDays(id);return LT_BOND_LEVELS.filter(x=>days>=x.days).length}
+function ltBondNext(id){const days=ltBondDays(id);return LT_BOND_LEVELS.find(x=>days<x.days)||null}
+function ltBondMilestoneKey(id,days){return `${id}:${days}`}
+function ltBondHearts(id){const lv=ltBondLevel(id);return '♥'.repeat(lv)+'♡'.repeat(LT_BOND_LEVELS.length-lv)}
+function ltBondMessage(id){const rows=LT_BOND_MESSAGES[id]||LT_BOND_MESSAGES.lumi;return rows[Math.min(rows.length-1,ltBondLevel(id))]||rows[0]}
+function ltSelectedCompanion(){
+ const cb=ltBondState(),unlocked=unlockedCompanions(),picked=unlocked.find(c=>c.id===cb.selectedId);
+ return picked||unlocked.find(c=>c.id===state.v11?.starterPartner)||unlocked[0]||COMPANIONS[0]
+}
+function ltSelectCompanion(id){
+ const c=unlockedCompanions().find(x=>x.id===id);if(!c){showToast('まだ あいぼうに できないよ');return}
+ const cb=ltBondState();cb.selectedId=id;cb.manualSelection=true;save();render();showToast(`${c.name}が きょうから あいぼうだよ！`)
+}
+currentCompanion=function(){return ltSelectedCompanion()};
+companionComment=function(){const c=ltSelectedCompanion();return {c,text:ltBondMessage(c.id)}};
+
+function ltMaxStudyStreak(){
+ const keys=[...new Set((state.dailyHistory||[]).map(x=>x.date).filter(Boolean))].sort();let best=0,run=0,prev=null;
+ for(const key of keys){const d=ltDateFromKey(key);if(!d)continue;if(prev&&d.getTime()-prev.getTime()===DAY)run++;else run=1;best=Math.max(best,run);prev=d}
+ return Math.max(best,state.streak||0)
+}
+function ltAnyBondAtLeast(days){return COMPANIONS.some(c=>ltBondDays(c.id)>=days)}
+function ltAchievementDefinitions(){
+ const base=[
+  {id:'day1',group:'ぼうけん',icon:'🌱',name:'はじめの 一歩シール',title:'はじめの ぼうけんしゃ',hint:'きょうの ぼうけんを 1日 おえる',check:()=>state.totalSessions>=1},
+  {id:'day3',group:'ぼうけん',icon:'⭐',name:'三つ星シール',title:'みっかの たんけんか',hint:'3日 ぼうけんする',check:()=>state.totalSessions>=3},
+  {id:'day7',group:'ぼうけん',icon:'🌟',name:'七つ星シール',title:'七つ星の たびびと',hint:'7日 ぼうけんする',check:()=>state.totalSessions>=7},
+  {id:'day14',group:'ぼうけん',icon:'🌙',name:'つづける月シール',title:'つづける まほうつかい',hint:'14日 ぼうけんする',check:()=>state.totalSessions>=14},
+  {id:'day30',group:'ぼうけん',icon:'🌈',name:'30日の にじシール',title:'にじの たびびと',hint:'30日マップを 1周する',check:()=>state.totalSessions>=30},
+  {id:'day60',group:'ぼうけん',icon:'🗺️',name:'二つの けしきシール',title:'ふたつの けしきを しる人',hint:'60日 ぼうけんする',check:()=>state.totalSessions>=60},
+  {id:'streak3',group:'ぼうけん',icon:'🔥',name:'三日つづけたシール',title:'三日星',hint:'3日 つづけて ぼうけんする',check:()=>ltMaxStudyStreak()>=3},
+  {id:'streak7',group:'ぼうけん',icon:'☀️',name:'七日つづけたシール',title:'七日星',hint:'7日 つづけて ぼうけんする',check:()=>ltMaxStudyStreak()>=7},
+  {id:'q50',group:'まなび',icon:'✏️',name:'50もんシール',title:'50もんの ひらめき',hint:'50もんに ちょうせんする',check:()=>totalAnswered()>=50},
+  {id:'q200',group:'まなび',icon:'📘',name:'200もんシール',title:'200もんの ちえ',hint:'200もんに ちょうせんする',check:()=>totalAnswered()>=200},
+  {id:'q500',group:'まなび',icon:'💡',name:'500もんシール',title:'500もんの きらめき',hint:'500もんに ちょうせんする',check:()=>totalAnswered()>=500},
+  {id:'q1000',group:'まなび',icon:'💎',name:'1000もんシール',title:'千の ひかり',hint:'1000もんに ちょうせんする',check:()=>totalAnswered()>=1000},
+  {id:'jp50',group:'まなび',icon:'📖',name:'ことばの森シール',title:'ことばの もりびと',hint:'こくごで 50もん せいかいする',check:()=>subjectCorrect('こくご')>=50},
+  {id:'math50',group:'まなび',icon:'🔢',name:'かずの丘シール',title:'かずの たんけんか',hint:'さんすうで 50もん せいかいする',check:()=>subjectCorrect('さんすう')>=50},
+  {id:'en30',group:'まなび',icon:'🎵',name:'Helloシール',title:'Helloの うたいて',hint:'えいごで 30もん せいかいする',check:()=>subjectCorrect('えいご')>=30},
+  {id:'life30',group:'まなび',icon:'🌷',name:'くらしシール',title:'くらしの はかせ',hint:'ものしりで 30もん せいかいする',check:()=>subjectCorrect('ものしり')>=30},
+  {id:'fourLights',group:'まなび',icon:'🔮',name:'四つの ひかりシール',title:'四つの ひかりを つなぐ人',hint:'4つの きょうかで まなぶ',check:()=>Object.keys(SUBJECTS).every(k=>(state.subjectStats[k]?.total||0)>0)},
+  {id:'town5',group:'まちと ボス',icon:'🏠',name:'まちの きらめき5',title:'まちの だいくさん',hint:'まちの きらめきを 5こ集める',check:()=>ltTownStars()>=5},
+  {id:'town10',group:'まちと ボス',icon:'🏘️',name:'まちの きらめき10',title:'まちの まほうつかい',hint:'まちの きらめきを 10こ集める',check:()=>ltTownStars()>=10},
+  {id:'town20',group:'まちと ボス',icon:'🏰',name:'七色の まちシール',title:'七色の まちづくり名人',hint:'まちの きらめきを 20こ集める',check:()=>ltTownStars()>=20},
+  {id:'boss1',group:'まちと ボス',icon:'👑',name:'はじめての ボスシール',title:'ボスの ともだち',hint:'ボスチャレンジの シールを 1まい集める',check:()=>ltBossChallengeState().seals.length>=1},
+  {id:'boss6',group:'まちと ボス',icon:'🏅',name:'ボスシール6',title:'ひかりの チャレンジャー',hint:'ボスシールを 6まい集める',check:()=>ltBossChallengeState().seals.length>=6},
+  {id:'boss12',group:'まちと ボス',icon:'🏆',name:'ボスシールマスター',title:'十二の ひかりを もつ人',hint:'ボスシールを 12まい集める',check:()=>ltBossChallengeState().seals.length>=12},
+  {id:'allFriends',group:'なかま',icon:'🐾',name:'なかま ずかんシール',title:'王国みんなの ともだち',hint:'8人の なかまと あう',check:()=>unlockedCompanions().length>=COMPANIONS.length},
+  {id:'bond30',group:'なかま',icon:'💞',name:'こころの あいぼうシール',title:'こころの あいぼう',hint:'だれかと 30日 いっしょに ぼうけんする',check:()=>ltAnyBondAtLeast(30)}
+ ];
+ return base.concat(COMPANIONS.map(c=>({id:`bond7_${c.id}`,group:'なかま',icon:c.icon,name:`${c.name}の なかよしシール`,title:`${c.name}の しんゆう`,hint:`${c.name}と 7日 いっしょに ぼうけんする`,check:()=>ltBondDays(c.id)>=7})));
+}
+function ltAchievement(id){return ltAchievementDefinitions().find(x=>x.id===id)||null}
+function ltRefreshAchievements(){
+ const col=ltCollectionState(),defs=ltAchievementDefinitions();let changed=false;
+ defs.forEach(a=>{if(a.check()&&!col.unlocked.includes(a.id)){col.unlocked.push(a.id);changed=true}});
+ col.unlocked=[...new Set(col.unlocked)].slice(-100);
+ if(!ltAchievement(col.selectedTitle)||!col.unlocked.includes(col.selectedTitle))col.selectedTitle=col.unlocked[0]||'';
+ return changed
+}
+function ltSelectedTitle(){const a=ltAchievement(ltCollectionState().selectedTitle);return a?.title||'まだ しょうごうは ないよ'}
+function ltSetTitle(id){const col=ltCollectionState(),a=ltAchievement(id);if(!a||!col.unlocked.includes(id)){showToast('まだ えらべない しょうごうだよ');return}col.selectedTitle=id;save();render();showToast(`「${a.title}」を つけたよ！`)}
+
+const r4BaseCompleteDailyIfNeeded=completeDailyIfNeeded;
+completeDailyIfNeeded=function(){
+ const completed=r4BaseCompleteDailyIfNeeded();if(!completed)return false;
+ const cb=ltBondState(),c=ltSelectedCompanion();if(cb.lastAwardDate!==today()){
+  const old=ltBondDays(c.id),now=old+1;cb.days[c.id]=now;cb.lastAwardDate=today();
+  const crossed=LT_BOND_LEVELS.filter(x=>old<x.days&&now>=x.days);
+  crossed.forEach(x=>{const key=ltBondMilestoneKey(c.id,x.days);if(!cb.milestones.includes(key))cb.milestones.push(key)});
+  if(crossed.length){const m=crossed.at(-1);cb.pendingCelebration={companionId:c.id,days:now,level:LT_BOND_LEVELS.indexOf(m)+1,milestoneDays:m.days,name:m.name,at:Date.now()};createAutoBackup('なかよし度の節目',true)}
+ }
+ ltRefreshAchievements();return true
+};
+
+function ltOpenBondModal(c){
+ const cb=ltBondState(),days=ltBondDays(c.id),lv=ltBondLevel(c.id),next=ltBondNext(c.id),selected=cb.selectedId===c.id,modal=el('div',{className:'modal'}),panel=el('div',{className:'modalPanel'});
+ panel.appendChild(el('div',{className:'ltBondModalHero'},[el('div',{className:'ltBondModalIcon'},c.icon),el('div',{className:'ltBondModalName'},c.name),el('div',{className:'ltBondHearts'},ltBondHearts(c.id)),el('div',{className:'small'},`いっしょに ぼうけんした日 ${days}にち　なかよし ${lv}/5`),el('div',{className:'ltBondMilestones'},LT_BOND_LEVELS.map(x=>el('div',{className:`ltBondMilestone ${days>=x.days?'on':''}`},days>=x.days?x.icon:'♡'))),el('div',{className:'ltBondTalk'},ltBondMessage(c.id)),next?el('div',{className:'small',style:{marginTop:'8px'}},`あと ${next.days-days}にちで「${next.name}」`):el('div',{className:'small',style:{marginTop:'8px'}},'さいこうの なかよしだよ！') ]));
+ panel.appendChild(el('button',{className:'primary',style:{marginTop:'12px'},disabled:selected,onclick:()=>{modal.remove();ltSelectCompanion(c.id)}},selected?'いまの あいぼう':'この なかまを あいぼうに する'));
+ if(SIDE_STORIES[c.id])panel.appendChild(el('button',{className:'secondary',style:{marginTop:'8px'},onclick:()=>{modal.remove();openStory(c.id)}},'📖 なかまの おはなし'));
+ panel.appendChild(el('button',{className:'secondary',style:{marginTop:'8px'},onclick:()=>modal.remove()},'とじる'));modal.appendChild(panel);document.body.appendChild(modal)
+}
+function ltRenderBondHero(){
+ const c=ltSelectedCompanion(),days=ltBondDays(c.id),lv=ltBondLevel(c.id),next=ltBondNext(c.id),from=lv?LT_BOND_LEVELS[lv-1].days:0,to=next?.days||Math.max(1,from),pct=next?Math.max(0,Math.min(100,(days-from)/(to-from)*100)):100;
+ return el('div',{className:'ltBondHero'},[el('div',{className:'ltBondHeroTop'},[el('div',{className:'ltBondHeroIcon'},c.icon),el('div',{className:'ltBondHeroMain'},[el('b',{},`きょうの あいぼう　${c.name}`),el('div',{className:'ltBondHearts'},ltBondHearts(c.id)),el('span',{},`いっしょに ぼうけんした日 ${days}にち　なかよし ${lv}/5`)])]),el('div',{className:'ltBondTalk'},ltBondMessage(c.id)),el('div',{className:'ltBondBar'},el('div',{style:{width:pct+'%'}})),el('div',{className:'small',style:{marginTop:'5px'}},next?`あと ${next.days-days}にちで「${next.name}」`:'さいこうの なかよし！ これからも 日数は のこるよ。'),el('div',{className:'ltBondActions'},[el('button',{className:'secondary',onclick:()=>ltOpenBondModal(c)},'💞 なかよしを みる'),el('button',{className:'secondary',onclick:()=>{state.screen='collection';render()}},'🏅 シールずかん')])])
+}
+
+const r4BaseRenderCompanions=renderCompanions;
+renderCompanions=function(){
+ ensureV11();ltRefreshAchievements();const li=levelInfo(),unlocked=new Set(unlockedCompanions().map(c=>c.id)),selected=ltSelectedCompanion().id,wrap=el('div',{className:'screen'});wrap.appendChild(topBar('なかまと へんしん'));wrap.appendChild(ltRenderBondHero());
+ wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},'へんしんの いしょう'),el('div',{className:'starterGrid'},V11_STARTER_STYLES.map(c=>el('button',{className:`starterChoice ${state.v11.starterStyle===c.id?'on':''}`,onclick:()=>{state.v11.starterStyle=c.id;save();render()}},[el('div',{className:'starterIcon'},c.icon),el('div',{className:'starterName'},c.name),el('div',{className:'starterMeta'},state.v11.starterStyle===c.id?'えらんでいる':'きがえる')]))),el('div',{className:'outfitRow',style:{marginTop:'10px'}},OUTFITS.slice(1).map(o=>{const lock=li.level<o.level;return el('button',{className:`outfit ${state.selectedOutfit===o.id?'on':''} ${lock?'locked':''}`,onclick:()=>lock?showToast(`レベル${o.level}で ひらくよ`):selectOutfit(o.id)},[el('div',{className:'outfitIcon'},lock?'🔒':o.icon),el('div',{className:'outfitName'},o.name),el('div',{className:'small'},lock?`Lv.${o.level}`:state.selectedOutfit===o.id?'きている':'きがえる')])})) ]));
+ wrap.appendChild(el('div',{className:'sectionTitle',style:{marginTop:'15px'}},['なかま ずかん',el('span',{className:'small'},`${unlocked.size}/${COMPANIONS.length}`)]));
+ wrap.appendChild(el('div',{className:'companionGrid'},COMPANIONS.map(c=>{const lock=!unlocked.has(c.id),st=lock?0:companionStage(c),isSelected=c.id===selected,days=lock?0:ltBondDays(c.id);return el('button',{className:`companion ${lock?'locked':''} ${isSelected?'selected':''}`,onclick:()=>{if(lock){showToast('ぼうけんを つづけると あえるよ');return}ltOpenBondModal(c)}},[el('div',{className:'companionIcon'},lock?'❔':c.icon),el('div',{className:'companionName'},lock?'まだ ひみつ':c.name+(isSelected?' ♥':'')),el('div',{className:'companionStage'},lock?'':`せいちょう ${st}/3`),lock?null:el('div',{className:'ltBondMini'},`${ltBondHearts(c.id)} ${days}にち`)])})));
+ return wrap
+};
+
+function ltRenderSticker(a,newly){
+ const col=ltCollectionState(),unlocked=col.unlocked.includes(a.id),selected=col.selectedTitle===a.id;
+ return el('button',{className:`ltSticker ${unlocked?'':'locked'} ${selected?'selected':''} ${newly.has(a.id)?'new':''}`,onclick:()=>unlocked?ltSetTitle(a.id):showToast(a.hint)},[newly.has(a.id)?el('div',{className:'ltNewBadge'},'NEW'):null,el('div',{className:'ltStickerIcon'},unlocked?a.icon:'❔'),el('div',{className:'ltStickerName'},unlocked?a.name:'まだ ひみつの シール'),el('div',{className:'ltStickerTitle'},unlocked?`しょうごう「${a.title}」`:'🔒'),el('div',{className:'ltStickerHint'},unlocked?(selected?'いま つけている':'タップで しょうごうにする'):a.hint)])
+}
+function renderCollection(){
+ ltRefreshAchievements();const col=ltCollectionState(),defs=ltAchievementDefinitions(),newly=new Set(col.unlocked.filter(id=>!col.seen.includes(id))),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('シールと しょうごう'));
+ wrap.appendChild(el('div',{className:'ltCollectionHero'},[el('h2',{},'🏅 がんばった 足あとずかん'),el('p',{},'せいかいの数だけでなく、つづけた日、まち、なかまとの時間も シールになります。シールに強さの差は ありません。'),el('div',{className:'ltSelectedTitle'},['いまの しょうごう',el('b',{},`「${ltSelectedTitle()}」`),el('div',{className:'small'},`${col.unlocked.length}/${defs.length}まい あつめたよ`)]) ]));
+ [...new Set(defs.map(x=>x.group))].forEach(group=>{const rows=defs.filter(x=>x.group===group),got=rows.filter(x=>col.unlocked.includes(x.id)).length;wrap.appendChild(el('div',{className:'ltCollectionGroup'},[el('div',{className:'ltCollectionGroupTitle'},[group,el('span',{className:'small'},`${got}/${rows.length}`)]),el('div',{className:'ltStickerGrid'},rows.map(a=>ltRenderSticker(a,newly))) ]))});
+ col.seen=[...new Set([...col.seen,...col.unlocked])].slice(-100);save();return wrap
+}
+function ltRenderCollectionHomeCard(){const col=ltCollectionState(),defs=ltAchievementDefinitions(),newCount=col.unlocked.filter(x=>!col.seen.includes(x)).length;return el('div',{className:'section ltCollectionHomeCard'},el('div',{className:'ltCollectionHomeRow'},[el('div',{className:'ltCollectionHomeIcon'},newCount?'🎖️':'🏅'),el('div',{className:'ltCollectionHomeMain'},[el('b',{},newCount?`新しい シールが ${newCount}まい あるよ！`:'シールと しょうごう'),el('span',{},`${col.unlocked.length}/${defs.length}まい　いま「${ltSelectedTitle()}」`)]),el('button',{className:'ghost',onclick:()=>{state.screen='collection';render()}},newCount?'みる':'ずかん')]))}
+
+const r4BaseSave=save;
+save=function(){ensureLongTermState();ltRefreshAchievements();return r4BaseSave()};
+const r4BaseRenderHome=renderHome;
+renderHome=function(){
+ ltRefreshAchievements();const wrap=r4BaseRenderHome(),profile=wrap.querySelector('.profileMain'),name=profile?.querySelector('.profileName');if(name)name.insertAdjacentElement('afterend',el('div',{className:'ltProfileTitle'},`🏅 ${ltSelectedTitle()}`));
+ const hold=wrap.querySelector('.parentHold'),card=ltRenderCollectionHomeCard();wrap.insertBefore(card,hold||null);return wrap
+};
+const r4BaseRenderResult=renderResult;
+renderResult=function(){
+ const wrap=r4BaseRenderResult(),cb=ltBondState(),p=cb.pendingCelebration;if(p&&state.quiz?.newlyCompleted){const c=COMPANIONS.find(x=>x.id===p.companionId)||COMPANIONS[0],card=el('div',{className:'section ltBondCelebrate'},[el('div',{className:'ltBondCelebrateIcon'},c.icon),el('h3',{},`${c.name}と「${p.name}」になったよ！`),el('div',{className:'ltBondHearts'},ltBondHearts(c.id)),el('p',{},`いっしょに ぼうけんした日 ${p.days}にち。なかよしの 足あとが シールずかんにも のこります。`)]);wrap.insertBefore(card,wrap.lastChild);cb.pendingCelebration=null;save()}return wrap
+};
+const r4BaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=r4BaseDiagnostics(),cb=ltBondState(),col=ltCollectionState(),c=ltSelectedCompanion();rows.push({name:'なかよし度',ok:true,text:`現在の相棒は${c.name}。相棒ごとの学習完了日数を独立保存し、二重加算を日付で防止しています。合計 ${Object.values(cb.days).reduce((a,b)=>a+(Number(b)||0),0)}日。`});rows.push({name:'シール・称号図鑑',ok:true,text:`解除 ${col.unlocked.length}/${ltAchievementDefinitions().length}、選択中「${ltSelectedTitle()}」。解除済みシールは条件値が変化しても保持されます。`});return rows};
+const r4BaseRender=render;
+render=function(){ensureLongTermState();ltRefreshAchievements();if(state.screen==='collection'){const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderCollection());return}return r4BaseRender()};
+
+
+/* ================= Ver.1.4.0 candidate R5: crystal fragments and cycle crystals ================= */
+APP.version='1.4.0';
+const LT_CRYSTAL_PIECES=4;
+const LT_CRYSTALS=[
+ {id:'pink',name:'さくらの クリスタル',color:'pink',icon:'◆'},
+ {id:'red',name:'ほのおの クリスタル',color:'red',icon:'◆'},
+ {id:'yellow',name:'たいようの クリスタル',color:'yellow',icon:'◆'},
+ {id:'green',name:'わかばの クリスタル',color:'green',icon:'◆'},
+ {id:'blue',name:'そらの クリスタル',color:'blue',icon:'◆'},
+ {id:'indigo',name:'うみの クリスタル',color:'indigo',icon:'◆'},
+ {id:'purple',name:'おつきさまの クリスタル',color:'purple',icon:'◆'}
+];
+const LT_SPECIAL_CRYSTALS=[
+ {id:'forest',theme:'ほしの もり',name:'ほしの もりの クリスタル',icon:'🌟'},
+ {id:'seaside',theme:'うみべの まち',name:'うみの しずくクリスタル',icon:'🫧'},
+ {id:'moonvalley',theme:'つきの たに',name:'つきあかりの クリスタル',icon:'🌙'},
+ {id:'cloudcastle',theme:'くもの おしろ',name:'そらぐもの クリスタル',icon:'☁️'}
+];
+let ltCrystalCompletionInProgress=false;
+function ltCrystalCountThrough(total,index){total=Math.max(0,Math.floor(Number(total)||0));return total<=index?0:Math.floor((total-1-index)/LT_CRYSTALS.length)+1}
+function ltSpecialCountThrough(cycles,index){cycles=Math.max(0,Math.floor(Number(cycles)||0));return cycles<=index?0:Math.floor((cycles-1-index)/LT_SPECIAL_CRYSTALS.length)+1}
+function ltCrystalForSession(session){return LT_CRYSTALS[(Math.max(1,session)-1)%LT_CRYSTALS.length]}
+function ltSpecialForCycle(cycle){return LT_SPECIAL_CRYSTALS[(Math.max(1,cycle)-1)%LT_SPECIAL_CRYSTALS.length]}
+function ltNormalizeCrystalState(lt){
+ if(!lt.crystalCollection||typeof lt.crystalCollection!=='object')lt.crystalCollection={};
+ const cc=lt.crystalCollection;
+ if(!cc.shards||typeof cc.shards!=='object')cc.shards={};
+ LT_CRYSTALS.forEach(x=>{const n=Number(cc.shards[x.id]);cc.shards[x.id]=Math.max(0,Math.floor(Number.isFinite(n)?n:0))});
+ if(!cc.special||typeof cc.special!=='object')cc.special={};
+ LT_SPECIAL_CRYSTALS.forEach(x=>{const n=Number(cc.special[x.id]);cc.special[x.id]=Math.max(0,Math.floor(Number.isFinite(n)?n:0))});
+ const shardSum=Object.values(cc.shards).reduce((a,b)=>a+(Number(b)||0),0);
+ if(!Number.isFinite(Number(cc.creditedSessions)))cc.creditedSessions=shardSum>0?Math.max(0,state.totalSessions||0):0;
+ cc.creditedSessions=Math.max(0,Math.floor(Number(cc.creditedSessions)||0));
+ const specialSum=Object.values(cc.special).reduce((a,b)=>a+(Number(b)||0),0);
+ if(!Number.isFinite(Number(cc.creditedCycles)))cc.creditedCycles=specialSum>0?Math.floor((state.totalSessions||0)/LT_MAP_DAYS):0;
+ cc.creditedCycles=Math.max(0,Math.floor(Number(cc.creditedCycles)||0));
+ if(!Object.prototype.hasOwnProperty.call(cc,'pendingShard'))cc.pendingShard=null;
+ if(!Object.prototype.hasOwnProperty.call(cc,'pendingSpecial'))cc.pendingSpecial=null;
+ return cc
+}
+function ltCatchUpCrystalsRaw(cc,targetSessions,targetCycles){
+ targetSessions=Math.max(0,Math.floor(Number(targetSessions)||0));targetCycles=Math.max(0,Math.floor(Number(targetCycles)||0));
+ if(targetSessions>cc.creditedSessions){
+  LT_CRYSTALS.forEach((x,i)=>{const delta=ltCrystalCountThrough(targetSessions,i)-ltCrystalCountThrough(cc.creditedSessions,i);if(delta>0)cc.shards[x.id]=(cc.shards[x.id]||0)+delta});
+  cc.creditedSessions=targetSessions;
+ }
+ if(targetCycles>cc.creditedCycles){
+  LT_SPECIAL_CRYSTALS.forEach((x,i)=>{const delta=ltSpecialCountThrough(targetCycles,i)-ltSpecialCountThrough(cc.creditedCycles,i);if(delta>0)cc.special[x.id]=(cc.special[x.id]||0)+delta});
+  cc.creditedCycles=targetCycles;
+ }
+}
+const r5BaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){
+ const lt=r5BaseEnsureLongTermState();lt.version=5;const cc=ltNormalizeCrystalState(lt);
+ if(!ltCrystalCompletionInProgress)ltCatchUpCrystalsRaw(cc,state.totalSessions||0,Math.floor((state.totalSessions||0)/LT_MAP_DAYS));
+ return lt
+};
+function ltCrystalState(){return ensureLongTermState().crystalCollection}
+function ltCrystalShardCount(id){return Math.max(0,Number(ltCrystalState().shards[id])||0)}
+function ltCrystalRank(id){return Math.floor(ltCrystalShardCount(id)/LT_CRYSTAL_PIECES)}
+function ltCrystalPieceProgress(id){return ltCrystalShardCount(id)%LT_CRYSTAL_PIECES}
+function ltCompletedCrystalCount(){return LT_CRYSTALS.filter(x=>ltCrystalRank(x.id)>=1).length}
+function ltTotalCrystalShards(){return LT_CRYSTALS.reduce((a,x)=>a+ltCrystalShardCount(x.id),0)}
+function ltSpecialCrystalTotal(){const cc=ltCrystalState();return LT_SPECIAL_CRYSTALS.reduce((a,x)=>a+(Number(cc.special[x.id])||0),0)}
+function ltSpecialCrystalKinds(){const cc=ltCrystalState();return LT_SPECIAL_CRYSTALS.filter(x=>(cc.special[x.id]||0)>0).length}
+function ltAwardCrystalSessionRaw(cc,session){
+ const def=ltCrystalForSession(session),before=Number(cc.shards[def.id])||0,after=before+1;cc.shards[def.id]=after;cc.creditedSessions=Math.max(cc.creditedSessions,session);
+ cc.pendingShard={id:def.id,session,count:after,progress:after%LT_CRYSTAL_PIECES===0?LT_CRYSTAL_PIECES:after%LT_CRYSTAL_PIECES,completed:after%LT_CRYSTAL_PIECES===0,rank:Math.floor(after/LT_CRYSTAL_PIECES),at:Date.now()};
+}
+function ltAwardSpecialCycleRaw(cc,cycle){
+ const def=ltSpecialForCycle(cycle);cc.special[def.id]=(Number(cc.special[def.id])||0)+1;cc.creditedCycles=Math.max(cc.creditedCycles,cycle);cc.pendingSpecial={id:def.id,cycle,count:cc.special[def.id],at:Date.now()};
+}
+const r5BaseCompleteDailyIfNeeded=completeDailyIfNeeded;
+completeDailyIfNeeded=function(){
+ ensureLongTermState();let completed=false;ltCrystalCompletionInProgress=true;
+ try{completed=r5BaseCompleteDailyIfNeeded()}finally{ltCrystalCompletionInProgress=false}
+ if(!completed)return false;
+ const cc=ltNormalizeCrystalState(state.longTerm),sessions=Math.max(0,state.totalSessions||0),cycles=Math.floor(sessions/LT_MAP_DAYS);
+ if(sessions>cc.creditedSessions)ltAwardCrystalSessionRaw(cc,sessions);
+ if(cycles>cc.creditedCycles)ltAwardSpecialCycleRaw(cc,cycles);
+ ltRefreshAchievements();return true
+};
+function ltShardPieces(def,count,overrideProgress=null){
+ const progress=overrideProgress==null?count%LT_CRYSTAL_PIECES:Math.max(0,Math.min(LT_CRYSTAL_PIECES,Number(overrideProgress)||0));
+ return el('div',{className:'ltShardPieces'},Array.from({length:LT_CRYSTAL_PIECES},(_,i)=>el('span',{className:`ltShardPiece ${i<progress?'on':''} ${def.color}`},'◆')))
+}
+function ltRenderCrystalCard(def){
+ const count=ltCrystalShardCount(def.id),rank=Math.floor(count/LT_CRYSTAL_PIECES),progress=count%LT_CRYSTAL_PIECES,next=ltCrystalForSession((state.totalSessions||0)+1)?.id===def.id;
+ return el('div',{className:`ltCrystalCard ${rank?'complete':''} ${next?'current':''}`},[el('div',{className:`ltCrystalGem ${def.color} ${rank?'':'locked'}`},def.icon),el('div',{className:'ltCrystalName'},def.name),el('div',{className:'ltCrystalRank'},rank?`かがやき ${rank}　つぎ ${progress}/${LT_CRYSTAL_PIECES}`:`かけら ${progress}/${LT_CRYSTAL_PIECES}`),ltShardPieces(def,count)])
+}
+function ltRenderSpecialCard(def,currentId){
+ const count=Math.max(0,Number(ltCrystalState().special[def.id])||0),locked=count===0;
+ return el('div',{className:`ltSpecialCrystal ${locked?'locked':''} ${currentId===def.id?'current':''}`},[el('div',{className:'ltSpecialIcon'},locked?'❔':def.icon),el('div',{className:'ltSpecialName'},locked?'まだ ひみつの クリスタル':def.name),el('div',{className:'ltSpecialCount'},locked?`${def.theme}を 30にち あるくと ひらく`:count===1?'1こ みつけた':`かがやき ${count}`)])
+}
+function renderCrystalCollection(){
+ const cc=ltCrystalState(),status=ltMapStatus(),currentSpecial=ltSpecialForCycle(status.cycle),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('クリスタルずかん'));
+ wrap.appendChild(el('div',{className:'ltCrystalHero'},[el('h2',{},'💎 七色の かけらずかん'),el('p',{},'きょうの ぼうけんを おえると、7色の かけらを じゅんばんに ひとつ みつけます。4こで クリスタルが でき、そのあとも かがやきが そだちます。'),el('div',{className:'ltCrystalSummary'},[el('div',{},[el('b',{},`${ltCompletedCrystalCount()}/7`),'できた クリスタル']),el('div',{},[el('b',{},ltTotalCrystalShards()),'かけら']),el('div',{},[el('b',{},ltSpecialCrystalTotal()),'とくべつ クリスタル'])]) ]));
+ wrap.appendChild(el('div',{className:'ltCrystalGroup'},[el('div',{className:'ltCrystalGroupTitle'},['七色の クリスタル',el('span',{className:'small'},'4こで ひとつ できる')]),el('div',{className:'ltCrystalGrid'},LT_CRYSTALS.map(ltRenderCrystalCard))]));
+ wrap.appendChild(el('div',{className:'ltCrystalGroup'},[el('div',{className:'ltCrystalGroupTitle'},['30にちの とくべつクリスタル',el('span',{className:'small'},`${ltSpecialCrystalKinds()}/4しゅるい`)]),el('div',{className:'ltSpecialGrid'},LT_SPECIAL_CRYSTALS.map(x=>ltRenderSpecialCard(x,currentSpecial.id)))]));
+ wrap.appendChild(el('button',{className:'secondary section',onclick:()=>{state.screen='adventureMap';render()}},'🗺️ 30にちマップを みる'));return wrap
+}
+function ltRenderCrystalHomeCard(){
+ const next=ltCrystalForSession((state.totalSessions||0)+1),special=ltSpecialForCycle(ltMapStatus().cycle);
+ return el('div',{className:'section ltCrystalHomeCard'},el('div',{className:'ltCrystalHomeRow'},[el('div',{className:'ltCrystalHomeIcon'},'💎'),el('div',{className:'ltCrystalHomeMain'},[el('b',{},`七色の クリスタル ${ltCompletedCrystalCount()}/7`),el('span',{},`つぎは「${next.name}」の かけら。30にちで「${special.name}」が ひらくよ。`)]),el('button',{className:'ghost',onclick:()=>{state.screen='crystalCollection';render()}},'ずかん')]))
+}
+const r5BaseRenderLongTermMap=renderLongTermMap;
+renderLongTermMap=function(){
+ const wrap=r5BaseRenderLongTermMap(),status=ltMapStatus(),def=ltSpecialForCycle(status.cycle),count=Math.max(0,Number(ltCrystalState().special[def.id])||0),card=el('div',{className:'ltMapCrystal'},[el('div',{className:'ltMapCrystalIcon'},def.icon),el('div',{className:'ltMapCrystalMain'},[el('b',{},`${status.cycle}しゅうめの ごほうび　${def.name}`),el('span',{},status.completed>=30&&count?`30にちを あるききって、みつけたよ！ いま ${count}こ。`:`あと ${Math.max(0,30-status.completed)}にちで とくべつクリスタルが ひらくよ。`)])]);
+ const lastButton=[...wrap.querySelectorAll('button')].at(-1);if(lastButton)wrap.insertBefore(card,lastButton);else wrap.appendChild(card);return wrap
+};
+const r5BaseAchievementDefinitions=ltAchievementDefinitions;
+ltAchievementDefinitions=function(){return r5BaseAchievementDefinitions().concat([
+ {id:'crystalPiece1',group:'クリスタル',icon:'🔹',name:'はじめての かけらシール',title:'かけらの みつけ人',hint:'クリスタルの かけらを 1こ みつける',check:()=>ltTotalCrystalShards()>=1},
+ {id:'crystalSeven',group:'クリスタル',icon:'💎',name:'七色の クリスタルシール',title:'七色の クリスタルマスター',hint:'七色の クリスタルを ぜんぶ つくる',check:()=>ltCompletedCrystalCount()>=7},
+ {id:'specialCrystal1',group:'クリスタル',icon:'🌟',name:'とくべつクリスタルシール',title:'30にちの たからもの',hint:'30にちの とくべつクリスタルを 1こ みつける',check:()=>ltSpecialCrystalTotal()>=1},
+ {id:'specialCrystal4',group:'クリスタル',icon:'🔮',name:'四つの けしきクリスタル',title:'四つの けしきの まもり人',hint:'4しゅるいの とくべつクリスタルを みつける',check:()=>ltSpecialCrystalKinds()>=4}
+])};
+const r5BaseRenderHome=renderHome;
+renderHome=function(){
+ const wrap=r5BaseRenderHome(),hold=wrap.querySelector('.parentHold'),card=ltRenderCrystalHomeCard(),collection=wrap.querySelector('.ltCollectionHomeCard');if(collection)wrap.insertBefore(card,collection);else wrap.insertBefore(card,hold||null);return wrap
+};
+const r5BaseRenderResult=renderResult;
+renderResult=function(){
+ const wrap=r5BaseRenderResult(),cc=ltCrystalState();
+ if(state.quiz?.newlyCompleted&&cc.pendingShard){const p=cc.pendingShard,def=LT_CRYSTALS.find(x=>x.id===p.id)||LT_CRYSTALS[0],card=el('div',{className:'section ltCrystalCelebrate'},[el('div',{className:`ltCrystalCelebrateIcon ltCrystalGem ${def.color}`},'◆'),el('h3',{},p.completed?`${def.name}が できたよ！`:`${def.name}の かけらを みつけたよ！`),el('p',{},p.completed?`4この かけらが ひとつになりました。かがやき ${p.rank}になったよ。`:`かけらは ${p.progress}/${LT_CRYSTAL_PIECES}。あと ${LT_CRYSTAL_PIECES-p.progress}こで クリスタルになります。`),ltShardPieces(def,p.count,p.progress)]);wrap.insertBefore(card,wrap.lastChild);cc.pendingShard=null}
+ if(state.quiz?.newlyCompleted&&cc.pendingSpecial){const p=cc.pendingSpecial,def=LT_SPECIAL_CRYSTALS.find(x=>x.id===p.id)||LT_SPECIAL_CRYSTALS[0],card=el('div',{className:'section ltCrystalCelebrate'},[el('div',{className:'ltCrystalCelebrateIcon'},def.icon),el('h3',{},`${def.name}を みつけたよ！`),el('p',{},`${p.cycle}しゅうめの 30にちを あるききった しるしです。クリスタルずかんに のこりました。`) ]);wrap.insertBefore(card,wrap.lastChild);cc.pendingSpecial=null}
+ save();return wrap
+};
+const r5BaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=r5BaseDiagnostics(),cc=ltCrystalState();rows.push({name:'クリスタルの かけら',ok:true,text:`7色を固定順で付与。記録済み ${cc.creditedSessions}日、かけら ${ltTotalCrystalShards()}個、完成 ${ltCompletedCrystalCount()}/7。整数カウンタのみ保存しています。`});rows.push({name:'30日特別クリスタル',ok:true,text:`記録済み ${cc.creditedCycles}周、特別クリスタル ${ltSpecialCrystalTotal()}個・${ltSpecialCrystalKinds()}/4種類。旧セーブはtotalSessionsから自動補完します。`});return rows};
+const r5BaseRender=render;
+render=function(){ensureLongTermState();ltRefreshAchievements();if(state.screen==='crystalCollection'){const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderCrystalCollection());return}return r5BaseRender()};
+
+
+/* ================= Ver.1.4.0 candidate R6: cycle stories and journey events ================= */
+APP.version='1.4.0';
+const LT_JOURNEY_DAYS=[1,7,14,21,28,30];
+const LT_JOURNEY_THEME_DATA=[
+ {key:'forest',name:'ほしの もり',icon:'🌲',treasure:'ほしの たねの たからばこ',gate:'こもれびの もん',festival:'もりの にじまつり',chapters:[
+  {title:'もりへ かえる みち',pages:['にじの王国を ひとまわりした あと、なつかしい もりの においが してきました。','まえに とおった みちなのに、木の えだには あたらしい 星の実が なっています。','ルミは いいました。\n「おなじ ばしょでも、また くると ちがう ひかりが みえるね」']},
+  {title:'ほしの たね',pages:['もりの じめんに、小さな 金色の たねが おちていました。','フローラが そっと 土を かけ、みんなで 一日ひとつずつ 水を あげました。','七日めの 朝、たねから 星のかたちの ふたばが ひらきました。']},
+  {title:'きつねの あんない',pages:['夕方の もりで、きつねの子が まよっていました。','ミントが 月の ほうこうを たしかめ、あなたは 木についた しるしを じゅんばんに みつけました。','きつねの子は ぶじに おうちへ かえり、しっぽを ふって おれいを いいました。']},
+  {title:'よるの おと',pages:['夜の もりには、昼には きこえない 音が あります。','ふくろうの 声、葉っぱの こすれる音、小川の さらさらした音。','ピピが 小さく うたうと、いろいろな 音が ひとつの やさしい うたに なりました。']},
+  {title:'木のみの おまつり',pages:['コロンは、かたちの ちがう 木のみを たくさん あつめました。','丸いもの、長いもの、ぼうしを かぶったものを みんなで わけて ならべます。','ならべた 木のみは 大きな 星の もようになり、もりの おまつりが はじまりました。']},
+  {title:'もりの あたらしい ページ',pages:['三十日め、えほんの いえに もりの なかまたちが あつまりました。','白紙だった ページには、まえとは ちがう もりの けしきが いっぱいに かかれています。','「おわった おはなしも、また そだつんだね」\nララは うれしそうに 本を とじました。']}
+ ]},
+ {key:'sea',name:'うみべの まち',icon:'🐚',treasure:'かいがらの たからばこ',gate:'しおかぜの もん',festival:'みなとの にじまつり',chapters:[
+  {title:'しおかぜの てがみ',pages:['にじの王国に 色が もどった つぎの朝、まどから 青い てがみが とんできました。','てがみには「うみべの まちで、音を なくした かねを さがして」と かいてあります。','あなたと ルミは、白い みちを こえて はじめての うみへ むかいました。']},
+  {title:'まいごの かいがら',pages:['すなはまに、しましまの かいがらが ひとつだけ おちていました。','「なかまの ところへ かえりたい」と、小さな 波の音が きこえます。','色と かたちを よく みくらべると、おなじ もようの かいがらが 岩かげで まっていました。']},
+  {title:'ひかる とうだい',pages:['夜に なると、みなとの とうだいが くらく なってしまいました。','コロンが かいだんの 数を かぞえ、あなたは 一だんずつ 星の ランプを ともします。','いちばん 上の ランプが ひかると、遠くの ふねが 安心して みなとへ かえってきました。']},
+  {title:'くじらの うた',pages:['沖の ほうから、低くて やさしい うたが きこえました。','ピピが「Hello!」と よびかけると、大きな くじらが 水から 顔を だします。','ことばが ちがっても、同じ リズムで うたうと、海いっぱいに にじの 波が ひろがりました。']},
+  {title:'おまつりの じゅんび',pages:['うみべの まちは、三十日めの おまつりの じゅんびで おおいそがしです。','ララは かんばんを よみ、ミントは みちを しらべ、モコは 雨が ふらないように そっと 風を はこびました。','できることを ひとつずつ もちよると、みなとの 広場が 七色に かざられました。']},
+  {title:'七色の みなと',pages:['三十日めの 夕方、なくしていた みなとの かねが とうだいの 下で みつかりました。','かねを ならすと、ふねも 鳥も まちの なかまも、みんな 広場へ あつまります。','海の 上に 大きな にじが かかり、あたらしい 旅の 一ページが できました。']}
+ ]},
+ {key:'moon',name:'つきの たに',icon:'🌙',treasure:'ほしずなの たからばこ',gate:'つきかげの もん',festival:'つきあかりの にじまつり',chapters:[
+  {title:'つきの たにの よる',pages:['うみべの まちを 出ると、空が だんだん むらさき色に かわりました。','山の あいだに、月の ひかりだけで みちが みえる たにが あります。','アクアは 小さな つばさを ひろげ、月の みちを さきに すすみました。']},
+  {title:'ほしずなの みち',pages:['たにの じめんには、きらきらした ほしずなが ちらばっています。','でも、みちを まちがえると ほしずなは すぐに きえてしまいます。','あなたが 数の じゅんばんを たしかめると、正しい みちだけが 金色に ひかりました。']},
+  {title:'うさぎの とけい',pages:['月の うさぎが、大きな とけいの 前で こまっていました。','長い はりと 短い はりが、夜と 朝を まちがえているのです。','みんなで 時こくを なおすと、たにに 朝の 花と 夜の 花が じゅんばんに ひらきました。']},
+  {title:'ねむった つきばな',pages:['たにの いちばん おくに、つぼみの まま ねむる つきばなが ありました。','フローラは「いそがせなくて いいよ」と いい、毎日 少しずつ 水を あげます。','二十一日めの 夜、花は じぶんの ちょうどよい 時に、白い ひかりを まとって ひらきました。']},
+  {title:'かげと ともだち',pages:['月が 明るい ほど、じめんの かげは くっきり のびます。','モコは じぶんの 大きな かげを こわがりましたが、あなたが 手を ふると かげも いっしょに 手を ふりました。','「こわいものも、よく みると ぼくの 一ぶなんだね」\nモコは かげと ならんで あるきました。']},
+  {title:'つきあかりの しゅくさい',pages:['三十日め、たにの みんなが 月の ひろばへ あつまりました。','つきばな、ほしずな、とけいの 音が ひとつになり、空へ 七色の 光を おくります。','月は いつもより 大きく かがやき、つぎの 空の みちを てらしました。']}
+ ]},
+ {key:'cloud',name:'くもの おしろ',icon:'☁️',treasure:'ふわふわぐもの たからばこ',gate:'そよかぜの もん',festival:'そらの にじまつり',chapters:[
+  {title:'そらの かいだん',pages:['つきの たにの 上に、雲で できた 白い かいだんが あらわれました。','一だん のぼるたびに、下の けしきが 小さく なっていきます。','アクアと 手を つなぎ、あなたは 雲の 上の おしろへ たどりつきました。']},
+  {title:'ふうせん ゆうびん',pages:['くもの おしろでは、てがみを ふうせんに つけて とどけます。','ところが 風むきが かわり、てがみが ちがう へやへ とんでいきました。','ミントが 矢じるしを よみ、あなたが 名前を たしかめると、ぜんぶ 正しい 人へ とどきました。']},
+  {title:'かみなりの 子',pages:['くらい 雲の 中から、小さな かみなりの子が 顔を だしました。','大きな 音を だして みんなを おどろかせるので、ひとりぼっちに なっていたのです。','ピピが 小さな 音から いっしょに れんしゅうすると、かみなりは おまつりの たいこに かわりました。']},
+  {title:'くもの としょかん',pages:['おしろの いちばん 高い へやには、雲で できた 本が ならんでいます。','本を ひらくと、きのうの 空や ずっと むかしの 雨が えのように うかびました。','ララは「わすれたくない 日は、本に しなくても 心に のこるね」と いいました。']},
+  {title:'にじの はし',pages:['おしろと 王国の あいだに、まだ はしが ありません。','みんなが あつめた 七色の クリスタルを ひとつずつ ならべると、空に にじの はしが のびました。','はしは だれかが 一もん がんばるたび、少しずつ つよく なりました。']},
+  {title:'そらの おしろの あさ',pages:['三十日めの 朝、雲の おしろから 王国ぜんぶが 見えました。','もり、うみ、月の たに、そして これから 行く まだ しらない ばしょ。','ルミは いいました。\n「ここまで きたから おわりじゃないよ。見える せかいが ふえたんだよ」']}
+ ]}
+];
+Object.assign(V11_RUBY,{'王国':'おうこく','朝':'あさ','金色':'きんいろ','夕方':'ゆうがた','岩':'いわ','安心':'あんしん','沖':'おき','低':'ひく','水':'みず','顔':'かお','広場':'ひろば','空':'そら','月':'つき','山':'やま','正':'ただ','夜':'よる','花':'はな','一ぶ':'いちぶ','手':'て','白':'しろ','名前':'なまえ','人':'ひと','雨':'あめ','高':'たか','本':'ほん','心':'こころ','日':'ひ','行':'い','見':'み','大':'おお','小':'ちい','長':'なが','短':'みじか'});
+function ltJourneyThemeInfo(cycle){cycle=Math.max(1,Math.floor(Number(cycle)||1));const theme=LT_JOURNEY_THEME_DATA[(cycle-1)%LT_JOURNEY_THEME_DATA.length],visit=Math.floor((cycle-1)/LT_JOURNEY_THEME_DATA.length)+1;return {...theme,cycle,visit}}
+function ltJourneyCycleCompleted(cycle){const total=Math.max(0,state.totalSessions||0),start=(Math.max(1,cycle)-1)*LT_MAP_DAYS;return Math.max(0,Math.min(LT_MAP_DAYS,total-start))}
+function ltJourneyStoryId(cycle,index){return `journey:${cycle}:${index}`}
+function ltJourneyStoryParts(id){const m=String(id||'').match(/^journey:(\d+):(\d+)$/);return m?{cycle:Number(m[1]),index:Number(m[2])}:null}
+function ltJourneyStoryObject(id){const p=ltJourneyStoryParts(id);if(!p||p.cycle<2||p.index<0||p.index>=LT_JOURNEY_DAYS.length)return null;const info=ltJourneyThemeInfo(p.cycle),base=info.chapters[p.index];if(!base)return null;const repeat=info.visit>1,prefix=repeat?`${info.visit}かいめの `:'';const pages=repeat?[`${info.name}へ また もどってきました。まえの 旅で みつけた ひかりは のこり、こんどは ちがう 小さな へんかを さがします。`,...base.pages]:[...base.pages];return {id,title:`${prefix}${base.title}`,pages,cycle:p.cycle,index:p.index,day:LT_JOURNEY_DAYS[p.index],theme:info.name,icon:info.icon,visit:info.visit}}
+const r6BaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){const lt=r6BaseEnsureLongTermState();lt.version=6;if(!lt.cycleStories||typeof lt.cycleStories!=='object')lt.cycleStories={};const cs=lt.cycleStories;if(!Array.isArray(cs.read))cs.read=[];cs.read=[...new Set(cs.read.filter(x=>ltJourneyStoryParts(x)))].slice(-96);if(typeof cs.pendingId!=='string'||!ltJourneyStoryParts(cs.pendingId))cs.pendingId=null;if(!Number.isFinite(Number(cs.totalRead)))cs.totalRead=cs.read.length;cs.totalRead=Math.max(cs.read.length,Number(cs.totalRead)||0);return lt};
+function ltJourneyState(){return ensureLongTermState().cycleStories}
+function ltJourneyIsRead(id){return ltJourneyState().read.includes(id)}
+function ltJourneyUnlocked(cycle){const completed=ltJourneyCycleCompleted(cycle);return LT_JOURNEY_DAYS.map((day,index)=>({day,index,id:ltJourneyStoryId(cycle,index),story:ltJourneyStoryObject(ltJourneyStoryId(cycle,index)),unlocked:day<=completed})).filter(x=>x.story)}
+function ltJourneyNextUnread(cycle=ltMapStatus().cycle){return ltJourneyUnlocked(cycle).find(x=>x.unlocked&&!ltJourneyIsRead(x.id))||null}
+function ltJourneyNextScheduled(cycle=ltMapStatus().cycle){const completed=ltJourneyCycleCompleted(cycle);const index=LT_JOURNEY_DAYS.findIndex(d=>d>completed);return index<0?null:{day:LT_JOURNEY_DAYS[index],index,id:ltJourneyStoryId(cycle,index),story:ltJourneyStoryObject(ltJourneyStoryId(cycle,index))}}
+function ltOpenJourneyStory(id){const story=ltJourneyStoryObject(id);if(!story)return;state.currentStoryId=id;state.storyPage=0;state.screen='story';save();render()}
+const r6BaseOpenStory=openStory;
+openStory=function(id){if(ltJourneyStoryObject(id)){ltOpenJourneyStory(id);return}return r6BaseOpenStory(id)};
+const r6BaseStoryObject=storyObject;
+storyObject=function(){return ltJourneyStoryObject(state.currentStoryId)||r6BaseStoryObject()};
+const r6BaseFinishStory=finishStory;
+finishStory=function(){const id=state.currentStoryId;if(ltJourneyStoryObject(id)){const cs=ltJourneyState();if(!cs.read.includes(id)){cs.read.push(id);cs.read=cs.read.slice(-96);cs.totalRead++}if(cs.pendingId===id)cs.pendingId=null;state.currentStoryId=null;state.storyPage=0;state.screen='home';ltRefreshAchievements();save();render();return}return r6BaseFinishStory()};
+const r6BaseRenderStory=renderStory;
+renderStory=function(){const wrap=r6BaseRenderStory();const story=ltJourneyStoryObject(state.currentStoryId);if(story){const kicker=wrap.querySelector('.storyKicker');if(kicker)kicker.textContent=`JOURNEY STORY　${story.cycle}しゅうめ・${story.day}にちめ`;const title=wrap.querySelector('.topTitle');if(title)title.textContent=story.theme+'の おはなし'}return wrap};
+const r6BaseLtMapMark=ltMapMark;
+ltMapMark=function(day,cycle){if(cycle>=2&&LT_JOURNEY_DAYS.includes(day)&&day!==30)return '📖';return r6BaseLtMapMark(day,cycle)};
+const r6BaseLtMapEventLabel=ltMapEventLabel;
+ltMapEventLabel=function(day,cycle){if(cycle<2)return r6BaseLtMapEventLabel(day,cycle);const info=ltJourneyThemeInfo(cycle),index=LT_JOURNEY_DAYS.indexOf(day);if(day===30)return `${info.festival}と さいごの おはなし`;if(index>=0)return `おはなし「${info.chapters[index].title}」`;if(day%5===0&&day<=20)return info.gate;if(day%3===0)return info.treasure;return 'つぎの 一歩'};
+function ltJourneyRenderPanel(cycle=ltMapStatus().cycle){const info=ltJourneyThemeInfo(cycle),completed=ltJourneyCycleCompleted(cycle),chapters=ltJourneyUnlocked(cycle),unread=ltJourneyNextUnread(cycle),next=ltJourneyNextScheduled(cycle);const panel=el('div',{className:'ltJourneyPanel'},[el('div',{className:'ltJourneyPanelHead'},[el('div',{className:'ltJourneyPanelIcon'},info.icon),el('div',{className:'ltJourneyPanelMain'},[el('b',{},`${cycle}しゅうめ　${info.name}の おはなし`),el('span',{},unread?'よめる おはなしが あるよ。':next?`つぎの おはなしは ${next.day}にちめ。`:'6つの おはなしが ぜんぶ ひらいたよ。')])]),el('div',{className:'ltJourneyChapters'},chapters.map(x=>el('button',{className:`ltJourneyChapter ${x.unlocked?'':'locked'} ${x.unlocked&&!ltJourneyIsRead(x.id)?'new':''}`,onclick:()=>x.unlocked?ltOpenJourneyStory(x.id):showToast(`${x.day}にちめに ひらくよ`)},[el('div',{className:'ltJourneyChapterIcon'},x.unlocked?(ltJourneyIsRead(x.id)?'📘':'📕'):'🔒'),el('div',{className:'ltJourneyChapterDay'},`${x.day}にちめ`),el('div',{className:'ltJourneyChapterName'},x.unlocked?x.story.title:'まだ ひみつ')])))]);return panel}
+const r6BaseRenderLongTermMap=renderLongTermMap;
+renderLongTermMap=function(){const wrap=r6BaseRenderLongTermMap(),status=ltMapStatus();if(status.cycle>=2){const panel=ltJourneyRenderPanel(status.cycle),crystal=wrap.querySelector('.ltMapCrystal'),last=[...wrap.querySelectorAll('button')].at(-1);if(crystal)wrap.insertBefore(panel,crystal);else if(last)wrap.insertBefore(panel,last);else wrap.appendChild(panel)}else if(status.completed>=30){const preview=ltJourneyThemeInfo(2),panel=el('div',{className:'ltJourneyPanel'},[el('div',{className:'ltJourneyPanelHead'},[el('div',{className:'ltJourneyPanelIcon'},preview.icon),el('div',{className:'ltJourneyPanelMain'},[el('b',{},`つぎの たび　${preview.name}`),el('span',{},'あしたの ぼうけんを おえると、2しゅうめの さいしょの おはなしが ひらくよ。')])])]);const crystal=wrap.querySelector('.ltMapCrystal'),last=[...wrap.querySelectorAll('button')].at(-1);if(crystal)wrap.insertBefore(panel,crystal);else if(last)wrap.insertBefore(panel,last);else wrap.appendChild(panel)}return wrap};
+function ltJourneyHomeTarget(){const status=ltMapStatus();if(status.cycle===1&&status.completed<30)return null;if(status.cycle===1&&status.completed===30)return {cycle:2,preview:true,info:ltJourneyThemeInfo(2)};const unread=ltJourneyNextUnread(status.cycle),next=ltJourneyNextScheduled(status.cycle);return {cycle:status.cycle,preview:false,info:ltJourneyThemeInfo(status.cycle),unread,next}}
+function ltRenderJourneyHomeCard(){const target=ltJourneyHomeTarget();if(!target)return null;const {info}=target;let title,sub,action;if(target.preview){title=`つぎは ${info.name}`;sub='あした、2しゅうめの さいしょの おはなしが ひらくよ。';action=()=>{state.screen='adventureMap';render()}}else if(target.unread){title=`NEW　${target.unread.story.title}`;sub=`${target.cycle}しゅうめ・${target.unread.day}にちめの おはなし。`;action=()=>ltOpenJourneyStory(target.unread.id)}else if(target.next){title=`${info.name}の つぎの おはなし`;sub=`${target.next.day}にちめに「${target.next.story.title}」が ひらくよ。`;action=()=>{state.screen='adventureMap';render()}}else{title=`${info.name}の おはなし 6/6`;sub='よんだ おはなしは、本だなで いつでも よみかえせるよ。';action=()=>{state.screen='books';render()}}return el('div',{className:'section ltJourneyHomeCard'},el('div',{className:'ltJourneyHomeRow'},[el('div',{className:'ltJourneyHomeIcon'},info.icon),el('div',{className:'ltJourneyHomeMain'},[el('b',{},title),el('span',{},sub)]),el('button',{className:'ghost',onclick:action},target.unread?'よむ':target.preview?'みる':target.next?'マップ':'本だな')]))}
+const r6BaseRenderHome=renderHome;
+renderHome=function(){const wrap=r6BaseRenderHome(),card=ltRenderJourneyHomeCard();if(card){const crystal=wrap.querySelector('.ltCrystalHomeCard'),collection=wrap.querySelector('.ltCollectionHomeCard'),hold=wrap.querySelector('.parentHold');if(crystal)wrap.insertBefore(card,crystal);else if(collection)wrap.insertBefore(card,collection);else wrap.insertBefore(card,hold||null)}return wrap};
+const r6BaseCompleteDailyIfNeeded=completeDailyIfNeeded;
+completeDailyIfNeeded=function(){ensureLongTermState();const completed=r6BaseCompleteDailyIfNeeded();if(!completed)return false;const status=ltMapStatus(),index=LT_JOURNEY_DAYS.indexOf(status.completed);if(status.cycle>=2&&index>=0){const id=ltJourneyStoryId(status.cycle,index);if(!ltJourneyIsRead(id))ltJourneyState().pendingId=id}return true};
+const r6BaseRenderResult=renderResult;
+renderResult=function(){const wrap=r6BaseRenderResult(),cs=ltJourneyState(),story=ltJourneyStoryObject(cs.pendingId);if(state.quiz?.newlyCompleted&&story){const card=el('div',{className:'section ltJourneyResult'},[el('div',{className:'ltJourneyResultIcon'},story.icon),el('h3',{},`あたらしい おはなし「${story.title}」`),el('p',{},`${story.cycle}しゅうめ・${story.day}にちめ。${story.theme}で、新しい できごとが はじまったよ。`),el('button',{className:'secondary',style:{marginTop:'10px'},onclick:()=>ltOpenJourneyStory(story.id)},'📖 おはなしを よむ')]);wrap.insertBefore(card,wrap.lastChild)}return wrap};
+function ltJourneyShelfCycles(){const current=ltMapStatus().cycle;if(current<2)return [];const cycles=[];for(let c=2;c<=Math.min(current,4);c++)cycles.push(c);if(current>=5){for(let c=Math.max(5,current-1);c<=current;c++)if(!cycles.includes(c))cycles.push(c)}return cycles}
+const r6BaseRenderBooks=renderBooks;
+renderBooks=function(){const wrap=r6BaseRenderBooks(),cycles=ltJourneyShelfCycles();if(!cycles.length)return wrap;const shelf=el('div',{className:'ltJourneyShelf'},[el('div',{className:'ltJourneyShelfHead'},[el('h3',{},'🗺️ 30にちの たびの 本だな'),el('p',{},'2しゅうめからの おはなしです。おなじ けしきに また きたときも、その しゅうの ページとして のこります。')])]);cycles.forEach(cycle=>{const info=ltJourneyThemeInfo(cycle),completed=ltJourneyCycleCompleted(cycle),read=ltJourneyUnlocked(cycle).filter(x=>x.unlocked&&ltJourneyIsRead(x.id)).length;shelf.appendChild(el('div',{className:'ltJourneyCycleTitle'},[el('span',{},`${info.icon} ${cycle}しゅうめ　${info.name}`),el('span',{className:'ltJourneyVisit'},`${completed}/30にち　よんだ ${read}/6`)]));const list=el('div',{className:'bookList'});ltJourneyUnlocked(cycle).forEach(x=>{const locked=!x.unlocked,isRead=ltJourneyIsRead(x.id);list.appendChild(el('button',{className:`bookCard ${locked?'locked':''}`,onclick:()=>locked?showToast(`${x.day}にちめに ひらくよ`):ltOpenJourneyStory(x.id)},[el('div',{className:'bookIcon'},locked?'🔒':info.icon),el('div',{className:'bookMain'},[el('div',{className:'bookTitle'},rubyText(locked?'まだ ひみつ':x.story.title)),el('div',{className:'bookMeta'},`${x.day}にちめ　${locked?'まだ ひらいていません':`全${x.story.pages.length}ページ`}`)]),locked?null:el('div',{className:isRead?'readBadge':'readBadge newBadge'},isRead?'よんだ':'NEW')]))});shelf.appendChild(list)});shelf.appendChild(el('button',{className:'secondary section',onclick:()=>{state.screen='adventureMap';render()}},'🗺️ いまの 30にちマップを みる'));wrap.appendChild(shelf);return wrap};
+const r6BaseAchievementDefinitions=ltAchievementDefinitions;
+ltAchievementDefinitions=function(){return r6BaseAchievementDefinitions().concat([
+ {id:'journeyStory1',group:'おはなし',icon:'🗺️',name:'あたらしい たびシール',title:'つづきの ものがたりびと',hint:'2しゅうめからの おはなしを 1つ よむ',check:()=>ltJourneyState().totalRead>=1},
+ {id:'seaStoryAll',group:'おはなし',icon:'🐚',name:'うみべの おはなしシール',title:'七色の みなとの ともだち',hint:'2しゅうめの おはなしを 6つ よむ',check:()=>LT_JOURNEY_DAYS.every((_,i)=>ltJourneyIsRead(ltJourneyStoryId(2,i)))},
+ {id:'threeJourneyAll',group:'おはなし',icon:'🌙',name:'三つの けしきシール',title:'けしきを めぐる ものがたりびと',hint:'2〜4しゅうめの おはなしを ぜんぶ よむ',check:()=>[2,3,4].every(c=>LT_JOURNEY_DAYS.every((_,i)=>ltJourneyIsRead(ltJourneyStoryId(c,i))))},
+ {id:'returnJourney',group:'おはなし',icon:'🌲',name:'もういちどの たびシール',title:'おわらない ぼうけんしゃ',hint:'5しゅうめの おはなしを 1つ よむ',check:()=>LT_JOURNEY_DAYS.some((_,i)=>ltJourneyIsRead(ltJourneyStoryId(5,i)))}
+])};
+const r6BaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=r6BaseDiagnostics(),cs=ltJourneyState(),status=ltMapStatus(),unlocked=status.cycle>=2?ltJourneyUnlocked(status.cycle).filter(x=>x.unlocked).length:0;rows.push({name:'周回専用ストーリー',ok:true,text:`2周目以降は各30日6章。現在 ${status.cycle}周目、解放 ${unlocked}/6、既読記録 ${cs.read.length}件（上限96件）、累計既読 ${cs.totalRead}。進行はtotalSessionsから算出します。`});rows.push({name:'周回イベント表示',ok:true,text:'地域ごとに宝箱・門・祭りの名称を変更し、1・7・14・21・28・30日目に物語を配置しています。'});return rows};
+
+
+/* ================= Ver.1.4.0 candidate R7: integrated home and audit ================= */
+APP.version='1.4.0';
+document.title='はじまりのクリスタル Ver.1.4.0候補R7';
+const r7BaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){
+ const lt=r7BaseEnsureLongTermState();lt.version=7;
+ if(!lt.ui||typeof lt.ui!=='object')lt.ui={};
+ lt.ui.homeRevision=1;
+ return lt;
+};
+function ltHomeClaimableMissionCount(){
+ const lt=ensureLongTermState();
+ const count=(bucket)=>bucket.ids.filter(id=>ltMissionComplete(id)&&!bucket.claimed.includes(id)).length;
+ return count(lt.dailyMissions)+count(lt.weeklyMissions);
+}
+function ltHomeNewStickerCount(){const col=ltCollectionState();return col.unlocked.filter(id=>!col.seen.includes(id)).length}
+function ltHomeUnreadStoryCount(){
+ const main=STORY_EPISODES.slice(0,currentStoryUnlockCount()).filter(s=>!state.storyRead.includes(s.id)).length;
+ const status=ltMapStatus(),journey=status.cycle>=2?ltJourneyUnlocked(status.cycle).filter(x=>x.unlocked&&!ltJourneyIsRead(x.id)).length:0;
+ return main+journey;
+}
+function ltHomeCrystalProgress(){
+ const cc=ltCrystalState(),next=ltNextCrystalDef(),count=Math.max(0,Number(cc.shards[next.id])||0),progress=count%LT_CRYSTAL_PIECES;
+ return {next,count,progress,remaining:progress===0&&count>0?LT_CRYSTAL_PIECES:LT_CRYSTAL_PIECES-progress};
+}
+function ltHomeFocusTarget(){
+ const claimable=ltHomeClaimableMissionCount();
+ if(claimable>0)return {icon:'🎁',title:`もらえる ミッションが ${claimable}こ あるよ`,text:'できた 足あとを ごほうびに かえよう。',label:'もらう',action:()=>{state.screen='missions';render()}};
+ const journey=typeof ltJourneyHomeTarget==='function'?ltJourneyHomeTarget():null;
+ if(journey?.unread)return {icon:journey.info.icon,title:`あたらしい おはなし「${journey.unread.story.title}」`,text:`${journey.cycle}しゅうめ・${journey.unread.day}にちめの ページ。`,label:'よむ',action:()=>ltOpenJourneyStory(journey.unread.id)};
+ const newStickers=ltHomeNewStickerCount();
+ if(newStickers>0)return {icon:'🎖️',title:`あたらしい シールが ${newStickers}まい あるよ`,text:'シールを みて、すきな しょうごうを えらべるよ。',label:'みる',action:()=>{state.screen='collection';render()}};
+ if(state.daily?.completed&&ltBossChallengeUnlocked()&&!ltBossChallengePlayedToday())return {icon:'👑',title:'きょうの ボスチャレンジが できるよ',text:'3もんだけ。せいかいした ひかりは つぎの 日にも のこるよ。',label:'ちょうせん',action:()=>{state.screen='bossChallenge';render()}};
+ const crystal=ltHomeCrystalProgress();
+ if(crystal.remaining===1)return {icon:'💎',title:`あと1こで「${crystal.next.name}」が できるよ`,text:'きょうの ぼうけんを おえると、つぎの かけらが みつかるよ。',label:'ずかん',action:()=>{state.screen='crystalCollection';render()}};
+ const status=ltMapStatus(),next=ltNextMapEvent(status);
+ return {icon:'🗺️',title:`つぎは ${next.day}にちめ「${next.label}」`,text:`${status.cycle}しゅうめは ${status.completed}/30にち。小さな 一歩を つづけよう。`,label:'マップ',action:()=>{state.screen='adventureMap';render()}};
+}
+function ltHomeMiniButton(icon,value,label,action){return el('button',{className:'ltHomeMini',onclick:action},[el('div',{className:'ltHomeMiniIcon'},icon),el('b',{},value),el('span',{},label)])}
+function ltRenderIntegratedDashboard(){
+ const focus=ltHomeFocusTarget(),status=ltMapStatus(),daily=ltMissionCounts('daily'),c=ltSelectedCompanion(),bond=ltBondLevel(c.id),crystals=ltCompletedCrystalCount();
+ return el('div',{className:'ltHomeDashboard'},[
+  el('div',{className:'ltHomeDashTitle'},[el('b',{},'🌟 つぎの おたのしみ'),el('span',{},'いま ひとつだけ えらぶなら')]),
+  el('button',{className:'ltHomeFocus',onclick:focus.action},[el('div',{className:'ltHomeFocusIcon'},focus.icon),el('div',{className:'ltHomeFocusMain'},[el('b',{},focus.title),el('span',{},focus.text)]),el('div',{className:'ltHomeFocusGo'},'›')]),
+  el('div',{className:'ltHomeMiniGrid'},[
+   ltHomeMiniButton('🗺️',`${status.completed}/30`,'たび',()=>{state.screen='adventureMap';render()}),
+   ltHomeMiniButton('✨',`${daily.done}/3`,'きょう',()=>{state.screen='missions';render()}),
+   ltHomeMiniButton(c.icon,`${bond}/5`,'なかよし',()=>{state.screen='companions';render()}),
+   ltHomeMiniButton('💎',`${crystals}/7`,'クリスタル',()=>{state.screen='crystalCollection';render()})
+  ])
+ ])
+}
+function ltHomeMenuButton(icon,label,meta,action,badge=0,locked=false){
+ return el('button',{className:`ltHomeMenuBtn ${locked?'locked':''}`,onclick:()=>locked?showToast(meta):action()},[badge?el('div',{className:'ltHomeBadge'},badge>9?'9+':String(badge)):null,el('div',{className:'ltHomeMenuIcon'},locked?'🔒':icon),el('div',{className:'ltHomeMenuLabel'},label),el('div',{className:'ltHomeMenuMeta'},meta)])
+}
+function ltRenderIntegratedMenu(){
+ const status=ltMapStatus(),daily=ltMissionCounts('daily'),claimable=ltHomeClaimableMissionCount(),bossUnlocked=ltBossChallengeUnlocked(),boss=ltBossChallengeState(),crystals=ltCompletedCrystalCount(),newStickers=ltHomeNewStickerCount(),unread=ltHomeUnreadStoryCount(),town=ltTownStars(),friends=unlockedCompanions().length;
+ return el('div',{className:'ltHomeMenu'},[
+  el('div',{className:'ltHomeMenuHead'},[el('b',{},'🏰 王国の ばしょ'),el('span',{},'やりたい ところを えらべるよ')]),
+  el('div',{className:'ltHomeMenuGrid'},[
+   ltHomeMenuButton('🗺️','30にちマップ',`${status.cycle}しゅうめ ${status.completed}/30にち`,()=>{state.screen='adventureMap';render()}),
+   ltHomeMenuButton('✨','ミッション',`きょう ${daily.done}/3`,()=>{state.screen='missions';render()},claimable),
+   ltHomeMenuButton('🏘️','まち',`きらめき ${town}/20`,()=>{state.screen='town';render()}),
+   ltHomeMenuButton('🐾','なかま',`${friends}/${COMPANIONS.length}にん`,()=>{state.screen='companions';render()}),
+   ltHomeMenuButton('👑','ボスチャレンジ',bossUnlocked?`シール ${boss.seals.length}/12`:'ボスを たすけると ひらく',()=>{state.screen='bossChallenge';render()},bossUnlocked&&state.daily?.completed&&!ltBossChallengePlayedToday()?1:0,!bossUnlocked),
+   ltHomeMenuButton('💎','クリスタル',`七色 ${crystals}/7`,()=>{state.screen='crystalCollection';render()}),
+   ltHomeMenuButton('🏅','シールずかん',`${ltCollectionState().unlocked.length}/${ltAchievementDefinitions().length}まい`,()=>{state.screen='collection';render()},newStickers),
+   ltHomeMenuButton('📚','おはなし',`まだ ${unread}こ`,()=>{state.screen='books';render()},unread)
+  ])
+ ])
+}
+function ltRemoveOldHomeCards(wrap){
+ ['.ltGoalCard','.ltBossHomeCard','.ltJourneyHomeCard','.ltCrystalHomeCard','.ltCollectionHomeCard'].forEach(sel=>wrap.querySelectorAll(sel).forEach(x=>x.remove()));
+ [...wrap.querySelectorAll('.grid2.section')].forEach(grid=>{const t=grid.textContent||'';if(t.includes('まちを そだてる')&&t.includes('なかまと へんしん'))grid.remove()});
+}
+const r7BaseRenderHome=renderHome;
+renderHome=function(){
+ ensureLongTermState();ltRefreshAchievements();const wrap=r7BaseRenderHome();ltRemoveOldHomeCards(wrap);
+ const dashboard=ltRenderIntegratedDashboard(),boss=wrap.querySelector('.bossCard'),main=wrap.querySelector('.mainQuest');if(boss)boss.insertAdjacentElement('afterend',dashboard);else if(main)main.insertAdjacentElement('afterend',dashboard);else wrap.prepend(dashboard);
+ const menu=ltRenderIntegratedMenu(),hold=wrap.querySelector('.parentHold');wrap.insertBefore(menu,hold||null);
+ return wrap;
+};
+function ltIntegrationAudit(){
+ const lt=ensureLongTermState(),issues=[];
+ const unique=(arr)=>Array.isArray(arr)&&new Set(arr).size===arr.length;
+ if(!unique(state.bossCleared||[]))issues.push('bossClearedに重複');
+ if(!unique(lt.bossChallenge?.seals||[]))issues.push('ボスシールに重複');
+ if(!unique(lt.collection?.unlocked||[]))issues.push('解除シールに重複');
+ if(!unique(lt.cycleStories?.read||[]))issues.push('周回既読IDに重複');
+ if((lt.dailyMissions?.ids||[]).length!==3)issues.push('日次ミッション数');
+ if((lt.weeklyMissions?.ids||[]).length!==3)issues.push('週次ミッション数');
+ const map=ltMapStatus();if(map.completed<0||map.completed>30||map.cycle<1)issues.push('30日マップ範囲');
+ if(!COMPANIONS.some(c=>c.id===ltBondState().selectedId))issues.push('相棒ID');
+ if((lt.cycleStories?.read||[]).length>96)issues.push('周回既読上限');
+ const bytes=new Blob([JSON.stringify(snapshot())]).size;
+ return {ok:issues.length===0,issues,bytes,kb:Math.round(bytes/1024*10)/10,homeRoutes:8};
+}
+const r7BaseDiagnostics=diagnostics;
+diagnostics=function(){
+ const rows=r7BaseDiagnostics(),a=ltIntegrationAudit();
+ rows.push({name:'R1〜R6 統合状態',ok:a.ok,text:a.ok?`長期機能の配列重複・範囲・参照先を確認しました。セーブ本体は約${a.kb}KBです。`:`確認事項：${a.issues.join('、')}`});
+ rows.push({name:'ホーム画面の整理',ok:true,text:`長期機能の大型カードを1枚のダッシュボードへ統合し、専用画面への入口を${a.homeRoutes}個に整理しました。機能と保存データは削除していません。`});
+ return rows;
+};
+
+
+/* ================= Ver.1.4.0 candidate R8: beta test support and GitHub preflight ================= */
+APP.version='1.4.0';
+document.title='はじまりのクリスタル Ver.1.4.0候補R8';
+const R8_BETA_BACKUP_KEY='beginning_crystal_g1_beta_original_v1';
+const R8_BETA_META_KEY='beginning_crystal_g1_beta_meta_v1';
+const R8_BETA_NOTES_KEY='beginning_crystal_g1_beta_notes_v1';
+const R8_RUNTIME_ERRORS=[];
+try{window.addEventListener('error',e=>{R8_RUNTIME_ERRORS.push({at:Date.now(),type:'error',message:String(e.message||'unknown'),source:String(e.filename||''),line:e.lineno||0});if(R8_RUNTIME_ERRORS.length>20)R8_RUNTIME_ERRORS.shift()});window.addEventListener('unhandledrejection',e=>{R8_RUNTIME_ERRORS.push({at:Date.now(),type:'promise',message:String(e.reason?.message||e.reason||'unknown')});if(R8_RUNTIME_ERRORS.length>20)R8_RUNTIME_ERRORS.shift()})}catch(e){}
+function r8StorageJson(key,fallback){try{const v=JSON.parse(localStorage.getItem(key)||'null');return v==null?fallback:v}catch(e){return fallback}}
+function r8BetaActive(){try{return !!localStorage.getItem(R8_BETA_BACKUP_KEY)}catch(e){return false}}
+function r8BetaMeta(){return r8StorageJson(R8_BETA_META_KEY,{startedAt:null,currentDay:0,todayComplete:false})}
+function r8SetBetaMeta(patch){const m={...r8BetaMeta(),...(patch||{})};try{localStorage.setItem(R8_BETA_META_KEY,JSON.stringify(m))}catch(e){}return m}
+function r8DateKeyOffset(days){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+days);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function r8BuildingLevelForDay(day,offset=0){const n=Math.max(0,day-offset),thresholds=[0,1,4,9,16,25,40,60,85,115,150];let lv=0;for(let i=1;i<thresholds.length;i++)if(n>=thresholds[i])lv=i;return Math.min(10,lv)}
+function r8Distribute(total,weights){let used=0;return weights.map((w,i)=>{const n=i===weights.length-1?total-used:Math.floor(total*w);used+=n;return n})}
+function r8SyntheticRows(days,todayComplete,qpd=8){const rows=[],daily=[];if(days<=0)return {rows,daily};const count=Math.min(days,90),endOffset=todayComplete?0:-1,subjects=Object.keys(SUBJECTS);for(let i=count-1;i>=0;i--){const offset=endOffset-i,date=r8DateKeyOffset(offset),subjectsCount={'こくご':3,'さんすう':3,'えいご':1,'ものしり':1},correct=Math.round(qpd*.82);daily.push({date,answered:qpd,correct,subjects:deepClone(subjectsCount)});const base=new Date();base.setHours(17,0,0,0);base.setDate(base.getDate()+offset);for(let j=0;j<qpd;j++){const sub=subjects[j%subjects.length],pool=QUESTIONS.filter(q=>q.subject===sub),q=pool[(Math.abs(days*37+i*11+j*7))%Math.max(1,pool.length)]||QUESTIONS[0];rows.push({id:q.id,at:base.getTime()+j*60000,correct:j<correct,subject:sub,hintUsed:j===qpd-1&&i%4===0})}}return {rows:rows.slice(-240),daily:daily.slice(-90)}}
+function r8BuildBetaState(day,todayComplete=false){
+ day=Math.max(0,Math.min(3650,Math.floor(Number(day)||0)));todayComplete=!!todayComplete&&day>0;
+ const settings=deepClone(state.settings||initialState().settings),v11prefs=deepClone(state.v11||{}),v12prefs=deepClone(state.v12||{});
+ let s=migrate(initialState());s.setupDone=true;s.playerName='βテスト';s.screen='betaTools';s.settings={...s.settings,...settings};s.totalSessions=day;s.streak=Math.min(day,30);s.lastStudy=day?r8DateKeyOffset(todayComplete?0:-1):null;s.daily=blankDaily();
+ const qpd=8,total=day*qpd,correct=Math.round(total*.82),wrong=total-correct,totals=r8Distribute(total,[.38,.34,.16,.12]),corrects=r8Distribute(correct,[.38,.34,.16,.12]);Object.keys(SUBJECTS).forEach((sub,i)=>s.subjectStats[sub]={total:totals[i],correct:Math.min(totals[i],corrects[i])});
+ const units={'こくご|ひらがな':{total:Math.max(0,Math.floor(totals[0]*.35)),correct:Math.max(0,Math.floor(corrects[0]*.36))},'さんすう|たしざん':{total:Math.max(0,Math.floor(totals[1]*.35)),correct:Math.max(0,Math.floor(corrects[1]*.34))},'えいご|いろ':{total:Math.max(0,Math.floor(totals[2]*.3)),correct:Math.max(0,Math.floor(corrects[2]*.3))},'ものしり|きせつ':{total:Math.max(0,Math.floor(totals[3]*.3)),correct:Math.max(0,Math.floor(corrects[3]*.3))}};s.unitStats=units;
+ s.xp=correct*10+wrong*4+day*15+Math.floor(day/30)*30;s.coins=90+day*6;s.light=40+correct*2+wrong+day*18;
+ const offsets={book:0,tower:1,stage:2,plaza:3,fountain:0};Object.keys(BUILDINGS).forEach(id=>s.buildings[id]=Math.max(id==='fountain'?1:0,r8BuildingLevelForDay(day,offsets[id])));
+ const cleared=Math.min(BOSSES.length,Math.floor(Math.max(0,day-1)/5));s.bossCleared=BOSSES.slice(0,cleared).map(b=>b.id);s.bossProgress={};BOSSES.forEach((b,i)=>s.bossProgress[b.id]=i<cleared?3:0);
+ s.storyRead=STORY_EPISODES.slice(0,Math.max(0,Math.min(STORY_EPISODES.length,day-1))).map(x=>x.id);
+ const history=r8SyntheticRows(day,todayComplete,qpd);s.questionHistory=history.rows;s.dailyHistory=history.daily;s.daily=todayComplete?{date:today(),answered:qpd,correct:Math.round(qpd*.82),subjects:{'こくご':3,'さんすう':3,'えいご':1,'ものしり':1},completed:true,rewardClaimed:false}:blankDaily();
+ s.v11={...v11prefs,starterPartner:v11prefs.starterPartner||'lala',starterStyle:v11prefs.starterStyle||'star'};s.v12={...v12prefs};s.selectedOutfit='start';state=s;
+ if(typeof ensureV11==='function')ensureV11();if(typeof ensureV12==='function')ensureV12();if(typeof ensureV13==='function')ensureV13();delete state.longTerm;const lt=ensureLongTermState();
+ const cb=lt.companionBond;cb.selectedId='lala';cb.manualSelection=true;COMPANIONS.forEach((c,i)=>cb.days[c.id]=Math.max(0,Math.min(30,day-Math.max(0,i*6))));cb.lastAwardDate=todayComplete?today():null;
+ const bc=lt.bossChallenge;let seals=Math.min(12,Math.floor(Math.max(0,day-5)/7));outer:for(const b of BOSSES){for(const l of LT_BOSS_LEVELS){if(seals<=0)break outer;bc.progress[b.id][l.id]=l.target;if(!bc.seals.includes(`${b.id}:${l.id}`))bc.seals.push(`${b.id}:${l.id}`);seals--}}bc.totalPlays=bc.seals.length;bc.lastPlayDate=null;
+ const tg=lt.townGrowth;tg.eventsSeen=[];Object.keys(BUILDINGS).forEach(id=>{const reached=ltTownReachedMilestones(id);reached.slice(0,-1).forEach(m=>tg.eventsSeen.push(ltTownMilestoneKey(id,m.level)))});
+ const cs=lt.cycleStories;cs.read=[];const current=ltMapStatus().cycle;for(let c=2;c<=current;c++){const unlocked=ltJourneyUnlocked(c).filter(x=>x.unlocked);unlocked.slice(0,c===current?-1:undefined).forEach(x=>cs.read.push(x.id))}cs.read=[...new Set(cs.read)].slice(-96);cs.totalRead=cs.read.length;
+ ltRefreshAchievements();lt.collection.seen=lt.collection.unlocked.slice(0,Math.max(0,lt.collection.unlocked.length-2));const li=levelInfo();const outfit=[...OUTFITS].reverse().find(o=>li.level>=o.level);if(outfit)state.selectedOutfit=outfit.id;
+ state.screen='betaTools';r8SetBetaMeta({currentDay:day,todayComplete});save();return day
+}
+function r8StartBeta(){if(r8BetaActive()){state.screen='betaTools';render();return}if(!confirm('現在の学習データを専用領域へ退避し、βテスト用データへ切り替えますか？'))return;try{const pkg=buildPackage(snapshot(),'βテスト開始前の本番データ');localStorage.setItem(R8_BETA_BACKUP_KEY,JSON.stringify(pkg));localStorage.setItem(R8_BETA_META_KEY,JSON.stringify({startedAt:new Date().toISOString(),currentDay:0,todayComplete:false}));createAutoBackup('βテスト開始前',true);r8BuildBetaState(0,false);render();showToast('βテストモードを はじめました')}catch(e){alert('βテストを開始できませんでした。\n'+e.message)}}
+function r8EndBeta(){if(!r8BetaActive()){showToast('βテストモードではありません');return}if(!confirm('βテスト用データを破棄して、開始前の本番データへ戻しますか？'))return;try{const raw=localStorage.getItem(R8_BETA_BACKUP_KEY),info=inspectPackage(JSON.parse(raw));state=migrate(info.raw);localStorage.removeItem(R8_BETA_BACKUP_KEY);localStorage.removeItem(R8_BETA_META_KEY);state.screen='parent';save();render();showToast('本番データへ もどしました')}catch(e){alert('本番データへ戻せませんでした。専用バックアップは削除していません。\n'+e.message)}}
+function r8BetaNotes(){const rows=r8StorageJson(R8_BETA_NOTES_KEY,[]);return Array.isArray(rows)?rows.slice(-80):[]}
+function r8SaveBetaNotes(rows){try{localStorage.setItem(R8_BETA_NOTES_KEY,JSON.stringify((rows||[]).slice(-80)))}catch(e){}}
+function r8AddBetaNote(category,text){text=String(text||'').trim();if(!text){showToast('メモを 入れてください');return false}const rows=r8BetaNotes();rows.push({id:Date.now(),at:new Date().toISOString(),category,body:text,version:APP.version,screen:state.screen,totalSessions:state.totalSessions||0,beta:r8BetaActive(),viewport:`${window.innerWidth}x${window.innerHeight}`,userAgent:navigator.userAgent});r8SaveBetaNotes(rows);showToast('βテストメモを 保存しました');return true}
+function r8DeleteBetaNote(id){r8SaveBetaNotes(r8BetaNotes().filter(x=>x.id!==id));render()}
+function r8DownloadBlob(content,type,filename){const blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function r8CsvCell(x){const s=String(x??'');return /[",\n]/.test(s)?`"${s.replaceAll('"','""')}"`:s}
+function r8DownloadBetaNotes(){const rows=r8BetaNotes(),csv=[['日時','分類','本文','Ver','画面','冒険日数','βモード','画面サイズ','端末'],...rows.map(x=>[x.at,x.category,x.body,x.version,x.screen,x.totalSessions,x.beta?'はい':'いいえ',x.viewport,x.userAgent])].map(r=>r.map(r8CsvCell).join(',')).join('\n');r8DownloadBlob('\ufeff'+csv,'text/csv;charset=utf-8',`beginning_crystal_beta_notes_${today().replaceAll('-','')}.csv`);showToast('βテストメモを CSV保存しました')}
+function r8ProgressRows(){
+ ensureLongTermState();ltRefreshAchievements();const total=totalAnswered(),correct=totalCorrect(),pct=total?Math.round(correct/total*100):0,li=levelInfo(),map=ltMapStatus(),bc=ltBossChallengeState(),cc=ltCrystalState(),col=ltCollectionState(),rows=[];const add=(category,item,value,detail='')=>rows.push({category,item,value,detail});
+ add('基本','出力日時',new Date().toLocaleString('ja-JP'));add('基本','アプリ版',`Ver.${APP.version}`,document.title);add('基本','モード',r8BetaActive()?'βテスト':'通常');add('基本','プレイヤー',state.playerName||'ひかり');add('学習','総回答',total);add('学習','総正解',correct);add('学習','正答率',`${pct}%`);add('学習','冒険完了日数',state.totalSessions||0);add('学習','連続学習',`${state.streak||0}日`);add('学習','復習待ち',`${dueReviews().length}問`);add('成長','レベル',li.level,`XP ${state.xp||0}`);add('成長','コイン',state.coins||0);add('成長','ひかり',state.light||0);
+ Object.keys(SUBJECTS).forEach(sub=>{const x=state.subjectStats[sub]||{total:0,correct:0},p=x.total?Math.round(x.correct/x.total*100):0;add('教科',sub,`${x.correct}/${x.total}`,`正答率 ${p}%`)});
+ add('長期進行','30日マップ',`${map.cycle}周目 ${map.completed}/30日`,map.theme);add('長期進行','メイン物語',`${currentStoryUnlockCount()}/${STORY_EPISODES.length}話 解放`,`${state.storyRead.length}話 既読`);add('長期進行','周回物語',`${ltJourneyState().totalRead}話 既読`,`記録ID ${ltJourneyState().read.length}/96`);add('長期進行','通常ボス',`${state.bossCleared.length}/${BOSSES.length}体`);add('長期進行','ボスシール',`${bc.seals.length}/12枚`,`挑戦 ${bc.totalPlays}回`);add('長期進行','クリスタル',`${ltCompletedCrystalCount()}/7色`,`かけら ${ltTotalCrystalShards()}個・特別 ${ltSpecialCrystalTotal()}個`);add('長期進行','シール図鑑',`${col.unlocked.length}/${ltAchievementDefinitions().length}枚`,`称号：${ltSelectedTitle()}`);
+ Object.keys(BUILDINGS).forEach(id=>add('町',ltTownStage(id).name,`Lv.${state.buildings[id]||0}`,`次：${ltTownNextMilestone(id)?.name||'最高段階'}`));COMPANIONS.forEach(c=>add('仲間',c.name,unlockedCompanions().some(x=>x.id===c.id)?'解放済み':'未解放',`成長 ${unlockedCompanions().some(x=>x.id===c.id)?companionStage(c):0}/3・なかよし ${ltBondDays(c.id)}日`));OUTFITS.forEach(o=>add('衣装',o.name,li.level>=o.level?'解放済み':'未解放',`必要Lv.${o.level}${state.selectedOutfit===o.id?'・着用中':''}`));
+ const audit=ltIntegrationAudit();add('データ','セーブ本体',`${audit.kb}KB`);add('データ','問題報告',`${state.issues.filter(x=>!x.resolved).length}件 未対応`);return rows
+}
+function r8ProgressSummaryText(){const rows=r8ProgressRows(),pick=(cat,item)=>rows.find(x=>x.category===cat&&x.item===item)?.value||'-';return [`はじまりのクリスタル 進行レポート Ver.${APP.version}`,`出力：${new Date().toLocaleString('ja-JP')}`,`モード：${r8BetaActive()?'βテスト':'通常'}`,`プレイヤー：${state.playerName}`,`学習：総回答 ${pick('学習','総回答')}／総正解 ${pick('学習','総正解')}／正答率 ${pick('学習','正答率')}`,`冒険：${pick('学習','冒険完了日数')}日／${pick('長期進行','30日マップ')}`,`町：合計Lv.${ltTownTotalLevel()}/50／きらめき ${ltTownStars()}/20`,`仲間：${unlockedCompanions().length}/${COMPANIONS.length}人／相棒 ${ltSelectedCompanion().name}・${ltBondDays(ltSelectedCompanion().id)}日`,`収集：ボスシール ${ltBossChallengeState().seals.length}/12／クリスタル ${ltCompletedCrystalCount()}/7／シール ${ltCollectionState().unlocked.length}/${ltAchievementDefinitions().length}`].join('\n')}
+function r8DownloadProgressCsv(){const rows=r8ProgressRows(),csv=[['分類','項目','値','詳細'],...rows.map(x=>[x.category,x.item,x.value,x.detail])].map(r=>r.map(r8CsvCell).join(',')).join('\n');r8DownloadBlob('\ufeff'+csv,'text/csv;charset=utf-8',`beginning_crystal_progress_${state.playerName}_${today().replaceAll('-','')}.csv`);showToast('進行レポートを CSV保存しました')}
+function r8DownloadProgressJson(){const data={format:'beginning-crystal-progress-report',appId:APP.id,appVersion:APP.version,exportedAt:new Date().toISOString(),betaMode:r8BetaActive(),rows:r8ProgressRows()};r8DownloadBlob(JSON.stringify(data,null,2),'application/json;charset=utf-8',`beginning_crystal_progress_${state.playerName}_${today().replaceAll('-','')}.json`);showToast('進行レポートを JSON保存しました')}
+async function r8CopyProgress(){const text=r8ProgressSummaryText();try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else{const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}showToast('進行サマリーを コピーしました')}catch(e){alert(text)}}
+function r8ExternalRefs(){const refs=[];document.querySelectorAll('[src],[href]').forEach(n=>{const v=n.getAttribute('src')||n.getAttribute('href')||'';if(/^(https?:)?\/\//i.test(v))refs.push(v)});return [...new Set(refs)]}
+function r8DuplicateDomIds(){const ids=[...document.querySelectorAll('[id]')].map(x=>x.id).filter(Boolean),count={};ids.forEach(x=>count[x]=(count[x]||0)+1);return Object.entries(count).filter(([,n])=>n>1).map(([id,n])=>`${id}×${n}`)}
+function r8PreflightChecks(){
+ const a=auditQuestions(),external=r8ExternalRefs(),dups=r8DuplicateDomIds(),htmlBytes=new Blob([document.documentElement.outerHTML]).size,stateBytes=new Blob([JSON.stringify(snapshot())]).size,checks=[];const add=(name,status,text)=>checks.push({name,status,text,ok:status==='pass',warn:status==='warn'});
+ add('問題データ',a.issues.length?'fail':'pass',`${a.total}問／構造指摘 ${a.issues.length}件`);add('アプリ識別子',APP.id==='beginning_crystal_grade1'?'pass':'fail',`APP.id=${APP.id}`);add('保存キー',STORE_KEY==='beginning_crystal_g1_save_v1'?'pass':'fail',STORE_KEY);add('外部通信・外部資源',external.length?'fail':'pass',external.length?external.join('、'):'外部URL参照はありません。');add('モバイルviewport',document.querySelector('meta[name="viewport"]')?'pass':'fail',document.querySelector('meta[name="viewport"]')?.content||'なし');add('DOMのID重複',dups.length?'fail':'pass',dups.length?dups.join('、'):'重複なし');add('端末内保存',safeStorage()?'pass':'fail',safeStorage()?'localStorageの読み書きが可能です。':'保存できません。');add('JavaScript実行時エラー',R8_RUNTIME_ERRORS.length?'fail':'pass',R8_RUNTIME_ERRORS.length?R8_RUNTIME_ERRORS.map(x=>x.message).join('／'):'この起動中の捕捉エラーは0件です。');add('セーブ容量',stateBytes<750000?'pass':stateBytes<2000000?'warn':'fail',`${Math.round(stateBytes/1024*10)/10}KB`);add('単一HTML容量',htmlBytes<1500000?'pass':htmlBytes<3000000?'warn':'fail',`約${Math.round(htmlBytes/1024)}KB`);add('音声API','speechSynthesis'in window?'pass':'warn','speechSynthesis '+(('speechSynthesis'in window)?'利用可能':'利用不可'));add('公開URL',location.protocol==='https:'?'pass':'warn',location.protocol==='https:'?'HTTPSで表示中です。':'ローカル確認中です。GitHub Pages公開後にHTTPSを確認してください。');add('βテスト状態',r8BetaActive()?'warn':'pass',r8BetaActive()?'βテスト用データです。公開前に本番データへ戻してください。':'通常データです。');add('候補版表示',/候補R8/.test(document.title)?'warn':'pass',/候補/.test(document.title)?'公開確定時はタイトルとファイル名を index.html に整えてください。':'公開用タイトルです。');add('統合監査',ltIntegrationAudit().ok?'pass':'fail',ltIntegrationAudit().ok?'R1〜R7の統合状態は正常です。':ltIntegrationAudit().issues.join('、'));return checks
+}
+function r8PreflightSummary(){const rows=r8PreflightChecks();return {rows,pass:rows.filter(x=>x.status==='pass').length,warn:rows.filter(x=>x.status==='warn').length,fail:rows.filter(x=>x.status==='fail').length,at:new Date().toISOString()}}
+function r8DownloadPreflight(){const r=r8PreflightSummary(),text=[`はじまりのクリスタル GitHub公開前チェック Ver.${APP.version}`,`実行日時：${new Date(r.at).toLocaleString('ja-JP')}`,`合格 ${r.pass}／注意 ${r.warn}／不合格 ${r.fail}`,'',...r.rows.map(x=>`[${x.status.toUpperCase()}] ${x.name}: ${x.text}`)].join('\n');r8DownloadBlob('\ufeff'+text,'text/plain;charset=utf-8',`beginning_crystal_preflight_${today().replaceAll('-','')}.txt`);showToast('公開前チェックを 保存しました')}
+function renderR8BetaTools(){
+ const active=r8BetaActive(),meta=r8BetaMeta(),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('βテスト支援','parent'));wrap.appendChild(el('div',{className:`r8BetaHero ${active?'active':''}`},[el('h2',{},active?'🧪 βテストモード中':'🛡️ 安全なβテスト'),el('p',{},active?'開始前の本番データは専用領域に退避されています。日数や進行を自由に変更し、終了時に元へ戻せます。':'本番データを丸ごと退避してから、独立したテスト用プロフィールへ切り替えます。通常のバックアップとは別に保存します。'),el('div',{className:'r8BetaStatus'},[el('span',{className:'r8BetaChip'},active?`テスト ${meta.currentDay||0}日目`:'通常モード'),active?el('span',{className:'r8BetaChip'},meta.todayComplete?'今日クリア済み':'今日未クリア'):null,active&&meta.startedAt?el('span',{className:'r8BetaChip'},new Date(meta.startedAt).toLocaleString('ja-JP')):null]),el('button',{className:`${active?'secondary r8Danger':'primary'}`,style:{marginTop:'12px'},onclick:active?r8EndBeta:r8StartBeta},active?'本番データへ戻る':'βテストを開始する') ]));
+ if(active){const presets=[[0,'初回'],[5,'5日・ボス1'],[20,'20日・最終ボス'],[30,'30日・1周完了'],[31,'31日・2周目'],[60,'60日・2周完了'],[120,'120日・4周完了'],[365,'365日・長期']];wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},'進行日数を切り替える'),el('div',{className:'small'},'テストプロフィールを指定日の状態へ作り直します。現在のβテスト中の回答記録は上書きされます。'),el('div',{className:'r8PresetGrid',style:{marginTop:'9px'}},presets.map(([d,label])=>el('button',{className:`r8Preset ${Number(meta.currentDay)===d?'on':''}`,onclick:()=>{if(confirm(`${d}日目のテスト状態へ切り替えますか？`)){r8BuildBetaState(d,d>0);render()}}},[label,el('div',{className:'small'},`${d}日`)]))),(()=>{const input=el('input',{className:'input',type:'number',min:0,max:3650,value:meta.currentDay||0});return el('div',{className:'r8BetaCustom'},[input,el('button',{className:'secondary',onclick:()=>{const d=Math.max(0,Math.min(3650,Number(input.value)||0));if(confirm(`${d}日目へ切り替えますか？`)){r8BuildBetaState(d,meta.todayComplete);render()}}},'指定日にする')])})(),el('div',{className:'grid2',style:{marginTop:'8px'}},[el('button',{className:`settingChoice ${meta.todayComplete?'':'on'}`,onclick:()=>{r8BuildBetaState(meta.currentDay,false);render()}},'今日：未クリア'),el('button',{className:`settingChoice ${meta.todayComplete?'on':''}`,disabled:(meta.currentDay||0)<=0,onclick:()=>{r8BuildBetaState(meta.currentDay,true);render()}},'今日：クリア済み')]) ]));
+ const screens=[['🏠','home','ホーム'],['🗺️','adventureMap','30日マップ'],['✨','missions','ミッション'],['🏘️','town','町'],['🐾','companions','仲間'],['👑','bossChallenge','ボス'],['💎','crystalCollection','クリスタル'],['🏅','collection','シール'],['📚','books','本棚'],['🧪','diagnostics','診断']];wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},'画面を直接確認'),el('div',{className:'r8ScreenGrid'},screens.map(([icon,screen,label])=>el('button',{onclick:()=>{state.screen=screen;render()}},`${icon} ${label}`))) ]))}
+ const category=el('select',{className:'input'},['表示','操作','問題','進行','音声','その他'].map(x=>el('option',{value:x},x))),ta=el('textarea',{className:'backupBox',placeholder:'例：iPad横向きで、30日マップの下部が少し見切れる'});const notes=r8BetaNotes();wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},['βテストメモ',el('span',{className:'small'},`${notes.length}/80件`)]),category,ta,el('div',{className:'grid2',style:{marginTop:'8px'}},[el('button',{className:'primary',onclick:()=>{if(r8AddBetaNote(category.value,ta.value)){ta.value='';render()}}},'メモを保存'),el('button',{className:'secondary',disabled:!notes.length,onclick:r8DownloadBetaNotes},'CSV出力')]),...(notes.length?notes.slice(-8).reverse().map(n=>el('div',{className:'r8NoteRow'},[el('b',{},`${n.category}　${new Date(n.at).toLocaleString('ja-JP')}`),el('p',{},n.body),el('div',{className:'r8NoteMeta'},`画面 ${n.screen}／${n.totalSessions}日／${n.viewport}`),el('button',{className:'linkBtn',onclick:()=>r8DeleteBetaNote(n.id)},'削除')])):[el('div',{className:'small',style:{marginTop:'8px'}},'まだメモはありません。')]) ]));return wrap
+}
+function renderR8ProgressReport(){const rows=r8ProgressRows(),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('進行レポート','parent'));wrap.appendChild(el('div',{className:'r8ReleaseNote'},'現在の学習・町・仲間・物語・収集の状態を、共有しやすいCSVまたはJSONへ出力できます。セーブデータそのものではなく、読み取り用の一覧です。'));wrap.appendChild(el('div',{className:'saveButtons section'},[el('button',{className:'primary',onclick:r8DownloadProgressCsv},'CSVを保存'),el('button',{className:'secondary',onclick:r8DownloadProgressJson},'JSONを保存'),el('button',{className:'secondary wide',onclick:r8CopyProgress},'短いサマリーをコピー')]));wrap.appendChild(el('div',{className:'r8ReportWrap section'},el('table',{className:'r8ReportTable'},[el('thead',{},el('tr',{},['分類','項目','値','詳細'].map(x=>el('th',{},x)))),el('tbody',{},rows.map(x=>el('tr',{},[el('td',{},x.category),el('td',{},x.item),el('td',{},x.value),el('td',{},x.detail)]))) ])));return wrap}
+function renderR8Preflight(){const r=r8PreflightSummary(),wrap=el('div',{className:'screen'});wrap.appendChild(topBar('GitHub公開前チェック','parent'));wrap.appendChild(el('div',{className:'card'},[el('div',{style:{fontSize:'48px',textAlign:'center'}},r.fail?'⚠️':r.warn?'🔎':'✅'),el('div',{style:{fontSize:'18px',fontWeight:'1000',textAlign:'center'}},r.fail?'修正が必要です':r.warn?'公開前の確認事項があります':'公開条件を満たしています'),el('div',{className:'r8PreflightSummary',style:{marginTop:'12px'}},[el('div',{className:'r8PreflightStat r8Ok'},['合格',el('b',{},r.pass)]),el('div',{className:'r8PreflightStat r8Warn'},['注意',el('b',{},r.warn)]),el('div',{className:'r8PreflightStat r8Bad'},['不合格',el('b',{},r.fail)])]) ]));r.rows.forEach(x=>wrap.appendChild(el('div',{className:`diagRow ${x.status==='pass'?'good':x.status==='warn'?'warn':'bad'}`},[el('div',{className:'diagIcon'},x.status==='pass'?'✅':x.status==='warn'?'⚠️':'❌'),el('div',{className:'diagMain'},[el('div',{className:'diagName'},x.name),el('div',{className:'diagText'},x.text)])])));wrap.appendChild(el('div',{className:'r8ReleaseNote section'},'公開確定時は、この候補ファイルを index.html に変更し、iPad Safari・Android Chrome・PCブラウザで「初回設定→5問→結果→再読み込み→セーブ復元」を最終確認してください。'));wrap.appendChild(el('button',{className:'primary section',onclick:r8DownloadPreflight},'チェック結果を保存'));return wrap}
+function r8RenderParentTools(){return el('div',{className:'card section'},[el('div',{className:'sectionTitle'},'開発・βテスト支援'),el('div',{className:'small'},'通常の学習設定とは独立した、動作確認と共有用の機能です。'),el('div',{className:'r8ToolGrid',style:{marginTop:'9px'}},[el('button',{className:'r8ToolBtn',onclick:()=>{state.screen='betaTools';render()}},[el('div',{className:'r8ToolBtnIcon'},'🧪'),el('b',{},'βテスト支援'),el('span',{},'安全な日数変更・画面確認・メモ')]),el('button',{className:'r8ToolBtn',onclick:()=>{state.screen='progressReport';render()}},[el('div',{className:'r8ToolBtnIcon'},'📊'),el('b',{},'進行レポート'),el('span',{},'学習・町・仲間・収集を一覧出力')]),el('button',{className:'r8ToolBtn',onclick:()=>{state.screen='preflight';render()}},[el('div',{className:'r8ToolBtnIcon'},'🚀'),el('b',{},'公開前チェック'),el('span',{},'GitHub Pages向けの最終監査')])]) ])}
+const r8BaseRenderParent=renderParent;
+renderParent=function(){const wrap=r8BaseRenderParent(),reset=[...wrap.querySelectorAll('button')].find(b=>b.textContent.includes('学習データを リセット'));const tools=r8RenderParentTools();if(reset)wrap.insertBefore(tools,reset);else wrap.appendChild(tools);return wrap};
+const r8BaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=r8BaseDiagnostics(),pf=r8PreflightSummary();rows.push({name:'βテスト退避',ok:true,text:r8BetaActive()?'本番データを専用キーへ退避し、βテストモードで動作中です。':'βテスト開始時は本番データを専用キーへ退避します。'});rows.push({name:'進行レポート',ok:true,text:`${r8ProgressRows().length}行のCSV・JSON一覧を生成できます。`});rows.push({name:'GitHub公開前チェック',ok:pf.fail===0,warn:pf.warn>0,text:`合格${pf.pass}・注意${pf.warn}・不合格${pf.fail}。`});return rows};
+function r8BetaRibbon(){return el('div',{className:'r8BetaRibbon'},[el('b',{},`🧪 βテスト中：${r8BetaMeta().currentDay||0}日目　本番データは退避済み`),el('button',{onclick:()=>{state.screen='betaTools';render()}},'テスト画面'),el('button',{onclick:r8EndBeta},'終了')])}
+const r8BaseRender=render;
+render=function(){ensureLongTermState();const app=document.getElementById('app');if(state.screen==='betaTools'){app.innerHTML='';app.appendChild(renderR8BetaTools())}else if(state.screen==='progressReport'){app.innerHTML='';app.appendChild(renderR8ProgressReport())}else if(state.screen==='preflight'){app.innerHTML='';app.appendChild(renderR8Preflight())}else r8BaseRender();if(r8BetaActive()){const screen=app.querySelector('.screen');if(screen&&!screen.querySelector('.r8BetaRibbon'))screen.prepend(r8BetaRibbon())}}
 
 function boot(){applyMotionSetting();render();setTimeout(()=>{try{speechSynthesis.getVoices()}catch(e){}},100)}
 boot();
