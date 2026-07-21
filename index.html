@@ -4,8 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="はじまりのクリスタル">
+<meta name="description" content="小学1年生向けの、ことば・かず・英語・ものしりを学べるオフライン対応学習ゲームです。">
 <meta name="theme-color" content="#8b5cf6">
-<title>はじまりのクリスタル Ver.1.3.2</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<title>はじまりのクリスタル Ver.1.4.2</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{
@@ -174,6 +181,13 @@ ruby{ruby-position:over}.storyPage ruby rt,.storyTeaser ruby rt,.bookCard ruby r
 
 /* ================= Ver.1.4.0 candidate R8: beta tools and release audit ================= */
 .r8ToolGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.r8ToolBtn{min-height:84px;border-radius:18px;padding:10px;background:#fff;border:1px solid var(--line);text-align:center;box-shadow:0 6px 16px rgba(91,60,145,.06)}.r8ToolBtnIcon{font-size:27px}.r8ToolBtn b{display:block;font-size:12px;margin-top:4px}.r8ToolBtn span{display:block;font-size:9px;line-height:1.45;color:var(--muted);margin-top:3px}.r8BetaHero{border-radius:26px;padding:16px;background:linear-gradient(135deg,#fff4d8,#fff,#f0ebff);border:1px solid rgba(255,190,70,.34);box-shadow:var(--shadow)}.r8BetaHero.active{background:linear-gradient(135deg,#fff0ef,#fff8db,#f2ecff);border-color:rgba(255,120,100,.33)}.r8BetaHero h2{font-size:19px}.r8BetaHero p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:5px}.r8BetaStatus{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.r8BetaChip{border-radius:999px;padding:5px 9px;background:rgba(255,255,255,.78);border:1px solid var(--line);font-size:10px;font-weight:1000}.r8BetaRibbon{border-radius:15px;padding:8px 10px;margin-bottom:10px;background:linear-gradient(90deg,#fff0d8,#ffe9f1,#f0eaff);border:1px solid rgba(255,140,100,.30);display:flex;gap:8px;align-items:center;box-shadow:0 7px 17px rgba(91,60,145,.08)}.r8BetaRibbon b{font-size:11px;flex:1}.r8BetaRibbon button{border-radius:999px;background:#fff;padding:6px 9px;border:1px solid var(--line);font-size:10px;font-weight:1000}.r8PresetGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.r8Preset{min-height:54px;border-radius:15px;background:#fff;border:1.5px solid var(--line);padding:7px;font-weight:1000;font-size:11px}.r8Preset.on{background:#f4efff;border-color:#9a75df}.r8BetaCustom{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:9px}.r8BetaCustom .input{min-width:0}.r8ScreenGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.r8ScreenGrid button{min-height:48px;border-radius:14px;background:#fff;border:1px solid var(--line);font-size:11px;font-weight:1000;padding:7px}.r8ReportTable{width:100%;border-collapse:collapse}.r8ReportTable th,.r8ReportTable td{font-size:10px;line-height:1.45;padding:7px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.r8ReportTable th{background:#f3effa;font-weight:1000;position:static}.r8ReportTable td:first-child{width:25%;font-weight:1000}.r8ReportTable td:nth-child(2){width:30%}.r8ReportWrap{overflow:auto;border-radius:16px;border:1px solid var(--line);background:#fff}.r8PreflightSummary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.r8PreflightStat{border-radius:16px;padding:10px;text-align:center;background:#fff;border:1px solid var(--line)}.r8PreflightStat b{display:block;font-size:21px;margin-top:2px}.r8ReleaseNote{border-radius:17px;padding:11px 12px;background:#eef8ff;border:1px solid rgba(70,150,220,.24);font-size:11px;line-height:1.65}.r8NoteRow{border-radius:15px;background:#fff;border:1px solid var(--line);padding:9px;margin-top:7px}.r8NoteRow b{font-size:11px}.r8NoteRow p{font-size:10px;line-height:1.55;color:var(--muted);margin-top:4px;white-space:pre-wrap}.r8NoteMeta{font-size:9px;color:#9489a2;margin-top:4px}.r8Danger{border-color:rgba(255,90,80,.35)!important;color:#9e3b35}.r8Ok{color:#24795f}.r8Warn{color:#94670e}.r8Bad{color:#a13b36}@media(max-width:390px){.r8ToolGrid{grid-template-columns:1fr}.r8ToolBtn{min-height:66px;display:grid;grid-template-columns:38px 1fr;text-align:left;align-items:center}.r8ToolBtnIcon{grid-row:1/3}.r8PresetGrid{grid-template-columns:repeat(2,1fr)}.r8ScreenGrid{grid-template-columns:repeat(2,1fr)}.r8PreflightSummary{grid-template-columns:1fr 1fr}.r8BetaCustom{grid-template-columns:1fr}.r8ReportTable th,.r8ReportTable td{font-size:9px;padding:6px 5px}}
+
+
+/* ================= Ver.1.4.1 offline/PWA support ================= */
+.offlineStatusBadge{position:fixed;right:10px;top:max(10px,env(safe-area-inset-top));z-index:130;display:none;align-items:center;gap:5px;border-radius:999px;padding:7px 10px;background:rgba(51,37,79,.94);color:#fff;font-size:10px;font-weight:1000;box-shadow:0 8px 24px rgba(30,20,50,.25);pointer-events:none}
+.offlineStatusBadge.on{display:flex}.offlineSupportCard{background:linear-gradient(135deg,#eefcff,#f4efff);border-color:rgba(99,179,255,.26)}
+.offlineSupportGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.offlineSupportStat{border-radius:15px;padding:9px;background:#fff;border:1px solid var(--line);font-size:10px;line-height:1.5}.offlineSupportStat b{display:block;font-size:12px;margin-bottom:2px}
+@media(max-width:390px){.offlineSupportGrid{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -1624,7 +1638,7 @@ v131SetQuestion(30108,{visual:null});
 
 
 /* ================= Ver.1.4.0 candidate R1: long-term adventure ================= */
-APP.version='1.4.0';
+APP.version='1.4.1';
 document.title='はじまりのクリスタル Ver.1.4.0';
 
 const LT_MAP_DAYS=30;
@@ -2461,7 +2475,7 @@ diagnostics=function(){
 
 /* ================= Ver.1.4.0 candidate R8: beta test support and GitHub preflight ================= */
 APP.version='1.4.0';
-document.title='はじまりのクリスタル Ver.1.4.0候補R8';
+document.title='はじまりのクリスタル Ver.1.4.1';
 const R8_BETA_BACKUP_KEY='beginning_crystal_g1_beta_original_v1';
 const R8_BETA_META_KEY='beginning_crystal_g1_beta_meta_v1';
 const R8_BETA_NOTES_KEY='beginning_crystal_g1_beta_notes_v1';
@@ -2541,7 +2555,142 @@ function r8BetaRibbon(){return el('div',{className:'r8BetaRibbon'},[el('b',{},`�
 const r8BaseRender=render;
 render=function(){ensureLongTermState();const app=document.getElementById('app');if(state.screen==='betaTools'){app.innerHTML='';app.appendChild(renderR8BetaTools())}else if(state.screen==='progressReport'){app.innerHTML='';app.appendChild(renderR8ProgressReport())}else if(state.screen==='preflight'){app.innerHTML='';app.appendChild(renderR8Preflight())}else r8BaseRender();if(r8BetaActive()){const screen=app.querySelector('.screen');if(screen&&!screen.querySelector('.r8BetaRibbon'))screen.prepend(r8BetaRibbon())}}
 
-function boot(){applyMotionSetting();render();setTimeout(()=>{try{speechSynthesis.getVoices()}catch(e){}},100)}
+
+/* ================= Ver.1.4.1 offline/PWA support ================= */
+const OFFLINE_READY_KEY='beginning_crystal_offline_ready_v141';
+let OFFLINE_INSTALL_PROMPT=null;
+function offlineBadge(){let b=document.getElementById('offlineStatusBadge');if(!b){b=el('div',{id:'offlineStatusBadge',className:'offlineStatusBadge'},'📴 オフラインで あそべます');document.body.appendChild(b)}return b}
+function offlineUpdateStatus(){const b=offlineBadge();b.classList.toggle('on',!navigator.onLine);b.textContent=navigator.onLine?'🌐 オンライン':'📴 オフラインで あそべます'}
+async function offlineCacheNow(showMessage=true){if(!('serviceWorker'in navigator))return false;try{const reg=await navigator.serviceWorker.ready;if(reg.active)reg.active.postMessage({type:'CACHE_NOW'});await reg.update();if(showMessage)showToast('オフラインデータを こうしんしました');return true}catch(e){if(showMessage)showToast('オフラインデータを こうしんできませんでした');return false}}
+async function offlineInstallApp(){if(!OFFLINE_INSTALL_PROMPT){showToast('ブラウザのメニューから「ホーム画面に追加」をえらんでね');return}try{OFFLINE_INSTALL_PROMPT.prompt();await OFFLINE_INSTALL_PROMPT.userChoice;OFFLINE_INSTALL_PROMPT=null;showToast('ホーム画面への追加を かくにんしました')}catch(e){showToast('ホーム画面に追加できませんでした')}}
+function registerOfflineSupport(){
+ offlineUpdateStatus();window.addEventListener('online',()=>{offlineUpdateStatus();showToast('オンラインに もどりました')});window.addEventListener('offline',()=>{offlineUpdateStatus();showToast('オフラインモードで あそべます')});
+ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();OFFLINE_INSTALL_PROMPT=e});
+ window.addEventListener('appinstalled',()=>{OFFLINE_INSTALL_PROMPT=null;showToast('ホーム画面に 追加しました')});
+ if(!('serviceWorker'in navigator))return;
+ const start=async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});await navigator.serviceWorker.ready;if(!localStorage.getItem(OFFLINE_READY_KEY)){localStorage.setItem(OFFLINE_READY_KEY,'1');showToast('オフラインで あそべる じゅんびが できました')}if(reg.waiting)reg.waiting.postMessage({type:'SKIP_WAITING'});reg.addEventListener('updatefound',()=>{const w=reg.installing;if(w)w.addEventListener('statechange',()=>{if(w.state==='installed'&&navigator.serviceWorker.controller)showToast('あたらしいバージョンを じゅんびしました')})})}catch(e){console.warn('Offline setup failed',e)}};
+ if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});
+}
+function renderOfflineSupportCard(){const sw='serviceWorker'in navigator;return el('div',{className:'card section offlineSupportCard'},[el('div',{className:'sectionTitle'},'オフライン利用'),el('div',{className:'small'},'一度オンラインで開くと、その後は通信がなくても学習できます。GitHub Pagesの同じURLで使ってください。'),el('div',{className:'offlineSupportGrid'},[el('div',{className:'offlineSupportStat'},[el('b',{},navigator.onLine?'🌐 オンライン':'📴 オフライン'),navigator.onLine?'最新データを確認できます。':'保存済みデータで遊べます。']),el('div',{className:'offlineSupportStat'},[el('b',{},sw?'✅ オフライン対応':'⚠️ 非対応'),sw?'Service Workerを利用できます。':'このブラウザでは利用できません。'])]),el('div',{className:'grid2',style:{marginTop:'9px'}},[el('button',{className:'secondary',disabled:!sw||!navigator.onLine,onclick:()=>offlineCacheNow(true)},'オフラインデータを更新'),el('button',{className:'secondary',onclick:offlineInstallApp},'ホーム画面に追加')]),el('div',{className:'small',style:{marginTop:'8px'}},'初回だけはオンライン接続が必要です。ブラウザの履歴・サイトデータを削除すると、オフラインデータと学習記録も消えることがあります。')])}
+const offlineBaseRenderParent=renderParent;
+renderParent=function(){const wrap=offlineBaseRenderParent();const card=renderOfflineSupportCard(),hold=wrap.querySelector('.parentHold');wrap.insertBefore(card,hold||null);return wrap};
+
+
+/* ================= Ver.1.4.2 story progress reset ================= */
+APP.version='1.4.2';
+document.title='はじまりのクリスタル Ver.1.4.2';
+
+const SR_MAIN_STORY_IDS=new Set(STORY_EPISODES.map(x=>x.id));
+const srBaseEnsureLongTermState=ensureLongTermState;
+ensureLongTermState=function(){
+  const lt=srBaseEnsureLongTermState();
+  if(!lt.storyReplay||typeof lt.storyReplay!=='object')lt.storyReplay={};
+  const sr=lt.storyReplay;
+  sr.active=!!sr.active;
+  sr.baseTotalSessions=Math.max(0,Math.min(Number(state.totalSessions)||0,Number(sr.baseTotalSessions)||0));
+  sr.resetCount=Math.max(0,Math.floor(Number(sr.resetCount)||0));
+  sr.resetAt=sr.resetAt||null;
+  sr.bossProgress=sr.bossProgress&&typeof sr.bossProgress==='object'?sr.bossProgress:{};
+  sr.bossCleared=Array.isArray(sr.bossCleared)?[...new Set(sr.bossCleared.filter(id=>BOSSES.some(b=>b.id===id)))]:[];
+  sr.mapRewardedCycles=Math.max(0,Math.floor(Number(sr.mapRewardedCycles)||0));
+  return lt;
+};
+function srState(){return ensureLongTermState().storyReplay}
+function srActive(){return !!srState().active}
+function srStorySessions(){const sr=srState();return sr.active?Math.max(0,(state.totalSessions||0)-sr.baseTotalSessions):Math.max(0,state.totalSessions||0)}
+function srBossProgress(id){return srActive()?Math.max(0,Number(srState().bossProgress[id])||0):Math.max(0,Number(state.bossProgress?.[id])||0)}
+function srBossCleared(id){return srActive()?srState().bossCleared.includes(id):state.bossCleared.includes(id)}
+
+currentStoryUnlockCount=function(){return Math.min(STORY_EPISODES.length,srStorySessions())};
+currentBoss=function(){return BOSSES.find((boss,index)=>srStorySessions()>=(index+1)*5&&!srBossCleared(boss.id))||null};
+bossAvailable=function(){return !!currentBoss()};
+ltMapStatus=function(){const total=srStorySessions();if(total===0)return {cycle:1,completed:0,theme:LT_MAP_THEMES[0]};const cycle=Math.ceil(total/LT_MAP_DAYS),completed=total-(cycle-1)*LT_MAP_DAYS;return {cycle,completed,theme:LT_MAP_THEMES[(cycle-1)%LT_MAP_THEMES.length]}};
+ltJourneyCycleCompleted=function(cycle){const total=srStorySessions(),start=(Math.max(1,cycle)-1)*LT_MAP_DAYS;return Math.max(0,Math.min(LT_MAP_DAYS,total-start))};
+
+const srBaseCompleteDailyIfNeeded=completeDailyIfNeeded;
+completeDailyIfNeeded=function(){
+  const sr=srState(),replay=sr.active;
+  if(replay){
+    const lt=ensureLongTermState(),anticipatedRawCycle=Math.floor(((state.totalSessions||0)+1)/LT_MAP_DAYS);
+    /* The old map reward code follows totalSessions. Keep it from firing at the wrong replay day. */
+    lt.map.rewardedCycles=Math.max(lt.map.rewardedCycles||0,anticipatedRawCycle);
+    lt.map.pendingCelebration=null;
+  }
+  const completed=srBaseCompleteDailyIfNeeded();
+  if(!completed||!replay)return completed;
+  const lt=ensureLongTermState(),storyCycles=Math.floor(srStorySessions()/LT_MAP_DAYS);
+  if(storyCycles>sr.mapRewardedCycles){
+    const gained=storyCycles-sr.mapRewardedCycles;sr.mapRewardedCycles=storyCycles;
+    state.coins+=50*gained;state.light+=30*gained;state.xp+=30*gained;
+    lt.map.pendingCelebration={cycle:storyCycles,at:Date.now(),storyReplay:true};
+    createAutoBackup('物語30日マップ達成',true);
+  }else if(lt.map.pendingCelebration&&!lt.map.pendingCelebration.storyReplay){lt.map.pendingCelebration=null}
+  return completed;
+};
+
+const srBaseFinishQuiz=finishQuiz;
+finishQuiz=function(){
+  const qz=state.quiz;
+  if(qz?.mode!=='boss'||!qz.boss||!srActive())return srBaseFinishQuiz();
+  const sr=srState(),id=qz.boss.id,ok=qz.results.filter(r=>r.correct).length,old=Math.max(0,Number(sr.bossProgress[id])||0),now=Math.min(3,old+ok),newlyCleared=now>=3&&!sr.bossCleared.includes(id),everCleared=state.bossCleared.includes(id);
+  sr.bossProgress[id]=now;
+  if(newlyCleared){
+    sr.bossCleared.push(id);
+    if(!everCleared){state.bossProgress[id]=3;state.bossCleared.push(id);state.coins+=35;state.light+=20}
+  }else if(!everCleared){state.bossProgress[id]=Math.max(Number(state.bossProgress[id])||0,now)}
+  qz.newlyCompleted=false;state.screen='result';save();render();
+};
+
+function srWithReplayBossProgress(renderer){
+  if(!srActive())return renderer();
+  const original=state.bossProgress;state.bossProgress=srState().bossProgress;
+  try{return renderer()}finally{state.bossProgress=original}
+}
+const srBaseRenderHome=renderHome;
+renderHome=function(){return srWithReplayBossProgress(()=>srBaseRenderHome())};
+const srBaseRenderBoss=renderBoss;
+renderBoss=function(){return srWithReplayBossProgress(()=>srBaseRenderBoss())};
+const srBaseRenderResult=renderResult;
+renderResult=function(){return srWithReplayBossProgress(()=>srBaseRenderResult())};
+
+function srApplyStoryReset(){
+  const lt=ensureLongTermState(),sr=lt.storyReplay;
+  createAutoBackup('物語リセット前',true);
+  sr.active=true;sr.baseTotalSessions=Math.max(0,state.totalSessions||0);sr.resetCount=(sr.resetCount||0)+1;sr.resetAt=new Date().toISOString();
+  sr.bossProgress={};sr.bossCleared=[];
+  sr.mapRewardedCycles=Math.max(sr.mapRewardedCycles||0,Number(lt.map?.rewardedCycles)||0);
+  state.storyRead=(state.storyRead||[]).filter(id=>!SR_MAIN_STORY_IDS.has(id));
+  state.currentStoryId=null;state.storyPage=0;
+  if(lt.cycleStories){lt.cycleStories.read=[];lt.cycleStories.pendingId=null}
+  if(lt.map)lt.map.pendingCelebration=null;
+  state.quiz=null;state.screen='home';save();createAutoBackup('物語リセット後',true);render();
+  return true;
+}
+function srConfirmStoryReset(){
+  const learned=totalAnswered(),correct=totalCorrect();
+  const message=`物語だけを最初から始めます。\n\nリセットするもの\n・メインストーリー24話\n・通常ボス4体の物語上の進行\n・30日マップと周回物語\n\n残すもの\n・${learned}問の回答歴と${correct}問の正答歴\n・間違い問題と復習予定\n・XP、コイン、町、仲間、衣装\n・ボスチャレンジ、クリスタル、シール\n\n実行前の自動バックアップも作成します。続けますか？`;
+  if(!confirm(message))return false;
+  srApplyStoryReset();showToast('物語を さいしょから はじめます');return true;
+}
+function srRenderParentCard(){
+  const sr=srState(),storyDays=srStorySessions(),mainRead=(state.storyRead||[]).filter(id=>SR_MAIN_STORY_IDS.has(id)).length;
+  return el('div',{className:'card section'},[
+    el('div',{className:'sectionTitle'},['物語の進行',el('span',{className:'small'},sr.active?'リスタート中':'通常進行')]),
+    el('div',{className:'small'},sr.active?`学習記録は累計 ${state.totalSessions||0}日分を維持したまま、物語は ${storyDays}日目として進行しています。メイン物語 ${mainRead}/24話、通常ボス ${sr.bossCleared.length}/4体です。`:`現在は学習完了日数と物語が同じ進行です。メイン物語 ${mainRead}/24話、通常ボス ${state.bossCleared.length}/4体です。`),
+    sr.active?el('div',{className:'note',style:{marginTop:'9px'}},`物語リセット ${sr.resetCount}回。正答歴・復習・町・仲間・収集物はリセットされていません。`):null,
+    el('button',{className:'secondary',style:{marginTop:'10px',borderColor:'rgba(255,150,70,.38)'},onclick:srConfirmStoryReset},sr.active?'物語を もう一度 最初から':'物語だけを 最初から')
+  ]);
+}
+const srBaseRenderParent=renderParent;
+renderParent=function(){
+  const wrap=srBaseRenderParent(),fullReset=[...wrap.querySelectorAll('button')].find(b=>b.textContent.includes('学習データを リセット')),card=srRenderParentCard();
+  if(fullReset)wrap.insertBefore(card,fullReset);else wrap.appendChild(card);return wrap;
+};
+
+const srBaseDiagnostics=diagnostics;
+diagnostics=function(){const rows=srBaseDiagnostics(),sr=srState();rows.push({name:'物語リセット',ok:true,text:sr.active?`学習記録を維持し、物語 ${srStorySessions()}日目として再進行中。リセット${sr.resetCount}回。`:'学習記録を消さずに物語・通常ボス・30日マップだけをリセットできます。'});return rows};
+
+function boot(){applyMotionSetting();render();registerOfflineSupport();setTimeout(()=>{try{speechSynthesis.getVoices()}catch(e){}},100)}
 boot();
 </script>
 </body>
