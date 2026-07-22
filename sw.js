@@ -1,4 +1,4 @@
-const CACHE_NAME='beginning-crystal-v1.4.2-offline-1';
+const CACHE_NAME='beginning-crystal-v1.4.3-offline-1';
 const CORE_ASSETS=['./','./index.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png'];
 async function cacheCore(){const cache=await caches.open(CACHE_NAME);await cache.addAll(CORE_ASSETS)}
 self.addEventListener('install',event=>{event.waitUntil(cacheCore().then(()=>self.skipWaiting()))});

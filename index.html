@@ -12,7 +12,7 @@
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
-<title>はじまりのクリスタル Ver.1.4.2</title>
+<title>はじまりのクリスタル Ver.1.4.3</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{
@@ -184,8 +184,7 @@ ruby{ruby-position:over}.storyPage ruby rt,.storyTeaser ruby rt,.bookCard ruby r
 
 
 /* ================= Ver.1.4.1 offline/PWA support ================= */
-.offlineStatusBadge{position:fixed;right:10px;top:max(10px,env(safe-area-inset-top));z-index:130;display:none;align-items:center;gap:5px;border-radius:999px;padding:7px 10px;background:rgba(51,37,79,.94);color:#fff;font-size:10px;font-weight:1000;box-shadow:0 8px 24px rgba(30,20,50,.25);pointer-events:none}
-.offlineStatusBadge.on{display:flex}.offlineSupportCard{background:linear-gradient(135deg,#eefcff,#f4efff);border-color:rgba(99,179,255,.26)}
+.offlineSupportCard{background:linear-gradient(135deg,#eefcff,#f4efff);border-color:rgba(99,179,255,.26)}
 .offlineSupportGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.offlineSupportStat{border-radius:15px;padding:9px;background:#fff;border:1px solid var(--line);font-size:10px;line-height:1.5}.offlineSupportStat b{display:block;font-size:12px;margin-bottom:2px}
 @media(max-width:390px){.offlineSupportGrid{grid-template-columns:1fr}}
 
@@ -2559,16 +2558,13 @@ render=function(){ensureLongTermState();const app=document.getElementById('app')
 /* ================= Ver.1.4.1 offline/PWA support ================= */
 const OFFLINE_READY_KEY='beginning_crystal_offline_ready_v141';
 let OFFLINE_INSTALL_PROMPT=null;
-function offlineBadge(){let b=document.getElementById('offlineStatusBadge');if(!b){b=el('div',{id:'offlineStatusBadge',className:'offlineStatusBadge'},'📴 オフラインで あそべます');document.body.appendChild(b)}return b}
-function offlineUpdateStatus(){const b=offlineBadge();b.classList.toggle('on',!navigator.onLine);b.textContent=navigator.onLine?'🌐 オンライン':'📴 オフラインで あそべます'}
 async function offlineCacheNow(showMessage=true){if(!('serviceWorker'in navigator))return false;try{const reg=await navigator.serviceWorker.ready;if(reg.active)reg.active.postMessage({type:'CACHE_NOW'});await reg.update();if(showMessage)showToast('オフラインデータを こうしんしました');return true}catch(e){if(showMessage)showToast('オフラインデータを こうしんできませんでした');return false}}
 async function offlineInstallApp(){if(!OFFLINE_INSTALL_PROMPT){showToast('ブラウザのメニューから「ホーム画面に追加」をえらんでね');return}try{OFFLINE_INSTALL_PROMPT.prompt();await OFFLINE_INSTALL_PROMPT.userChoice;OFFLINE_INSTALL_PROMPT=null;showToast('ホーム画面への追加を かくにんしました')}catch(e){showToast('ホーム画面に追加できませんでした')}}
 function registerOfflineSupport(){
- offlineUpdateStatus();window.addEventListener('online',()=>{offlineUpdateStatus();showToast('オンラインに もどりました')});window.addEventListener('offline',()=>{offlineUpdateStatus();showToast('オフラインモードで あそべます')});
  window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();OFFLINE_INSTALL_PROMPT=e});
  window.addEventListener('appinstalled',()=>{OFFLINE_INSTALL_PROMPT=null;showToast('ホーム画面に 追加しました')});
  if(!('serviceWorker'in navigator))return;
- const start=async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});await navigator.serviceWorker.ready;if(!localStorage.getItem(OFFLINE_READY_KEY)){localStorage.setItem(OFFLINE_READY_KEY,'1');showToast('オフラインで あそべる じゅんびが できました')}if(reg.waiting)reg.waiting.postMessage({type:'SKIP_WAITING'});reg.addEventListener('updatefound',()=>{const w=reg.installing;if(w)w.addEventListener('statechange',()=>{if(w.state==='installed'&&navigator.serviceWorker.controller)showToast('あたらしいバージョンを じゅんびしました')})})}catch(e){console.warn('Offline setup failed',e)}};
+ const start=async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});await navigator.serviceWorker.ready;if(!localStorage.getItem(OFFLINE_READY_KEY))localStorage.setItem(OFFLINE_READY_KEY,'1');if(reg.waiting)reg.waiting.postMessage({type:'SKIP_WAITING'})}catch(e){console.warn('Offline setup failed',e)}};
  if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});
 }
 function renderOfflineSupportCard(){const sw='serviceWorker'in navigator;return el('div',{className:'card section offlineSupportCard'},[el('div',{className:'sectionTitle'},'オフライン利用'),el('div',{className:'small'},'一度オンラインで開くと、その後は通信がなくても学習できます。GitHub Pagesの同じURLで使ってください。'),el('div',{className:'offlineSupportGrid'},[el('div',{className:'offlineSupportStat'},[el('b',{},navigator.onLine?'🌐 オンライン':'📴 オフライン'),navigator.onLine?'最新データを確認できます。':'保存済みデータで遊べます。']),el('div',{className:'offlineSupportStat'},[el('b',{},sw?'✅ オフライン対応':'⚠️ 非対応'),sw?'Service Workerを利用できます。':'このブラウザでは利用できません。'])]),el('div',{className:'grid2',style:{marginTop:'9px'}},[el('button',{className:'secondary',disabled:!sw||!navigator.onLine,onclick:()=>offlineCacheNow(true)},'オフラインデータを更新'),el('button',{className:'secondary',onclick:offlineInstallApp},'ホーム画面に追加')]),el('div',{className:'small',style:{marginTop:'8px'}},'初回だけはオンライン接続が必要です。ブラウザの履歴・サイトデータを削除すると、オフラインデータと学習記録も消えることがあります。')])}
@@ -2579,6 +2575,8 @@ renderParent=function(){const wrap=offlineBaseRenderParent();const card=renderOf
 /* ================= Ver.1.4.2 story progress reset ================= */
 APP.version='1.4.2';
 document.title='はじまりのクリスタル Ver.1.4.2';
+// Ver.1.4.3: ordinary offline operation is intentionally silent.
+document.title='はじまりのクリスタル Ver.1.4.3';
 
 const SR_MAIN_STORY_IDS=new Set(STORY_EPISODES.map(x=>x.id));
 const srBaseEnsureLongTermState=ensureLongTermState;
